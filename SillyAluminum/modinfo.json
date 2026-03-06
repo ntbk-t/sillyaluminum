@@ -1,0 +1,15 @@
+{
+    "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+    "type": "Code",
+    "modid": "sillyaluminum",
+    "name": "Silly Aluminum Mod",
+    "authors": [
+        "notebook!!",
+        "whatever alias anthony wants to use :>"
+    ],
+    "description": "Adds aluminum to the game, as well as realistic* processes to produce it!",
+    "version": "1.0.0",
+    "dependencies": {
+        "game": "1.21.0"
+    }
+}
