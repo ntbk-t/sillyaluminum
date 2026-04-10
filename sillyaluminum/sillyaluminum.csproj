@@ -8,7 +8,7 @@
 
 	<ItemGroup>
 		<Reference Include="VintagestoryAPI">
-			<HintPath>/opt/vintagestory/VintagestoryAPI.dll</HintPath>
+			<HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 
