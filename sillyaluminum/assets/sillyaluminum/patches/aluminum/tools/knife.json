@@ -1,0 +1,77 @@
+[
+    //Knife Blade
+    {
+        "file": "game:itemtypes/toolhead/knifeblade.json",
+        "op": "addmerge",
+        "path": "/variantgroups/0/states/-",
+        "value": "aluminum"
+    },
+    {
+        "file": "game:itemtypes/tool/knifeblade.json",
+        "op": "move",
+        "frompath": "/shapeByType/*",
+        "path": "/temp"
+    },
+    {
+        "file": "game:itemtypes/tool/knifeblade.json",
+        "op": "addmerge",
+        "path": "/shapeByType/knifeblade-aluminum",
+        "value": { "base": "item/tool/knife/copper" }
+    },
+    {
+        "file": "game:itemtypes/tool/knifeblade.json",
+        "op": "move",
+        "frompath": "/temp",
+        "path": "/shapeByType/*"
+    },
+    {
+        file: "game:recipes/smithing/knife.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminum",
+    },
+
+    //Knife
+    {
+        file: "game:itemtypes/tool/knife.json",
+        op: "addmerge",
+        path: "/variantgroups/1/states/-",
+        value: "aluminum"
+    },
+    {
+        "file": "game:itemtypes/tool/knife.json",
+        "op": "move",
+        "frompath": "/attributes/groundStorageTransformByType/*",
+        "path": "/temp"
+    },
+    {
+        "file": "game:itemtypes/tool/knife.json",
+        "op": "addmerge",
+        "path": "/attributes/groundStorageTransformByType/knife-generic-aluminum",
+        "value": {
+				translation: { x: 0, y: 0.01, z: -0.074 },
+				rotation: { x: 26, y: 88, z: -87 },
+				scale: 1
+			}
+    },
+    {
+        "file": "game:itemtypes/tool/knife.json",
+        "op": "move",
+        "frompath": "/temp",
+        "path": "/attributes/groundStorageTransformByType/*"
+    },
+    {
+        file: "game:itemtypes/tool/knife.json",
+        op: "addmerge",
+        path: "/durabilitybytype/knife-generic-aluminum",
+        value: 270
+    },
+    {
+        file: "game:itemtypes/tool/knife.json",
+        op: "addmerge",
+        path: "/miningspeedbytype/*-aluminum",
+        value: {
+            "plant": 1.35
+        }
+    },
+]

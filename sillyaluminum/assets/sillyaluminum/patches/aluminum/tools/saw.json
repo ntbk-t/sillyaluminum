@@ -1,0 +1,15 @@
+[
+    //Saw Blade
+    {
+        "file": "game:itemtypes/toolhead/sawblade.json",
+        "op": "addmerge",
+        "path": "/variantgroups/0/states/-",
+        "value": "aluminum"
+    },
+    {
+        file: "game:recipes/smithing/saw.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminum",
+    },
+]

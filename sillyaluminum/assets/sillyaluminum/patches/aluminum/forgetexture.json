@@ -1,0 +1,14 @@
+[
+  {
+    "file": "game:blocktypes/legacy/ingotpile",
+    "op": "addmerge",
+    "path": "/textures/aluminum",
+    "value": { "base": "block/metal/ingot/aluminum" }
+  },
+  {
+    "file": "game:blocktypes/metal/platepile",
+    "op": "addmerge",
+    "path": "/textures/aluminum",
+    "value": { "base": "block/metal/ingot/aluminum" }
+  }
+]

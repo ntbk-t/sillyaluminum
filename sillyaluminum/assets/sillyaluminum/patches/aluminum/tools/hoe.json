@@ -1,0 +1,67 @@
+[
+    //Hoe Head
+    {
+        "file": "game:itemtypes/toolhead/hoehead.json",
+        "op": "addmerge",
+        "path": "/variantgroups/0/states/-",
+        "value": "aluminum"
+    },
+    {
+        file: "game:recipes/smithing/hoe.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminum",
+    },
+
+    //Hoe
+    {
+        file: "game:itemtypes/tool/hoe.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states/-",
+        value: "aluminum"
+    },
+    {
+        file: "game:itemtypes/tool/hoe.json",
+        op: "addmerge",
+        path: "/shapeByType/*-aluminum",
+        value: { "base": "item/tool/hoe-copper" }
+    },
+    {
+        "file": "game:itemtypes/tool/hoe.json",
+        "op": "move",
+        "frompath": "/texturesByType/*",
+        "path": "/temp"
+    },
+    {
+        "file": "game:itemtypes/tool/hoe.json",
+        "op": "addmerge",
+        "path": "/texturesByType/hoe-aluminum",
+        "value": {"material": { base: "block/metal/ingot/{material}" }}
+    },
+    {
+        "file": "game:itemtypes/tool/hoe.json",
+        "op": "move",
+        "frompath": "/temp",
+        "path": "/texturesByType/*"
+    },
+    {
+        file: "game:itemtypes/tool/hoe.json",
+        op: "addmerge",
+        path: "/miningspeedbytype/*-aluminum",
+        value: {
+            "soil": 2.7
+        }
+    },
+    {
+        file: "game:itemtypes/tool/hoe.json",
+        op: "addmerge",
+        path: "/durabilitybytype/*-aluminum",
+        value: 180
+    },
+    {
+        file: "game:itemtypes/tool/hoe.json",
+        op: "addmerge",
+        path: "/attackpowerbytype/hoe-aluminum",
+        value: 1.125
+    },
+]

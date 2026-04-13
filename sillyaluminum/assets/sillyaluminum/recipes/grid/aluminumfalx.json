@@ -1,0 +1,13 @@
+[
+    {
+		ingredientPattern: "T,P,S",
+		ingredients: {
+			"T": { type: "item", code: "game:bladehead-falx-steel" },
+			"S": { type: "item", code: "game:stick" },
+			"P": { type: "item", code: "game:metalplate-aluminum", quantity: 1 },
+		},
+		width: 1,
+		height: 3,
+		output: { type: "item", code: "game:blade-falx-aluminum", quantity: 1  }
+	}
+]

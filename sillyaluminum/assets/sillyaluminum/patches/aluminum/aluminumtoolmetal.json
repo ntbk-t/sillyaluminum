@@ -1,0 +1,10 @@
+[
+    {
+        file: "game:worldproperties/block/toolmetal.json",
+        op: "addmerge",
+        path: "/variants/-",
+        value: {
+            code: "aluminum"
+        },
+    },
+]

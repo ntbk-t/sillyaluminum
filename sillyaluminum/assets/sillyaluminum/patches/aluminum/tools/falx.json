@@ -1,0 +1,57 @@
+[
+    //Falx Head
+    // {
+    //     "file": "game:itemtypes/toolhead/bladehead.json",
+    //     "op": "addmerge",
+    //     "path": "/variantgroups/1/states/-",
+    //     "value": "aluminum"
+    // },
+    // {
+    //     file: "game:recipes/smithing/blade-falx.json",
+    //     op: "addmerge",
+    //     path: "/ingredient/allowedVariants/-",
+    //     value: "aluminum",
+    // },
+
+    //Falx
+    {
+        file: "game:itemtypes/tool/blade.json",
+        op: "addmerge",
+        path: "/variantgroups/1/states/-",
+        value: "aluminum"
+    },
+    {
+        file: "game:itemtypes/tool/blade.json",
+        op: "addmerge",
+        path: "/texturesByType/blade-falx-aluminum",
+        value: { 
+			"falxstring": { base: "block/transparent" },
+			"thongs": { base: "block/transparent" },			
+			"woodguard": { base: "block/transparent" },
+			"handle":  { base: "block/wood/debarked/veryaged"  },
+			"falxblade":  { base: "block/metal/ingot/steel"  },
+			"cloth":  { base: "block/cloth/linen/green"  },
+			"handguard":  { base: "block/metal/sheet/aluminum"  },
+			"spinerivet":  { base: "block/metal/sheet/aluminum1"  },
+			"pips":  { base: "block/transparent"  }
+		},
+    },
+    {
+        file: "game:itemtypes/tool/blade.json",
+        op: "addmerge",
+        path: "/tooltierbytype/*-aluminum",
+        value: 5
+    },
+    {
+        file: "game:itemtypes/tool/blade.json",
+        op: "addmerge",
+        path: "/attackpowerbytype/*-aluminum",
+        value: 5.25
+    },
+    {
+        file: "game:itemtypes/tool/blade.json",
+        op: "addmerge",
+        path: "/durabilitybytype/*-aluminum",
+        value: 2125
+    }
+]

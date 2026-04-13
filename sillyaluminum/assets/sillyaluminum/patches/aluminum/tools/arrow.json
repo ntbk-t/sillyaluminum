@@ -1,0 +1,47 @@
+[
+    //Arrow Head
+    {
+        "file": "game:itemtypes/toolhead/arrowhead.json",
+        "op": "addmerge",
+        "path": "/variantgroups/0/states/-",
+        "value": "aluminum"
+    },
+    {
+        "file": "game:itemtypes/toolhead/arrowhead.json",
+        "op": "move",
+        "frompath": "/shapeByType/*",
+        "path": "/temp"
+    },
+    {
+        "file": "game:itemtypes/toolhead/arrowhead.json",
+        "op": "addmerge",
+        "path": "/shapeByType/*-aluminum",
+        "value": { "base": "item/tool/arrowhead-copper" }
+    },
+    {
+        "file": "game:itemtypes/toolhead/arrowhead.json",
+        "op": "move",
+        "frompath": "/temp",
+        "path": "/shapeByType/*"
+    },
+    
+    //Arrow
+    {
+        file: "game:itemtypes/tool/arrow.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states/-",
+        value: "aluminum"
+    },
+    {
+        file: "game:itemtypes/tool/arrow.json",
+        op: "addmerge",
+        path: "/attributes/damageByType/*-aluminum",
+        value: -0.25
+    },
+    {
+        file: "game:itemtypes/tool/arrow.json",
+        op: "addmerge",
+        path: "/attributes/breakChanceOnImpactByType/*-aluminum",
+        value: -0.165
+    },
+]

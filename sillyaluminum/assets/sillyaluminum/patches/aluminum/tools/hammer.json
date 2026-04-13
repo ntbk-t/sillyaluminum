@@ -1,0 +1,41 @@
+[
+    //Hammer Head
+    {
+        "file": "game:itemtypes/toolhead/hammerhead.json",
+        "op": "addmerge",
+        "path": "/variantgroups/0/states/-",
+        "value": "aluminum"
+    },
+    {
+        file: "game:recipes/smithing/hammer.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminum",
+    },
+    
+    //Hammer
+    {
+        file: "game:itemtypes/tool/hammer.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states/-",
+        value: "aluminum"
+    },
+    {
+        file: "game:itemtypes/tool/hammer.json",
+        op: "addmerge",
+        path: "/tooltierbytype",
+        value: 2
+    },
+    {
+        file: "game:itemtypes/tool/hammer.json",
+        op: "addmerge",
+        path: "/durabilitybytype",
+        value: 450
+    },
+    {
+        file: "game:itemtypes/tool/hammer.json",
+        op: "addmerge",
+        path: "/attackpowerbytype",
+        value: 1.125
+    },
+]

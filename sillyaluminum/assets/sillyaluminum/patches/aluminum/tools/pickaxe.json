@@ -1,0 +1,54 @@
+[
+    //Pickaxe Head
+    {
+        "file": "game:itemtypes/toolhead/pickaxehead.json",
+        "op": "addmerge",
+        "path": "/variantgroups/0/states/-",
+        "value": "aluminum"
+    },
+    {
+        file: "game:recipes/smithing/pickaxe.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminum",
+    },
+
+    
+    //Pickaxe
+    {
+        file: "game:itemtypes/tool/pickaxe.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states/-",
+        value: "aluminum"
+    },
+    {
+        file: "game:itemtypes/tool/pickaxe.json",
+        op: "addmerge",
+        path: "/tooltierbytype/*-aluminum",
+        value: 2
+    },
+    {
+        file: "game:itemtypes/tool/pickaxe.json",
+        op: "addmerge",
+        path: "/miningspeedbytype/*-aluminum",
+        value: {
+			"ceramic": 1.35,
+			"stone": 3.6,
+			"ore": 3.6,
+			"metal": 3.6,
+			"ice": 1.575
+		}
+    },
+    {
+        file: "game:itemtypes/tool/pickaxe.json",
+        op: "addmerge",
+        path: "/attackpowerbytype/pickaxe-aluminum",
+        value: 1.125
+    },
+    {
+        file: "game:itemtypes/tool/pickaxe.json",
+        op: "addmerge",
+        path: "/durabilitybytype/pickaxe-aluminum",
+        value: 270
+    }
+]
