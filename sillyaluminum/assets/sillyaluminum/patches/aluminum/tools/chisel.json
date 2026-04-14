@@ -1,3 +1,20 @@
 [
-    
+    {
+        file: "game:itemtypes/tool/chisel.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states/-",
+        value: "aluminum"
+    },
+    {
+        file: "game:itemtypes/tool/chisel.json",
+        op: "addmerge",
+        path: "/durabilitybytype/chisel-aluminum",
+        value: 540
+    },
+    {
+        file: "game:recipes/smithing/chisel.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminum",
+    }
 ]

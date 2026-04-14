@@ -1,3 +1,26 @@
 [
-    
+    {
+        file: "game:itemtypes/tool/cleaver.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states/-",
+        value: "aluminum"
+    },
+    {
+        file: "game:itemtypes/tool/cleaver.json",
+        op: "addmerge",
+        path: "/durabilitybytype/cleaver-aluminum",
+        value: 180
+    },
+    {
+        file: "game:itemtypes/tool/cleaver.json",
+        op: "addmerge",
+        path: "/attackpowerbytype/cleaver-aluminum",
+        value: 1.125
+    },
+    {
+        file: "game:recipes/smithing/cleaver.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminum",
+    }
 ]

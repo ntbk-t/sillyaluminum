@@ -12,4 +12,34 @@
         path: "/ingredient/allowedVariants/-",
         value: "aluminum",
     },
+
+    //Saw
+    {
+        file: "game:itemtypes/tool/saw.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states/-",
+        value: "aluminum"
+    },
+    {
+        file: "game:itemtypes/tool/saw.json",
+        op: "addmerge",
+        path: "/tooltierbytype/saw-aluminum",
+        value: 2
+    },
+    {
+        file: "game:itemtypes/tool/saw.json",
+        op: "addmerge",
+        path: "/miningspeedbytype/*-aluminum",
+        value: {
+			"wood": 3.6,
+			"leaves": 2.16
+		}
+    },
+    {
+        file: "game:itemtypes/tool/saw.json",
+        op: "addmerge",
+        path: "/durabilitybytype/saw-aluminum",
+        value: 225
+    },
+    
 ]

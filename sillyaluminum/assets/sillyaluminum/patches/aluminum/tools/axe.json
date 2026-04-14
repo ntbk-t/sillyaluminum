@@ -25,13 +25,6 @@
         "path": "/shapeByType/*"
     },
     {
-        file: "game:recipes/smithing/axe.json.json",
-        op: "addmerge",
-        path: "/ingredient/allowedVariants/-",
-        value: "aluminum",
-    },
-
-    {
         "file": "game:itemtypes/toolhead/axehead.json",
         "op": "move",
         "frompath": "/attributes/onTongTransformByType/*",
@@ -75,6 +68,12 @@
         "op": "move",
         "frompath": "/temp",
         "path": "/guiTransformByType/*"
+    },
+    {
+        file: "game:recipes/smithing/axe.json.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminum",
     },
 
     //Axe

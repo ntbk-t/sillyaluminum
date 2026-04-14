@@ -33,7 +33,7 @@
 			"cloth":  { base: "block/cloth/linen/green"  },
 			"handguard":  { base: "block/metal/sheet/aluminum"  },
 			"spinerivet":  { base: "block/metal/sheet/aluminum1"  },
-			"pips":  { base: "block/transparent"  }
+			"pips":  { base: "block/metal/sheet/aluminum1"  }
 		},
     },
     {

@@ -1,0 +1,21 @@
+[
+    //Shears
+    {
+        file: "game:itemtypes/tool/shears.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states/-",
+        value: "aluminum"
+    },
+    {
+        file: "game:itemtypes/tool/shears.json",
+        op: "addmerge",
+        path: "/attackpowerbytype/shears-aluminum",
+        value: 0.9
+    },
+    {
+        file: "game:itemtypes/tool/shears.json",
+        op: "addmerge",
+        path: "/durabilitybytype/shears-aluminum",
+        value: 900
+    },
+]

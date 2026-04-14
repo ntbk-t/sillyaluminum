@@ -12,4 +12,18 @@
         path: "/ingredient/allowedVariants/-",
         value: "aluminum",
     },
+
+    //Scythe
+    {
+        file: "game:itemtypes/tool/scythe.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states/-",
+        value: "aluminum"
+    },
+    {
+        file: "game:itemtypes/tool/scythe.json",
+        op: "addmerge",
+        path: "/durabilitybytype/scythe-aluminum",
+        value: 405
+    },
 ]
