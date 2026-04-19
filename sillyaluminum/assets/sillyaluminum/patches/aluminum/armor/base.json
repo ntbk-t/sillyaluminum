@@ -1,0 +1,20 @@
+[
+    {
+        file: "game:itemtypes/wearable/seraph/armor.json",
+        path: "/variantgroups/2/states/-",
+        op: "addmerge",
+        value: "aluminum"
+    },
+    {
+        file: "game:itemtypes/wearable/seraph/armor.json",
+        path: "/skipVariants/-",
+        op: "addmerge",
+        value: "armor-*-brigandine-aluminum"
+    },
+    {
+        file: "game:itemtypes/wearable/seraph/armor.json",
+        path: "/skipVariants/-",
+        op: "addmerge",
+        value: "armor-*-scale-aluminum"
+    }
+]

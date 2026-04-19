@@ -1,0 +1,17 @@
+[
+    //Hoop smithing
+    {
+        file: "game:recipes/smithing/hoop.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminum",
+    },
+
+    //Hoop
+    {
+        file: "game:itemtypes/part/hoop.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states/-",
+        value: "aluminum"
+    },
+]

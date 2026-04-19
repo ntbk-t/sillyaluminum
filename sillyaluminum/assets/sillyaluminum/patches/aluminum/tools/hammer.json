@@ -23,19 +23,19 @@
     {
         file: "game:itemtypes/tool/hammer.json",
         op: "addmerge",
-        path: "/tooltierbytype",
+        path: "/tooltierbytype/*-aluminum",
         value: 2
     },
     {
         file: "game:itemtypes/tool/hammer.json",
         op: "addmerge",
-        path: "/durabilitybytype",
+        path: "/durabilitybytype/hammer-aluminum",
         value: 450
     },
     {
         file: "game:itemtypes/tool/hammer.json",
         op: "addmerge",
-        path: "/attackpowerbytype",
+        path: "/attackpowerbytype/hammer-aluminum",
         value: 1.125
     },
 ]

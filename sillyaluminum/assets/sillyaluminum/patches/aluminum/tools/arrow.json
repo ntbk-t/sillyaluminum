@@ -24,6 +24,18 @@
         "frompath": "/temp",
         "path": "/shapeByType/*"
     },
+    {
+        file: "game:recipes/smithing/6arrowhead.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminum",
+    },
+    {
+        file: "game:recipes/smithing/9arrowhead.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminum",
+    },
     
     //Arrow
     {

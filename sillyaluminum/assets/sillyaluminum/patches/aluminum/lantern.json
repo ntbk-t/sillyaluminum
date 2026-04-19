@@ -1,0 +1,28 @@
+[
+    {
+        file: "game:blocktypes/metal/lantern.json",
+        op: "addmerge",
+        path: "/textures/aluminum",
+        value: { base: "block/metal/lantern/aluminum" }
+    },
+    {
+        file: "game:blocktypes/metal/lantern.json",
+        op: "addmerge",
+        path: "/textures/deco-aluminum",
+        value: { base: "block/metal/lantern/aluminum-deco" }
+    },
+    {
+        file: "game:blocktypes/metal/lantern.json",
+        op: "addmerge",
+        path: "/creativeinventoryStacksByType/*-up/0/stacks/-",
+        value: { 
+            type: "block", 
+            code: "lantern-up", 
+            attributes: { 
+                material: "aluminum", 
+                lining: "plain", 
+                glass: "quartz" 
+            } 
+        }
+    },
+]

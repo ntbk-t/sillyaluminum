@@ -1,15 +1,15 @@
 [
     //Spear Head
-    {
-        "file": "game:itemtypes/toolhead/spearhead.json",
-        "op": "addmerge",
-        "path": "/variantgroups/0/states/-",
-        "value": "aluminum"
-    },
-    {
-        file: "game:recipes/smithing/spear.json",
-        op: "addmerge",
-        path: "/ingredient/allowedVariants/-",
-        value: "aluminum",
-    },
+    // {
+    //     "file": "game:itemtypes/toolhead/spearhead.json",
+    //     "op": "addmerge",
+    //     "path": "/variantgroups/0/states/-",
+    //     "value": "aluminum"
+    // },
+    // {
+    //     file: "game:recipes/smithing/spear.json",
+    //     op: "addmerge",
+    //     path: "/ingredient/allowedVariants/-",
+    //     value: "aluminum",
+    // },
 ]
