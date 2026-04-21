@@ -1,0 +1,21 @@
+[
+    //Crowbar
+    {
+        file: "game:itemtypes/tool/crowbar.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states/-",
+        value: "aluminum"
+    },
+    {
+        file: "game:itemtypes/tool/crowbar.json",
+        op: "addmerge",
+        path: "/durabilitybytype/*-aluminum",
+        value: 225
+    },
+    {
+        file: "game:recipes/smithing/crowbar.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminum",
+    },
+]
