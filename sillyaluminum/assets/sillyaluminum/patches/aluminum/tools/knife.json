@@ -7,19 +7,19 @@
         "value": "aluminum"
     },
     {
-        "file": "game:itemtypes/tool/knifeblade.json",
+        "file": "game:itemtypes/toolhead/knifeblade.json",
         "op": "move",
         "frompath": "/shapeByType/*",
         "path": "/temp"
     },
     {
-        "file": "game:itemtypes/tool/knifeblade.json",
+        "file": "game:itemtypes/toolhead/knifeblade.json",
         "op": "addmerge",
         "path": "/shapeByType/knifeblade-aluminum",
         "value": { "base": "item/tool/knife/copper" }
     },
     {
-        "file": "game:itemtypes/tool/knifeblade.json",
+        "file": "game:itemtypes/toolhead/knifeblade.json",
         "op": "move",
         "frompath": "/temp",
         "path": "/shapeByType/*"

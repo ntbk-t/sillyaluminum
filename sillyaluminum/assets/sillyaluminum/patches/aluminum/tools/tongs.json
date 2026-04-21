@@ -1,0 +1,21 @@
+[
+    //Tongs
+    {
+        "file": "game:itemtypes/tool/tongsmetal.json",
+        "op": "addmerge",
+        "path": "/variantgroups/1/states/-",
+        "value": "aluminum"
+    },
+    {
+        "file": "game:itemtypes/tool/tongsmetal.json",
+        "op": "addmerge",
+        "path": "/durabilityByType/tongsmetal-standard-aluminum",
+        "value": 450
+    },
+    {
+        file: "game:recipes/smithing/tongs.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminum",
+    },
+]

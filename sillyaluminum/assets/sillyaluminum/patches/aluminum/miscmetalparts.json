@@ -1,5 +1,85 @@
 [
+    //Ingot
+    {
+        file: "game:itemtypes/resource/ingot.json",
+        op: "addmerge",
+        path: "/materialDensityByType/*-aluminum",
+        value: 2700
+    },
+    {
+        file: "game:itemtypes/resource/ingot.json",
+        op: "addmerge",
+        path: "/combustiblePropsByType/ingpt-aluminum",
+        value: {
+            meltingPoint: 660,
+            meltingDuration: 30,
+            smeltedRatio: 1,
+            smeltedStack: { type: "item", code: "ingot-aluminum" }
+        }
+    },
+
+    //Metal bit
+    {
+        file: "game:itemtypes/resource/metalbit.json",
+        op: "addmerge",
+        path: "/combustiblePropsByType/metalbit-aluminum",
+        value: {
+            meltingPoint: 660,
+            meltingDuration: 30,
+            smeltedRatio: 20,
+            smeltedStack: { type: "item", code: "ingot-aluminum" }
+        }
+    },
+
+    //Plate
+    {
+        file: "game:itemtypes/resource/metalplate.json",
+        op: "addmerge",
+        path: "/materialDensityByType/*-aluminum",
+        value: 2700
+    },
+    {
+        file: "game:itemtypes/resource/metalplate.json",
+        op: "addmerge",
+        path: "/combustiblePropsByType/metalplate-aluminum",
+        value: {
+			meltingPoint: 660,
+			meltingDuration: 30,
+			smeltedRatio: 1,
+			smeltedStack: { type: "item", code: "ingot-aluminum", stacksize: 2 }
+		}
+    },
+    {
+        file: "game:recipes/smithing/plate.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminum",
+    },
+
     //Chain
+    {
+        file: "game:itemtypes/resource/metalchain.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states/-",
+        value: "aluminum"
+    },
+    {
+        file: "game:itemtypes/resource/metalchain.json",
+        op: "addmerge",
+        path: "/materialDensityByType/*-aluminum",
+        value: 2700
+    },
+    {
+        file: "game:itemtypes/resource/metalchain.json",
+        op: "addmerge",
+        path: "/combustiblePropsByType/metalchain-aluminum",
+        value: {
+			meltingPoint: 660,
+			meltingDuration: 30,
+			smeltedRatio: 1,
+			smeltedStack: { type: "item", code: "ingot-aluminum", stacksize: 2 }
+		}
+    },
     {
         file: "game:recipes/smithing/chain.json",
         op: "addmerge",
@@ -7,7 +87,7 @@
         value: "aluminum",
     },
 
-    //Scales
+    //Scales //Not adding scale armor, so not adding scales
     // {
     //     file: "game:recipes/smithing/scale.json",
     //     op: "addmerge",

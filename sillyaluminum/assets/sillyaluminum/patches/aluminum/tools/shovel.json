@@ -27,28 +27,28 @@
     
 
     
-    {
-        file: "game:itemtypes/toolhead/shovelhead.json",
-        op: "move",
-        frompath: "/fpHandTransformByType/*",
-        path: "/temp",
-    },
-    {
-        file: "game:itemtypes/toolhead/shovelhead.json",
-        op: "addmerge",
-        path: "/fpHandTransformByType/shovelhead-aluminum",
-        value: {
-			translation: { x: -0.25, y: -0.1, z: 0 },
-			rotation: { x: 3, y: 15, z: 90 },
-			scale: 2.5
-		}
-    },
-    {
-        file: "game:itemtypes/toolhead/shovelhead.json",
-        op: "move",
-        frompath: "/temp",
-        path: "/fpHandTransformByType/*",
-    },
+    // {
+    //     file: "game:itemtypes/toolhead/shovelhead.json",
+    //     op: "move",
+    //     frompath: "/fpHandTransformByType/*",
+    //     path: "/temp",
+    // },
+    // {
+    //     file: "game:itemtypes/toolhead/shovelhead.json",
+    //     op: "addmerge",
+    //     path: "/fpHandTransformByType/shovelhead-aluminum",
+    //     value: {
+	// 		translation: { x: -0.25, y: -0.1, z: 0 },
+	// 		rotation: { x: 3, y: 15, z: 90 },
+	// 		scale: 2.5
+	// 	}
+    // },
+    // {
+    //     file: "game:itemtypes/toolhead/shovelhead.json",
+    //     op: "move",
+    //     frompath: "/temp",
+    //     path: "/fpHandTransformByType/*",
+    // },
 
 
 
@@ -106,7 +106,7 @@
 
 
     {
-        file: "game:recipes/smithing/shovelhead.json",
+        file: "game:recipes/smithing/shovel.json",
         op: "addmerge",
         path: "/ingredient/allowedVariants/-",
         value: "aluminum",

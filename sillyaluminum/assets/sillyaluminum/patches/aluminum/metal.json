@@ -7,7 +7,7 @@
             code: "aluminum",
             meltPoint: 660.32,
             boilPoint: 2470,
-            density: 2699,
+            density: 2700, //2699 but I messed up everywhere else and am too lazy to fix it :P
             specificHeatCapacity: 0.896894,
             elemental: true,
             tier: 1,
@@ -26,23 +26,4 @@
     //         }
     //     }
     // },
-    {
-        file: "game:itemtypes/resource/metalbit.json",
-        op: "addmerge",
-        path: "/combustiblePropsByType/*-aluminum",
-        value: {
-            meltingPoint: 660.32,
-            meltingDuration: 30,
-            smeltedRatio: 20,
-            smeltedStack: { type: "item", code: "ingot-aluminum" }
-        }
-    },
-
-    {
-        file: "game:recipes/smithing/plate.json",
-        op: "addmerge",
-        path: "/ingredient/allowedVariants/-",
-        value: "aluminum",
-    },
-    
 ]

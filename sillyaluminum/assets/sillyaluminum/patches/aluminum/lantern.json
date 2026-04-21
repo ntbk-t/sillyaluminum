@@ -14,10 +14,16 @@
     {
         file: "game:blocktypes/metal/lantern.json",
         op: "addmerge",
+        path: "/textures/grid-aluminum",
+        value: { base: "block/metal/lantern/grid/aluminum" }
+    },
+    {
+        file: "game:blocktypes/metal/lantern.json",
+        op: "addmerge",
         path: "/creativeinventoryStacksByType/*-up/0/stacks/-",
         value: { 
             type: "block", 
-            code: "lantern-up", 
+            code: "lantern-{size}-up", 
             attributes: { 
                 material: "aluminum", 
                 lining: "plain", 
