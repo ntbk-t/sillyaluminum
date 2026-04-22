@@ -9,7 +9,7 @@
     {
         file: "game:itemtypes/resource/ingot.json",
         op: "addmerge",
-        path: "/combustiblePropsByType/ingpt-aluminum",
+        path: "/combustiblePropsByType/ingot-aluminum",
         value: {
             meltingPoint: 660,
             meltingDuration: 30,

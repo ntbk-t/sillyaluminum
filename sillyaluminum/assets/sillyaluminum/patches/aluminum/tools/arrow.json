@@ -45,15 +45,33 @@
         value: "aluminum"
     },
     {
+        "file": "game:itemtypes/tool/arrow.json",
+        "op": "move",
+        "frompath": "/shapeByType/*",
+        "path": "/temp"
+    },
+    {
+        "file": "game:itemtypes/tool/arrow.json",
+        "op": "addmerge",
+        "path": "/shapeByType/*-aluminum",
+        "value": { "base": "item/tool/arrow-aluminum" }
+    },
+    {
+        "file": "game:itemtypes/tool/arrow.json",
+        "op": "move",
+        "frompath": "/temp",
+        "path": "/shapeByType/*"
+    },
+    {
         file: "game:itemtypes/tool/arrow.json",
         op: "addmerge",
         path: "/attributes/damageByType/*-aluminum",
-        value: -0.25
+        value: 1
     },
     {
         file: "game:itemtypes/tool/arrow.json",
         op: "addmerge",
         path: "/attributes/breakChanceOnImpactByType/*-aluminum",
-        value: -0.165
+        value: 0.15
     },
 ]

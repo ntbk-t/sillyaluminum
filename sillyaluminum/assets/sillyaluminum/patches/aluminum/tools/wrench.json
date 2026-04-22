@@ -1,0 +1,33 @@
+[
+    //Wrench
+    {
+        "file": "game:itemtypes/tool/wrench.json",
+        "op": "addmerge",
+        "path": "/variantgroups/0/states/-",
+        "value": "aluminum"
+    },
+    {
+        "file": "game:itemtypes/tool/wrench.json",
+        "op": "addmerge",
+        "path": "/tooltierbytype/*-aluminum",
+        "value": 2
+    },
+    {
+        "file": "game:itemtypes/tool/wrench.json",
+        "op": "addmerge",
+        "path": "/durabilitybytype/wrench-aluminum",
+        "value": 450
+    },
+    {
+        "file": "game:itemtypes/tool/wrench.json",
+        "op": "addmerge",
+        "path": "/attackpowerbytype/wrench-aluminum",
+        "value": 1.5
+    },
+    {
+        file: "game:recipes/smithing/wrench.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminum",
+    },
+]
