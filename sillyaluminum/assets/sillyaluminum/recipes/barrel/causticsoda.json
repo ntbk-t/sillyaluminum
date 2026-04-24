@@ -1,0 +1,10 @@
+[
+    {
+        code: "causticsoda",
+        ingredients: [
+            { type: "item", code: "game:slakedlimeportion", litres: 2 },
+            { type: "item", code: "powder-sodaash", quantity: 2 }
+        ],
+        output: { type: "item", code: "powder-causticsoda", quantity: 1 }
+    }
+]

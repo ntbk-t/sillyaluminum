@@ -1,0 +1,8 @@
+[
+    {
+        file: "game:itemtypes/liquid/acid.json",
+        path: "/allowedVariants/-",
+        op: "addmerge",
+        value: "acid-full-hydrochloric"
+    }
+]
