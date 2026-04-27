@@ -29,8 +29,7 @@
 			shelf: {
 				size: { width: 2, height: 2, length: 2 }
 			}
-		},
-		"explodeInWater": true
+		}
 	},
 	maxstacksize: 128,
 	size: { width: 0.0625, height: 0.0625, length: 0.0625 },
