@@ -22,12 +22,12 @@
 			maxQuantity: 2,
 		},
 		{
-			code: "water", 
-			validStacks: [ { type: "item", code: "game:waterportion" } ],
+			code: "limewater", 
+			validStacks: [ { type: "item", code: "game:limewaterportion" } ],
 			minQuantity: 1,
 			maxQuantity: 1,
 			portionSizeLitres: 3,
 		}
 	],
-	cooksInto: { type: "Item", code: "portion-bauxiteslurry", quantity: 600 }
+	cooksInto: { type: "Item", code: "portion-bauxiteslurry", quantity: 400 }
 }
