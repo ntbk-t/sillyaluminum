@@ -49,7 +49,7 @@
 	dropsByType: {
 		"*-7": [
 			{ type: "item", code: "seeds-saltwort", quantity: { avg: 1.2 }  },
-			//{ type: "item", code: "grain-flax", quantity: { avg: 3, var: 0.5 }  },
+			{ type: "item", code: "sprig-saltwort", quantity: { avg: 2}  },
 			//{ type: "item", code: "flaxfibers", quantity: { avg: 4, var: 0.5 }  },
 		],
 		"*": [
