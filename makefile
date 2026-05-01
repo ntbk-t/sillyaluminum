@@ -1,10 +1,10 @@
 CWD=$(shell pwd)
-PROJECT_PATH=$(CWD)/SillyAluminum
+PROJECT_PATH=$(CWD)/sillyaluminum
 
 VINTAGE_STORY_ARGS=\
 	--openWorld "modding test world"\
 	--tracelog\
-	--addModPath $(PROJECT_PATH)/bin/Debug/Mods\
+	--addModPath $(PROJECT_PATH)/bin/Release/Mods\
 	--addOrigin $(PROJECT_PATH)/assets
 
 build:

@@ -25,7 +25,7 @@ public static class Program
 }
 
 public class BuildContext : FrostingContext {
-    public const string ProjectName = "SillyAluminum";
+    public const string ProjectName = "sillyaluminum";
     public string BuildConfiguration { get; }
     public string Version { get; }
     public string Name { get; }
