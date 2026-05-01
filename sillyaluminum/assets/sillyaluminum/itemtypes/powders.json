@@ -56,7 +56,7 @@
 			meltingPoint: 1350,
 			meltingDuration: 30,
 			smeltedRatio: 6,
-			smeltedStack: { type: "item", code: "nugget-sodium", stacksize: 2 }
+			smeltedStack: { type: "item", code: "metalbit-sodium", stacksize: 2 }
 		}
 	},
 	
