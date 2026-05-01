@@ -31,16 +31,6 @@
         "*-saltwort-raw": 400,
         "*-saltwort-dry": 300
     },
-	combustiblePropsByType: {
-		"*-saltwort-raw": {
-            burnTemperature: 400,
-		    burnDuration: 3,
-        },
-        "*-saltwort-dry": {
-            burnTemperature: 700,
-		    burnDuration: 2,
-        }
-	},
     transitionablePropsByType: {
         "*-saltwort-raw": [
 			{
@@ -52,7 +42,23 @@
 			}
 		]
     },
-		guiTransform: {
+	combustiblePropsbyType: {
+		"*-saltwort-raw": {
+            burnTemperature: 400,
+		    burnDuration: 7,
+        },
+		"*-saltwort-dry": {
+			burnTemperature: 700,
+			burnDuration: 3,
+			meltingPoint: 200,
+			meltingDuration: 1,
+			smeltedRatio: 1,
+			smeltingType: "convert",
+			smeltedStack: { type: "item", code: "powder-saltwortash" },
+			requiresContainer: false
+		}
+	},
+	guiTransform: {
 		translation: { x: 2, y: -2, z: 0 },
 		rotation: { x: 95, y: -39, z: -47 },
 		origin: { x: 0.6, y: 0, z: 0.6 },

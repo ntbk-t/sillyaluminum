@@ -1,0 +1,48 @@
+{
+	code: "portion",
+	class: "ItemLiquidPortion",
+	matterState: "liquid",
+	variantgroups: [
+		{ code:"type", states: ["bauxiteslurry", "sodiumaluminate"] }
+	],
+	attributes: {
+		handbook: {
+			ignoreCreativeInvStacks: true,
+            groupBy: ["portion-*"]
+		},
+		waterTightContainerProps: {
+			containable: true,
+			isopaque: true,
+			itemsPerLitre: 100,
+			textureByType: { 
+				"*-bauxiteslurry": { base: "game:block/liquid/dye/orange", alpha: 255 },
+				"*-sodiumaluminate": { base: "game:block/liquid/dye/brown", alpha: 120 },
+			},
+			isOpaqueByType: {
+				"*": false
+			},			
+			allowSpill: true,
+			whenSpilled: { 
+				action: "DropContents",
+				stack: { type: "item", code: "portion-{type}" } 
+			}
+		}
+	},
+	shape: { base: "game:item/liquid" },
+	textureByType: { 
+		"*-bauxiteslurry": { base: "game:block/liquid/dye/orange", alpha: 255 },
+		"*-sodiumaluminate": { base: "game:block/liquid/dye/brown", alpha: 120 },
+	},	
+	creativeinventoryStacks: [ { tabs: ["general", "liquids"], stacks: [ { type: "block", code: "game:woodbucket", attributes: { ucontents: [ { type:"item", code: "sillyaluminum:portion-{type}", makefull: true } ] } } ] } ],
+	maxstacksize: 5000,
+	materialDensity: 200,
+	guiTransform: {
+		translation: { x: 0, y: 1, z: 0 },
+		rotation: { x: 123, y: -33, z: -13 },
+		origin: { x: 0.5, y: 0, z: 0.5 },
+		scale: 1.4
+	},
+	tpHandTransform: {
+		translation: { x: -1.5, y: -1, z: -1.4 }
+	}
+}

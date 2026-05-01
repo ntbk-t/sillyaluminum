@@ -1,6 +1,7 @@
 [
     {
         code: "causticsoda",
+        sealHours: 8,
         ingredients: [
             { type: "item", code: "game:slakedlimeportion", litres: 2 },
             { type: "item", code: "powder-sodaash", quantity: 2 }
