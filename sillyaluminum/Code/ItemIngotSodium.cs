@@ -4,43 +4,58 @@ using Vintagestory.API.Server;
 using Vintagestory.GameContent;
 using Vintagestory.API.Datastructures;
 using System.Security.Cryptography;
+using Vintagestory.API.MathTools;
 
-internal class ItemIngotSodium : Item{ //Not ItemIngot since that only has anvil stuff that we don't care about here
+//Not ItemIngot since that only has anvil stuff that we don't care about here
+internal class ItemIngotSodium : Item {
+	Item? metalbit_sodium = null;
 
-    public string GetMetalType(){
+    public override void OnLoaded(ICoreAPI api) {
+        base.OnLoaded(api);
+		metalbit_sodium = api.World.GetItem(new AssetLocation("sillyaluminum:metalbit-sodium"));
+    }
+
+    public string GetMetalType() {
 		return LastCodePart();
 	}
 
-    public override void OnGroundIdle(EntityItem entityItem){
-		if (api.Side != EnumAppSide.Server){
-			return;
-		}
+    public override void OnGroundIdle(EntityItem entityItem) {
+		if (api.Side != EnumAppSide.Server) return;
+		if (!entityItem.Swimming) return;
 
-		if(!entityItem.Swimming){
-			if(entityItem.Attributes.GetAsBool("burnOnWaterExit")){
-				entityItem.Attributes.RemoveAttribute("burnOnWaterExit");
-				entityItem.IsOnFire = true;
-				if(GetTemperature(entityItem.World, entityItem.Itemstack) < 800){
-					SetTemperature(entityItem.World, entityItem.Itemstack, 800);
-				}
+		if (api.World.Rand.NextDouble() >= 0.2) {
+			if (api.World.Rand.NextDouble() < 0.2) {
+				api.World.SpawnCubeParticles(
+					entityItem.Pos.XYZ,
+					entityItem.Itemstack.Clone(),
+					0.1f,
+					2,
+					0.2f + (float)api.World.Rand.NextDouble() / 5f
+				);
 			}
-			return;
 		}
 
-		if (api.World.Rand.NextDouble() < 0.20){
-			api.World.SpawnCubeParticles(entityItem.Pos.XYZ, entityItem.Itemstack.Clone(), 0.1f, 80, 0.3f);
-            //api.World.SpawnParticles(2, 255, entityItem.Pos.XYZ, entityItem.Pos.XYZ, )
-            ((IServerWorldAccessor)api.World).CreateExplosion(entityItem.Pos.AsBlockPos, EnumBlastType.OreBlast, 4.5, 25, 1f);
+		api.World.SpawnCubeParticles(entityItem.Pos.XYZ, entityItem.Itemstack.Clone(), 0.1f, 80, 0.3f);
+		((IServerWorldAccessor)api.World).CreateExplosion(entityItem.Pos.AsBlockPos, EnumBlastType.OreBlast, 4.5, 12, 1f);
+
+		// if only Rand.NextInRange...
+		var nuggets = api.World.Rand.NextInt64() % 10 + 10;
+		for (var i = 0; i < nuggets; i++) {
+			var nugget = (EntityItem?) api.World.SpawnItemEntity(
+				new ItemStack(metalbit_sodium, 1),
+				entityItem.Pos.XYZ,
+				new(
+					(api.World.Rand.NextDouble() - 0.5) * 0.25,
+					(api.World.Rand.NextDouble() * 0.5) + 0.25,
+					(api.World.Rand.NextDouble() - 0.5) * 0.25
+				)
+			);
+			// TODO: better way to handle this
+			if (nugget == null) return;
+            nugget.Itemstack.Item.SetTemperature(nugget.World, nugget.Itemstack, 800);
+			nugget.IsOnFire = true;
 			entityItem.Attributes.SetBool("burnOnWaterExit", true);
-			if(api.World.Rand.NextDouble() < 0.25){
-				entityItem.Die();
-			}else{
-				entityItem.Pos.Motion.X += (api.World.Rand.NextDouble() - 0.5) * 0.25;
-				entityItem.Pos.Motion.Z += (api.World.Rand.NextDouble() - 0.5) * 0.25;
-				entityItem.Pos.Motion.Y += (api.World.Rand.NextDouble() * 0.5) + 0.25;
-			}
-		}else if (api.World.Rand.NextDouble() < 0.2){
-			api.World.SpawnCubeParticles(entityItem.Pos.XYZ, entityItem.Itemstack.Clone(), 0.1f, 2, 0.2f + (float)api.World.Rand.NextDouble() / 5f);
 		}
+		entityItem.Die();
 	}
 }
