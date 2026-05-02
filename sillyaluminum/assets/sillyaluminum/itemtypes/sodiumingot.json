@@ -1,16 +1,17 @@
 {
-	code: "ingot-sodium",
-	//class: "ItemIngot", //ItemIngot handles mostly smithing stuff that we're not doing, so we don't need it
-    class: "sillyaluminum.ItemIngotSodium",
+	code: "ingot",
+	class: "sillyaluminum.ItemIngotSodium",
 	maxstacksize: 16,
 	behaviors: [{ 
 		name: "GroundStorable",
 		properties: {
 			layout: 'Stacking',
 			placeRemoveSound: 'game:sounds/block/ingot',
-			stackingModel: 'game:block/metal/ingotpile',
+			stackingModelByType: {
+				"*": 'game:block/metal/ingotpile',
+			},
 			stackingTextures: {
-				"metal": "resource/ingot/sodium",
+				"metal": "resource/ingot/{metal}",
 			},
 			modelItemsToStackSizeRatio: 1,
 			upSolid: true,
@@ -24,7 +25,8 @@
 	attributes: {
 		handbook: {
 			groupBy: ["ingot-*"],
-		},
+        },
+		shatteredStack: { type: "item", code: "metalbit-{metal}" },
 		displaycaseable: true, 
 		shelvable: true,
         displayable: {
@@ -51,19 +53,28 @@
 			scale: 1
 		}
 	},
-	storageFlags: 1,
-	shape: { base: "game:item/ingot" },
+	variantgroups: [
+		{ code: "metal", loadFromProperties: "sillyaluminum:metal"},
+	],
+	storageFlags: 5,
+	shapeByType: {
+		"*": { base: "game:item/ingot" },
+	},
 	textures: {
-		"metal": { base: "resource/ingot/sodium" },
+		"metal": { base: "resource/ingot/{metal}" },
 	},
 	creativeinventory: { "general": ["*"], "items": ["*"] },
-	materialDensity: 967,
-    combustibleProps: {
-			meltingPoint: 98,
+	materialDensityByType: {
+		"*-sodium": 927,
+	},
+	combustiblePropsByType: {
+		"ingot-sodium": {
+			meltingPoint: 97,
 			meltingDuration: 30,
 			smeltedRatio: 1,
 			smeltedStack: { type: "item", code: "ingot-sodium" }
-    },
+		}
+	},
 	guiTransform: {
 		translation: { x: 2, y: 0, z: 0 },
 		rotation: { x: 149, y: -36, z: 0 },
