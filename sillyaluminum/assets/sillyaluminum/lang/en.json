@@ -10,4 +10,19 @@
     "game:item-metalbit-aluminum": "Aluminum bits",
     "game:item-metalchain-aluminum": "Aluminum chain",
     "game:item-ingot-aluminum": "Aluminum ingot",
+    "sillyaluminum:item-powder-aluminumpowder": "Aluminum powder",
+    "sillyaluminum:item-salty-powder-saltyaluminumpowder": "Aluminum powder (with salt)",
+    // TODO: is this name good?
+    "sillyaluminum:item-salty-powder-aluminumchloride": "Muriate of alumina",
+
+    "sillyaluminum:item-ingot-sodium": "Sodium ingot",
+    "sillyaluminum:item-metalbit-sodium": "Sodium bits",
+    // TODO: less chemistry sounding name?
+    "sillyaluminum:item-sodium-aluminate": "Sodium aluminate",
+    "sillyaluminum:item-powder-sodaash": "Soda ash",
+
+    "sillyaluminum:item-sprig-saltwort-raw": "Saltwort sprig",
+    "sillyaluminum:item-sprig-saltwort-dry": "Saltwort sprig (dry)",
+    "sillyaluminum:item-seeds-saltwort": "Saltwort seeds",
+    "sillyaluminum:item-powder-saltwortash": "Saltwort ash",
 }
