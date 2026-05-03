@@ -1,12 +1,11 @@
-using System;
 using Vintagestory.API.Common;
 using Vintagestory.API.Server;
 using Vintagestory.GameContent;
-using Vintagestory.API.Datastructures;
-using System.Security.Cryptography;
 
 internal class ItemNuggetSodium : ItemNugget{
     public override void OnGroundIdle(EntityItem entityItem){
+		base.OnGroundIdle(entityItem);
+
 		if (api.Side != EnumAppSide.Server){
 			return;
 		}
