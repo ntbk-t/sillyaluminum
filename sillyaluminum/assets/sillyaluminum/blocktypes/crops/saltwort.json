@@ -8,7 +8,7 @@
 	],
 	creativeinventory: { "general": [""], "plants": [""] },
 	renderpass: "OpaqueNoCull",
-	shape: { base: "game:block/plant/crop/default*" },
+	shape: { base: "block/plant/saltwort" },
 	blockmaterial: "Plant",
 	textures: {
 		crop: { base: "block/crop/{type}/normal{stage}" },

@@ -1,32 +1,39 @@
 {
 	code: "ingot",
+	//class: "ItemIngot",
 	class: "sillyaluminum.ItemIngotSodium",
 	maxstacksize: 16,
-	behaviors: [{ 
-		name: "GroundStorable",
-		properties: {
-			layout: 'Stacking',
-			placeRemoveSound: 'game:sounds/block/ingot',
-			stackingModelByType: {
-				"*": 'game:block/metal/ingotpile',
-			},
-			stackingTextures: {
-				"metal": "resource/ingot/{metal}",
-			},
-			modelItemsToStackSizeRatio: 1,
-			upSolid: true,
-			stackingCapacity: 64,
-			transferQuantity: 1,
-			bulkTransferQuantity: 4,
-			collisionBox: { x1: 0, y1: 0, z1: 0, x2: 1, y2: 0.125, z2: 1 },
-			cbScaleYByLayer: 0.125
+	behaviors: [
+		{ 
+			name: "GroundStorable",
+			properties: {
+				layout: 'Stacking',
+				placeRemoveSound: 'game:sounds/block/ingot',
+				stackingModelByType: {
+					"*": 'game:block/metal/ingotpile',
+				},
+				stackingTextures: {
+					"metal": "resource/ingot/{metal}",
+				},
+				modelItemsToStackSizeRatio: 1,
+				upSolid: true,
+				stackingCapacity: 64,
+				transferQuantity: 1,
+				bulkTransferQuantity: 4,
+				collisionBox: { x1: 0, y1: 0, z1: 0, x2: 1, y2: 0.125, z2: 1 },
+				cbScaleYByLayer: 0.125
+			}
+		},
+		{ 
+			name: "Throwable", 
+			properties: { damage: 1, thrownProjectileCode: "thrownitem", damageType: "BluntAttack", randomThrowYaw: true, dropOnImpactChance: 0.5 }
 		}
-	}],
+	],
 	attributes: {
 		handbook: {
 			groupBy: ["ingot-*"],
         },
-		shatteredStack: { type: "item", code: "metalbit-{metal}" },
+		shatteredStack: { type: "item", code: "sillyaluminum:metalbit-{metal}" },
 		displaycaseable: true, 
 		shelvable: true,
         displayable: {

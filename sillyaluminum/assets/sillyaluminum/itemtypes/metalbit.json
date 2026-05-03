@@ -1,5 +1,5 @@
 {
-	code: "metalbit-sodium",
+	code: "metalbit",
 	// ItemNugget is just for displaying the yield in units in the tooltip
 	class: "sillyaluminum.ItemNuggetSodium",
 	behaviors: [
@@ -7,7 +7,7 @@
     ],
 	shape: { base: "game:item/nugget" },
 	textures: {
-		"ore": { base: "resource/ingot/sodium" }
+		"ore": { base: "resource/ingot/{metal}" }
 	},
 	attributes: {
 		handbook: {
@@ -20,7 +20,7 @@
 			rotation: { x: 0, y: 7, z: 0 }
 		},
 		tongOpening: "medium",
-		shatteredStack: { type: "item", code: "metalbit-sodium" },
+		shatteredStack: { type: "item", code: "metalbit-{metal}" },
 		onMetalTongTransform: {
 			translation: { x: -1.05, y: -0.12, z: -0.48 },
 			rotation: { x: -89, y: -8, z: 0 },
@@ -32,16 +32,21 @@
 			}
 		}
 	},
+	variantgroups: [
+		{ code: "metal", loadFromProperties: "sillyaluminum:metal"},
+	],
 	materialDensity: 967,
 	maxstacksize: 128,
 	size: { width: 0.0625, height: 0.0625, length: 0.0625 },
 	storageFlags: 5,
 	creativeinventory: { "general": ["*"], "items": ["*"] },
-	combustibleProps: {
-		meltingPoint: 98,
-		meltingDuration: 30,
-		smeltedRatio: 20,
-		smeltedStack: { type: "item", code: "ingot-sodium" }
+	combustiblePropsByType: {
+		"*-sodium": {
+			meltingPoint: 98,
+			meltingDuration: 30,
+			smeltedRatio: 20,
+			smeltedStack: { type: "item", code: "ingot-sodium" }
+		}
     },
 	guiTransform: {
 		translation: { x: 0, y: 0, z: 0 },
