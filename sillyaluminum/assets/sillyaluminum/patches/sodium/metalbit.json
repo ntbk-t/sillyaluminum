@@ -1,0 +1,45 @@
+[
+    //Add metalbit
+    {
+        "file": "game:itemtypes/resource/metalbit.json",
+        "op": "addmerge",
+        "path": "/variantgroups/0/states/-",
+        "value": "sodium"
+    },
+    {
+        file: "game:itemtypes/resource/metalbit.json",
+        op: "addmerge",
+        path: "/materialDensityByType",
+        value: {
+            "*-sodium": 927,
+            "*": 8000 //They all sink anyway
+        }
+    },
+    {
+        file: "game:itemtypes/resource/metalbit.json",
+        op: "addmerge",
+        path: "/combustiblePropsByType/metalbit-sodium",
+        value: {
+            meltingPoint: 97,
+            meltingDuration: 30,
+            smeltedRatio: 20,
+            smeltedStack: { type: "item", code: "ingot-sodium" }
+        }
+    },
+
+    //Add nugget class
+    {
+        "file": "game:itemtypes/resource/metalbit.json",
+        "op": "remove",
+        "path": "/class"
+    },
+    {
+        "file": "game:itemtypes/resource/metalbit.json",
+        "op": "addmerge",
+        "path": "/classByType",
+        "value": {
+            "*-sodium": "sillyaluminum.ItemNuggetSodium",
+            "*": "ItemNugget"
+        }
+    },
+]

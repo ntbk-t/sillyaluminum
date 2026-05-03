@@ -7,17 +7,13 @@ using System.Security.Cryptography;
 using Vintagestory.API.MathTools;
 
 //Not ItemIngot since that only has anvil stuff that we don't care about here
-internal class ItemIngotSodium : Item {
+internal class ItemIngotSodium : ItemIngot {
 	Item? metalbit_sodium = null;
 
     public override void OnLoaded(ICoreAPI api) {
         base.OnLoaded(api);
-		metalbit_sodium = api.World.GetItem(new AssetLocation("sillyaluminum:metalbit-sodium"));
+		metalbit_sodium = api.World.GetItem(new AssetLocation("metalbit-sodium")); //Used to be sillyaluminum:metalbit-sodium
     }
-
-    public string GetMetalType() {
-		return LastCodePart();
-	}
 
     public override void OnGroundIdle(EntityItem entityItem) {
 		if (api.Side != EnumAppSide.Server) return;

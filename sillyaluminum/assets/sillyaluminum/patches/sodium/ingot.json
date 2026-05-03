@@ -1,0 +1,113 @@
+[
+    //Add ingot
+    {
+        "file": "game:itemtypes/resource/ingot.json",
+        "op": "addmerge",
+        "path": "/variantgroups/0/states/-",
+        "value": "sodium"
+    },
+    {
+        file: "game:itemtypes/resource/ingot.json",
+        op: "addmerge",
+        path: "/attributes/workableTemperatureByType/ingot-sodium",
+        value: 0
+    },
+    {
+        file: "game:itemtypes/resource/ingot.json",
+        op: "addmerge",
+        path: "/materialDensityByType/*-sodium",
+        value: 927
+    },
+    {
+        file: "game:itemtypes/resource/ingot.json",
+        op: "addmerge",
+        path: "/combustiblePropsByType/ingot-sodium",
+        value: {
+            meltingPoint: 97,
+            meltingDuration: 30,
+            smeltedRatio: 1,
+            smeltedStack: { type: "item", code: "ingot-sodium" }
+        }
+    },
+
+    //Add ingot class
+    {
+        "file": "game:itemtypes/resource/ingot.json",
+        "op": "remove",
+        "path": "/class"
+    },
+    {
+        "file": "game:itemtypes/resource/ingot.json",
+        "op": "addmerge",
+        "path": "/classByType",
+        "value": {
+            "*-sodium": "sillyaluminum.ItemIngotSodium",
+            "*": "ItemIngot"
+        }
+    },
+
+    //Make sodium ingot throwable
+    {
+        "file": "game:itemtypes/resource/ingot.json",
+        "op": "remove",
+        "path": "/behaviors"
+    },
+    {
+        "file": "game:itemtypes/resource/ingot.json",
+        "op": "addmerge",
+        "path": "/behaviorsByType",
+        "value": {
+            "*-sodium": [
+                {
+                    name: "GroundStorable",
+                    properties: {
+                        layout: 'Stacking',
+                        placeRemoveSound: 'sounds/block/ingot',
+                        stackingModelByType: {
+                            "*-gold": 'block/metal/ingotpileshiny',
+                            "*": 'block/metal/ingotpile',
+                        },
+                        stackingTextures: {
+                            "metal": "block/metal/ingot/{metal}",
+                        },
+                        modelItemsToStackSizeRatio: 1,
+                        upSolid: true,
+                        stackingCapacity: 64,
+                        transferQuantity: 1,
+                        bulkTransferQuantity: 4,
+                        collisionBox: { x1: 0, y1: 0, z1: 0, x2: 1, y2: 0.125, z2: 1 },
+                        cbScaleYByLayer: 0.125
+                    }
+                },
+                { 
+                    //TODO: Make custom thrownProjectileCode that explodes on contact with water
+                    name: "Throwable", 
+                    properties: { damage: 1, thrownProjectileCode: "thrownitem", damageType: "BluntAttack", randomThrowYaw: true, dropOnImpactChance: 1 }
+                }
+            ],
+                "*": [
+                    { 
+                    name: "GroundStorable",
+                    properties: {
+                        layout: 'Stacking',
+                        placeRemoveSound: 'sounds/block/ingot',
+                        stackingModelByType: {
+                            "*-gold": 'block/metal/ingotpileshiny',
+                            "*": 'block/metal/ingotpile',
+                        },
+                        stackingTextures: {
+                            "metal": "block/metal/ingot/{metal}",
+                        },
+                        modelItemsToStackSizeRatio: 1,
+                        upSolid: true,
+                        stackingCapacity: 64,
+                        transferQuantity: 1,
+                        bulkTransferQuantity: 4,
+                        collisionBox: { x1: 0, y1: 0, z1: 0, x2: 1, y2: 0.125, z2: 1 },
+                        cbScaleYByLayer: 0.125
+                    }
+                }
+            ]
+        }
+    },
+]
