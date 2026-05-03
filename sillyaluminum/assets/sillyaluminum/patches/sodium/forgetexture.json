@@ -1,0 +1,8 @@
+[
+  {
+    "file": "game:blocktypes/legacy/ingotpile",
+    "op": "addmerge",
+    "path": "/textures/sodium",
+    "value": { "base": "block/metal/ingot/sodium" }
+  }
+]
