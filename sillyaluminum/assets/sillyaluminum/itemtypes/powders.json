@@ -8,7 +8,10 @@
 	],
 	heldTpIdleAnimation: "holdbothhands",
 	heldRightReadyAnimation: "holdbothhands",
-	shape: { base: "game:item/food/flour" },
+	shapeByType: {
+		"*-causticsoda": { base: "game:item/resource/crushed/normal" },
+		"*": { base: "game:item/food/flour" }
+	},
 	textureByType: {
 		"*": { "base": "resource/powder/{type}" }
 	},
