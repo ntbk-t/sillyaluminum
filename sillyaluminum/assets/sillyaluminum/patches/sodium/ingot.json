@@ -82,7 +82,13 @@
                 { 
                     //TODO: Make custom thrownProjectileCode that explodes on contact with water
                     name: "Throwable", 
-                    properties: { damage: 1, thrownProjectileCode: "thrownitem", damageType: "BluntAttack", randomThrowYaw: true, dropOnImpactChance: 1 }
+                    properties: {
+                        damage: 1,
+                        thrownProjectileCode: "sillyaluminum:throwningotsodium",
+                        damageType: "BluntAttack",
+                        randomThrowYaw: true,
+                        dropOnImpactChance: 1
+                    }
                 }
             ],
                 "*": [

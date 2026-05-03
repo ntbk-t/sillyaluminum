@@ -40,17 +40,16 @@ internal class ItemIngotSodium : ItemIngot {
 			var nugget = (EntityItem?) api.World.SpawnItemEntity(
 				new ItemStack(metalbit_sodium, 1),
 				entityItem.Pos.XYZ,
-				new(
+				new Vec3d(
 					(api.World.Rand.NextDouble() - 0.5) * 0.25,
 					(api.World.Rand.NextDouble() * 0.5) + 0.25,
 					(api.World.Rand.NextDouble() - 0.5) * 0.25
 				)
 			);
-			// TODO: better way to handle this
-			if (nugget == null) return;
+			if (nugget == null) continue;
             nugget.Itemstack.Item.SetTemperature(nugget.World, nugget.Itemstack, 800);
 			nugget.IsOnFire = true;
-			entityItem.Attributes.SetBool("burnOnWaterExit", true);
+			nugget.Attributes.SetBool("burnOnWaterExit", true);
 		}
 		entityItem.Die();
 	}

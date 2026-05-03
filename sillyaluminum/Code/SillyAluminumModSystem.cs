@@ -12,5 +12,6 @@ public class SillyAluminumModSystem : ModSystem {
         api.Logger.Event("Loaded mod " + Mod.Info.ModID);
         api.RegisterItemClass(Mod.Info.ModID + ".ItemNuggetSodium", typeof(ItemNuggetSodium));
         api.RegisterItemClass(Mod.Info.ModID + ".ItemIngotSodium", typeof(ItemIngotSodium));
+        api.RegisterEntity(Mod.Info.ModID + ".EntityThrownIngotSodium", typeof(EntityThrownIngotSodium));
     }
 }
