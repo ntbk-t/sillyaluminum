@@ -1,10 +1,10 @@
+using System;
 using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
 using Vintagestory.API.MathTools;
 using Vintagestory.API.Server;
-using Vintagestory.GameContent;
 
-internal class EntityThrownIngotSodium : EntityThrownStone {
+internal class EntityThrownIngotSodium : Vintagestory.GameContent.EntityThrownItem {
     private float explosionTimer;
 
     public override void Initialize(EntityProperties properties, ICoreAPI api, long InChunkIndex3d) {
@@ -61,4 +61,17 @@ internal class EntityThrownIngotSodium : EntityThrownStone {
 		}
         Die();
     }
+
+	public override void OnCollideWithLiquid(){
+		if (World.Side != EnumAppSide.Client){
+			float yDistance = (float)Math.Abs(PositionBeforeFalling.Y - Pos.Y);
+			double width = SelectionBox.XSize;
+			double height = SelectionBox.YSize;
+			double splashStrength = (double)(2f * GameMath.Sqrt(width * height)) + Pos.Motion.Length() * 10.0;
+			if (!(splashStrength < 0.4000000059604645) && !(yDistance < 0.25f))
+			{
+				doSplashEffects(splashStrength, splashStrength);
+			}
+		}
+	}
 }

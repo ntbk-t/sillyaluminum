@@ -1,6 +1,7 @@
 {
     code: "throwningotsodium",
     class: "sillyaluminum.EntityThrownIngotSodium",
+    //class: "EntityThrownItem",
     tags: ["inanimate", "projectile"],
     attributes: {
         isProjectile: true,
@@ -13,6 +14,9 @@
     client: {
         renderer: "Shape",
         shape: { base: "game:item/ingot" },
+        textures: {
+            "metal": { base: "game:block/metal/ingot/sodium" },
+        },
         size: 1,
         behaviors: [{ code: "passivephysics" }, { code: "interpolateposition" }],
     },
