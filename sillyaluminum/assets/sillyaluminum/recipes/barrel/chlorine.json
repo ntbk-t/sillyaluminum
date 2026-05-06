@@ -4,7 +4,7 @@
         sealHours: 2,
         ingredients: [
             { type: "item", code: "game:acid-full-hydrochloric", litres: 2 },
-            { type: "item", code: "mineral-pyrolusite", quantity: 2 }
+            { type: "item", code: "ore-pyrolusite", quantity: 2 }
         ],
         output: { type: "item", code: "portion-chlorinegas", litres: 10 }
     }

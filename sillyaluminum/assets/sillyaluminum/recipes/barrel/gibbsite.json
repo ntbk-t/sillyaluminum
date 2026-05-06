@@ -5,7 +5,7 @@
         ingredients: [
             { type: "item", code: "portion-sodiumaluminate", litres: 10 }
         ],
-        output: { type: "item", code: "mineral-gibbsite", quantity: 2 }
+        output: { type: "item", code: "ore-gibbsite", quantity: 2 }
     },
     {
         code: "gibbsiteseeded",
@@ -14,6 +14,6 @@
             { type: "item", code: "portion-sodiumaluminate", litres: 10 },
             { type: "item", code: "powder-gibbsite", quantity: 1 }
         ],
-        output: { type: "item", code: "mineral-gibbsite", quantity: 2 }
+        output: { type: "item", code: "ore-gibbsite", quantity: 2 }
     }
 ]

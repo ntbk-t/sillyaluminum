@@ -1,5 +1,5 @@
 {
-	code: "mineral",
+	code: "ore",
 	// ItemOre is just for displaying the yield in units in the tooltip
 	//class: "ItemOre",
 	behaviors: [
