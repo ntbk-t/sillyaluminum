@@ -1,0 +1,11 @@
+[
+    {
+        code: "hydrochloricacid",
+        sealHours: 2,
+        ingredients: [
+            { type: "item", code: "game:waterportion", litres: 5 },
+            { type: "item", code: "powder-sodiumaluminate", quantity: 1 }
+        ],
+        output: { type: "item", code: "portion-sodiumaluminate", litres: 5 }
+    }
+]

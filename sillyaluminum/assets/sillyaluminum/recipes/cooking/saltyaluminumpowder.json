@@ -1,0 +1,26 @@
+{
+	code: "saltyaluminumpowder",
+	perishableProps: {
+		type: "None",
+		freshHours: { avg: 48 },
+		transitionHours: { avg: 48 },
+		transitionRatio: 1,
+		transitionedStack: { type: "item", code: "powder-saltyaluminum" }
+	},
+	shape: { base: "game:block/food/meal/liquid" },
+	ingredients: [
+		{ 
+			code: "sodium", 
+			validStacks: [ { type: "item",  code: "game:metalbit-sodium" } ],
+			minQuantity: 2,
+			maxQuantity: 2,
+		},
+		{ 
+			code: "aluminumchloride", 
+			validStacks: [  { type: "item", code: "powder-aluminumchloride" } ],
+			minQuantity: 2,
+			maxQuantity: 2,
+		},
+	],
+	cooksInto: { type: "Item", code: "powder-saltyaluminum", quantity: 1 }
+}

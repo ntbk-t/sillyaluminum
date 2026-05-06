@@ -1,6 +1,6 @@
 [
     {
-        code: "causticsoda",
+        code: "hydrochloricacid",
         sealHours: 2,
         ingredients: [
             { type: "item", code: "game:acid-full-sulfuric", litres: 1 },

@@ -1,0 +1,96 @@
+{
+	code: "looseores",
+	class: "BlockLooseOres",
+	behaviors: [{name: "UnstableFalling"}, { name: "RightClickPickup", properties: { dropsPickupMode: true, sound: "game:sounds/block/loosestone" } }],
+	variantgroups: [
+		{ code: "ore", states: ["nativealuminum"] },
+		{ code: "rock", loadFromProperties: "block/rockwithdeposit" },
+		{ code: "cover", states: ["free", "snow"] }
+	],
+	attributes: {
+		handbook: {
+			groupBy: ["looseores-{ore}-*"],
+			searchWeightOffset: -0.25
+		}
+	},
+	creativeinventory: { "general": ["*-free"] },
+	doNotRenderAtLod2: true,
+	shape: {
+		base: "game:block/stone/loosestones/{cover}1",
+		alternates: [
+			{ base: "game:block/stone/loosestones/{cover}1", rotateY: 90 },
+			{ base: "game:block/stone/loosestones/{cover}1", rotateY: 180 },
+			{ base: "game:block/stone/loosestones/{cover}1", rotateY: 270 },
+			
+			{ base: "game:block/stone/loosestones/{cover}2", rotateY: 0 },
+			{ base: "game:block/stone/loosestones/{cover}2", rotateY: 90 },
+			{ base: "game:block/stone/loosestones/{cover}2", rotateY: 180 },
+			{ base: "game:block/stone/loosestones/{cover}2", rotateY: 270 },
+			
+			{ base: "game:block/stone/loosestones/{cover}3", rotateY: 0 },
+			{ base: "game:block/stone/loosestones/{cover}3", rotateY: 90 },
+			{ base: "game:block/stone/loosestones/{cover}3", rotateY: 180 },
+			{ base: "game:block/stone/loosestones/{cover}3", rotateY: 270 },
+		]
+	},
+	allowedVariants: [
+        "looseores-nativealuminum-granite-free",
+        "looseores-nativealuminum-basalt-free",
+        "looseores-nativealuminum-slate-free",
+        "looseores-nativealuminum-andesite-free",
+        "looseores-nativealuminum-peridotite-free",
+        "looseores-nativealuminum-claystone-free",
+        "looseores-nativealuminum-sandstone-free",
+        "looseores-nativealuminum-shale-free",
+        "looseores-nativealuminum-chalk-free",
+        "looseores-nativealuminum-chert-free",
+        "looseores-nativealuminum-conglomerate-free",
+        "looseores-nativealuminum-phyllite-free",
+	],
+	drawtypeByType: {
+		"*-free": "JSON",
+		"*-snow": "JSONAndSnowLayer",
+	},
+	resistance: 0.15,
+	replaceable: 6500,
+	textures: {
+		rock: {
+			base: "game:block/stone/rock/{rock}1",
+			overlays: [ "block/ore/{ore}1" ],
+		}
+	},
+	sounds: {
+		"walk": "walk/stone*"
+	},
+	dropsByType: {
+		"*": [
+			{
+				type: "item", 
+				code: "game:nugget-{ore}", 
+				quantity: { avg: 2, var: 1 } 
+			}
+		],
+	},
+	rainPermeableByType: {
+		"*-free": true,
+		"*": false,
+	},
+	sidesolid: { all: false },
+	sideopaqueByType: {
+		"*-snow": { all: false, down: true },
+		"*": { all: false }
+	},
+	lightAbsorption: 0,
+	selectionbox: { x1: 0, y1: 0, z1: 0, x2: 1, y2: 0.125, z2: 1 },
+	collisionbox: null,
+	guiTransform: {
+		rotation: { x: -25, y: 0, z: 0 },
+		origin: { x: 0.34, y: 0.1, z: 0.47 },
+		scale: 2.75
+	},
+		tpHandTransform: {
+		translation: { x: -1, y: -0.61, z: -0.84 },
+		rotation: { x: 0, y: 149, z: 1 },
+		scale: 0.5
+	}
+}

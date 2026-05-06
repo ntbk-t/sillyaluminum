@@ -40,7 +40,7 @@ internal class EntityThrownIngotSodium : Vintagestory.GameContent.EntityThrownIt
 		}
 
         World.SpawnCubeParticles(Pos.XYZ, new(metalBitSodium, 1), 0.1f, 80, 0.3f);
-		((IServerWorldAccessor) World).CreateExplosion(Pos.AsBlockPos, EnumBlastType.OreBlast, 4.5, 12, 1f);
+		((IServerWorldAccessor) World).CreateExplosion(Pos.AsBlockPos, EnumBlastType.EntityBlast, 0, 12.5, 1f);
 
         
         var nuggets = World.Rand.NextInt64() % 10 + 10;

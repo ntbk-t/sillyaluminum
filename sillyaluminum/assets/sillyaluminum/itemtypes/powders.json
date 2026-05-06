@@ -1,7 +1,7 @@
 {
 	code: "powder",
 	variantgroups: [
-		{ code: "type", states: ["saltwortash", "sodaash", "causticsoda", "sodiumaluminate", "aluminumchloride", "saltyaluminumpowder", "aluminumpowder"] }
+		{ code: "type", states: ["saltwortash", "sodaash", "causticsoda", "sodiumaluminate", "gibbsite", "alumina", "aluminumchloride", "saltyaluminum", "aluminumpowder"] }
 	],
 	behaviors: [
 		{ name: "GroundStorable", properties: { layout: 'Messy12', collisionBox: { x1: 0, y1: 0, z1: 0, x2: 1, y2: 0.125, z2: 1 } } }
@@ -10,6 +10,8 @@
 	heldRightReadyAnimation: "holdbothhands",
 	shapeByType: {
 		"*-causticsoda": { base: "game:item/resource/crushed/normal" },
+		"*-gibbsite": { base: "game:item/resource/crushed/normal" },
+		"*-alumina": { base: "game:item/resource/crushed/normal" },
 		"*": { base: "game:item/food/flour" }
 	},
 	textureByType: {
@@ -60,6 +62,12 @@
 			meltingDuration: 30,
 			smeltedRatio: 6,
 			smeltedStack: { type: "item", code: "game:metalbit-sodium", stacksize: 2 }
+		},
+		"powder-gibbsite": {
+			meltingPoint: 1200,
+			meltingDuration: 30,
+			smeltedRatio: 2,
+			smeltedStack: { type: "item", code: "powder-alumina", stacksize: 1 }
 		}
 	},
 	

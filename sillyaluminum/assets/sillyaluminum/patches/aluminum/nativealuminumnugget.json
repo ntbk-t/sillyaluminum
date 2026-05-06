@@ -1,0 +1,19 @@
+[
+    {
+        file: "game:itemtypes/resource/nugget.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states",
+        value: ["nativealuminum"]
+    },
+    {
+        file: "game:itemtypes/resource/nugget.json",
+        op: "addmerge",
+        path: "/combustiblePropsByType/nugget-nativealuminum",
+        value: {
+            meltingPoint: 660,
+            meltingDuration: 30,
+            smeltedRatio: 20,
+            smeltedStack: { type: "item", code: "ingot-aluminum" }
+        }
+    },
+]

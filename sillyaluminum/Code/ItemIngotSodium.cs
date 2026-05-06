@@ -33,7 +33,7 @@ internal class ItemIngotSodium : ItemIngot {
 		}
 
 		api.World.SpawnCubeParticles(entityItem.Pos.XYZ, entityItem.Itemstack.Clone(), 0.1f, 80, 0.3f);
-		((IServerWorldAccessor)api.World).CreateExplosion(entityItem.Pos.AsBlockPos, EnumBlastType.OreBlast, 4.5, 12, 1f);
+		((IServerWorldAccessor)api.World).CreateExplosion(entityItem.Pos.AsBlockPos, EnumBlastType.EntityBlast, 0, 12.5, 1f);
 
 		// if only Rand.NextInRange...
 		var nuggets = api.World.Rand.NextInt64() % 10 + 10;

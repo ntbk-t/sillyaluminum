@@ -1,0 +1,33 @@
+{
+	code: "aluminumchloride",
+	perishableProps: {
+		type: "None",
+		freshHours: { avg: 48 },
+		transitionHours: { avg: 48 },
+		transitionRatio: 1,
+		transitionedStack: { type: "item", code: "powder-aluminumchloride" }
+	},
+	shape: { base: "game:block/food/meal/liquid" },
+	ingredients: [
+		{ 
+			code: "carbon", 
+			validStacks: [ { type: "item",  code: "game:powder-charcoal" } ],
+			minQuantity: 1,
+			maxQuantity: 1,
+		},
+		{ 
+			code: "alumina", 
+			validStacks: [  { type: "item", code: "powder-alumina" } ],
+			minQuantity: 2,
+			maxQuantity: 2,
+		},
+		{
+			code: "chlorine", 
+			validStacks: [ { type: "item", code: "portion-chlorinegas" } ],
+			minQuantity: 1,
+			maxQuantity: 1,
+			portionSizeLitres: 2,
+		}
+	],
+	cooksInto: { type: "Item", code: "powder-aluminumchloride", quantity: 2 }
+}

@@ -1,0 +1,89 @@
+{
+	code: "ore",
+	blockmaterial: "Ore",
+	class: "BlockOre",
+	attributes: {
+		mapColorCode: "land",
+		propickable: true,
+		handbook: {
+			groupBy: ["ore-*-{type}-*"],
+			searchWeightOffset: -0.25
+		}
+	},
+	behaviors: [{name: "BreakIfFloating"}, { name: "UnstableRock" }],
+	variantgroups: [
+		{ code: "grade", states: ["poor", "medium", "rich", "bountiful"] },
+		{ code: "type",  states: ["nativealuminum"] },
+		{ code: "rock", loadFromProperties: "block/rockwithdeposit" }
+	],
+	allowedVariants: [
+        "ore-poor-nativealuminum-granite",
+        "ore-medium-nativealuminum-granite",
+        "ore-rich-nativealuminum-granite",
+        "ore-poor-nativealuminum-basalt",
+        "ore-medium-nativealuminum-basalt",
+        "ore-rich-nativealuminum-basalt",
+        "ore-bountiful-nativealuminum-basalt",
+        "ore-poor-nativealuminum-slate",
+        "ore-medium-nativealuminum-slate",
+        "ore-rich-nativealuminum-slate",
+        "ore-poor-nativealuminum-andesite",
+        "ore-medium-nativealuminum-andesite",
+        "ore-rich-nativealuminum-andesite",
+        "ore-poor-nativealuminum-peridotite",
+        "ore-medium-nativealuminum-peridotite",
+        "ore-rich-nativealuminum-peridotite",
+        "ore-poor-nativealuminum-claystone",
+        "ore-medium-nativealuminum-claystone",
+        "ore-poor-nativealuminum-sandstone",
+        "ore-medium-nativealuminum-sandstone",
+        "ore-poor-nativealuminum-shale",
+        "ore-medium-nativealuminum-shale",
+        "ore-poor-nativealuminum-chalk",
+        "ore-medium-nativealuminum-chalk",
+        "ore-poor-nativealuminum-chert",
+        "ore-medium-nativealuminum-chert",
+        "ore-poor-nativealuminum-conglomerate",
+        "ore-medium-nativealuminum-conglomerate",
+        "ore-poor-nativealuminum-phyllite",
+        "ore-medium-nativealuminum-phyllite",
+        "ore-rich-nativealuminum-phyllite",
+	],
+	creativeinventory: { "general": ["*"], "terrain": ["*"] },
+	storageFlags: 5,
+	shape: { base: "game:block/basic/cube" },
+	drawtype: "cube",
+	textures: {
+		all: {
+			base: "game:block/stone/rock/{rock}1",
+			overlays: [ "block/ore/{type}1" ],
+			alternates: [
+				{ base: "game:block/stone/rock/{rock}1", overlays: [ "block/ore/{type}2" ] },
+				{ base: "game:block/stone/rock/{rock}1", overlays: [ "block/ore/{type}3" ] }
+			]
+		}
+	},
+	replaceable: 100,
+	resistance: 8,
+	sounds: {
+		walk: "game:walk/stone",
+		byTool: {
+			"Pickaxe": { hit: "game:block/rock-hit-pickaxe", break: "game:block/rock-break-pickaxe" }
+		}
+	},
+	requiredMiningTierByType: {
+		"ore-*-nativealuminum-*": 2,
+	},
+	dropsByType: {
+		"*": [ 
+			{ type: "item", code: "crystalizedore-{grade}-{type}-{rock}",  quantity: { avg: 0.01, var: 0 }  },
+			{ type: "item", code: "ore-{grade}-{type}-{rock}",  quantity: { avg: 1.25, var: 0 }  }
+		],
+	},
+	heldTpIdleAnimation: "holdbothhandslarge", heldRightReadyAnimation: "heldblockready", heldTpUseAnimation: "twohandplaceblock",
+	tpHandTransform: {
+		translation: { x: -1.23, y: -0.91, z: -0.8 },
+		rotation: { x: -2, y: 25, z: -78 },
+		scale: 0.4
+	}
+}
