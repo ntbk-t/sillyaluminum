@@ -3,9 +3,9 @@
         code: "causticsoda",
         sealHours: 2,
         ingredients: [
-            { type: "item", code: "game:acid-full-sulfuric", litres: 1 },
-            { type: "item", code: "game:salt", quantity: 2 }
+            { type: "item", code: "game:slakedlimeportion", litres: 1 },
+            { type: "item", code: "powder-sodaash", quantity: 2 }
         ],
-        output: { type: "item", code: "game:acid-full-hydrochloric", litres: 1 }
+        output: { type: "item", code: "powder-causticsoda", litres: 1 }
     }
 ]

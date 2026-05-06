@@ -8,7 +8,10 @@
 	variantgroups: [
 		{ code: "resource", states: ["pyrolusite", "gibbsite"] }
 	],
-	shape: { base: "game:item/ore/ungraded/graphite" },
+	shape: { base: "item/mineral" },
+	textures: {
+		"mineral": {"base": "resource/minerals/{resource}"}
+	},
 	attributes: {
 		placeSound: "game:block/charcoal",
 		displaycaseable: true,
