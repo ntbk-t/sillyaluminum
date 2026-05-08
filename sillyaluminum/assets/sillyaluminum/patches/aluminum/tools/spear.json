@@ -12,4 +12,152 @@
     //     path: "/ingredient/allowedVariants/-",
     //     value: "aluminum",
     // },
+
+    //Spear
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "addmerge",
+        path: "/variantgroups/1/states/-",
+        value: "ornatealuminum"
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "addmerge",
+        path: "/shapeByType/spear-generic-ornatealuminum",
+        value: { base: "item/tool/spear/ornatealuminum" },
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "addmerge",
+        path: "/attackpowerbytype/spear-generic-ornatealuminum",
+        value: 4.25,
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "move",
+        frompath: "/attributes/damageByType/*",
+        path: "/temp"
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "addmerge",
+        path: "/attributes/damageByType/spear-generic-ornatealuminum",
+        value: 7.5,
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "move",
+        frompath: "/temp",
+        path: "/attributes/damageByType/*"
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "addmerge",
+        path: "/attributes/damageTierByType/*-ornatealuminum",
+        value: 0,
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "addmerge",
+        path: "/durabilitybytype/spear-generic-ornatealuminum",
+        value: 320,
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "move",
+        frompath: "/attributes/toolrackTransformByType/*",
+        path: "/temp"
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "addmerge",
+        path: "/attributes/toolrackTransformByType/spear-generic-ornatealuminum",
+        value: {
+            translation: { x: 0.31, y: 0.06, z: -0.55 },
+			rotation: { x: -90, y: -1, z: 1 },
+			scale: 1.36
+        },
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "move",
+        frompath: "/temp",
+        path: "/attributes/toolrackTransformByType/*"
+    },
+
+
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "move",
+        frompath: "/guiTransformByType/*",
+        path: "/temp"
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "addmerge",
+        path: "/guiTransformByType/spear-generic-ornatealuminum",
+        value: {
+			rotation: { x: -16, y: -2, z: -134 },
+			origin: { x: 1.47, y: 0.05, z: 0.5 },
+			scale: 3.09
+		},
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "move",
+        frompath: "/temp",
+        path: "/guiTransformByType/*"
+    },
+
+
+
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "move",
+        frompath: "/tpHandTransformByType/*",
+        path: "/temp"
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "addmerge",
+        path: "/tpHandTransformByType/spear-generic-ornatealuminum",
+        value: {
+			translation: { x: -1.04, y: 0.02, z: -0.57 },
+			rotation: { x: -90, y: 0, z: 0 },
+			origin: { x: 0.5, y: 0, z: 0.5 },
+			scale: 0.8
+		},
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "move",
+        frompath: "/temp",
+        path: "/tpHandTransformByType/*"
+    },
+
+    //Spear Projectile Entity
+    {
+        file: "game:entities/nonliving/projectile/spear.json",
+        op: "addmerge",
+        path: "/variantgroups/1/states/-",
+        value: "ornatealuminum"
+    },
+    {
+        file: "game:entities/nonliving/projectile/spear.json",
+        op: "move",
+        frompath: "/client/shapeByType/*",
+        path: "/temp"
+    },
+    {
+        file: "game:entities/nonliving/projectile/spear.json",
+        op: "addmerge",
+        path: "/client/shapeByType/spear-generic-ornatealuminum",
+        value: { base: "item/tool/spear/ornatealuminum" }
+    },
+    {
+        file: "game:entities/nonliving/projectile/spear.json",
+        op: "move",
+        frompath: "/temp",
+        path: "/client/shapeByType/*"
+    },
 ]

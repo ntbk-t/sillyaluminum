@@ -31,7 +31,7 @@ internal class ItemNuggetSodium : ItemNugget{
 			}else{
 				entityItem.Pos.Motion.X += (api.World.Rand.NextDouble() - 0.5) * 0.25;
 				entityItem.Pos.Motion.Z += (api.World.Rand.NextDouble() - 0.5) * 0.25;
-				entityItem.Pos.Motion.Y += (api.World.Rand.NextDouble() * 0.5) + 0.25;
+				entityItem.Pos.Motion.Y += (api.World.Rand.NextDouble() * 0.25) + 0.125;
 			}
 		}else if (api.World.Rand.NextDouble() < 0.2){
 			api.World.SpawnCubeParticles(entityItem.Pos.XYZ, entityItem.Itemstack.Clone(), 0.1f, 2, 0.2f + (float)api.World.Rand.NextDouble() / 5f);

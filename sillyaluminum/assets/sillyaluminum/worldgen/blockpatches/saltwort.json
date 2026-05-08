@@ -1,0 +1,16 @@
+[
+    {
+		// Large patches of saltwort
+		blockCodes: ["crop-saltwort-2", "crop-saltwort-4", "crop-saltwort-5", "crop-saltwort-6", "crop-saltwort-7"],
+		minTemp: 1,
+		maxTemp: 26,
+		minRain: 0.28,
+		maxRain: 0.6,
+		maxForest: 0.65,
+        offsetX: { avg: 0, var: 12 },
+		offsetZ: { avg: 0, var: 12 },
+		quantity: { avg: 8, var: 4 },
+		chance: 0.25,
+        placement: "NearSeaWater"
+	}
+]

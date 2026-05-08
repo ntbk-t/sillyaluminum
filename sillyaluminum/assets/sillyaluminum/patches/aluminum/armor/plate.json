@@ -94,6 +94,30 @@
     },
     {
         file: "game:itemtypes/wearable/seraph/armor.json",
+        op: "move",
+        frompath: "/attributes/statModifiersByType/armor-*-plate-*",
+        path: "/temp",
+    },
+    {
+        file: "game:itemtypes/wearable/seraph/armor.json",
+        op: "addmerge",
+        path: "/attributes/statModifiersByType/armor-*-plate-aluminum",
+        value: {
+            rangedWeaponsAcc: -0.05,
+            rangedWeaponsSpeed: -0.1,
+            walkSpeed: -0.07,
+            healingeffectivness: -0.1,
+            hungerrate: 0.1
+        },
+    },
+    {
+        file: "game:itemtypes/wearable/seraph/armor.json",
+        op: "move",
+        frompath: "/temp",
+        path: "/attributes/statModifiersByType/armor-*-plate-*",
+    },
+    {
+        file: "game:itemtypes/wearable/seraph/armor.json",
         op: "addmerge",
         path: "/durabilityByType/armor-*-plate-aluminum",
         value: 450,

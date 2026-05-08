@@ -1,0 +1,77 @@
+[
+    {
+        file: "game:config/tradelists/trader-luxuries.json",
+        op: "addmerge",
+        path: "/selling/list/-",
+        value: {
+            "code": "blade-falx-aluminum",
+            "type": "item",
+            "stacksize": 1,
+            "stock": {
+                "avg": 1,
+                "var": 0.25
+            },
+            "price": {
+                "avg": 80,
+                "var": 15
+            }
+        },
+    },
+    {
+        file: "game:config/tradelists/trader-luxuries.json",
+        op: "addmerge",
+        path: "/selling/list/-",
+        value: {
+            "code": "arrow-aluminum",
+            "type": "item",
+            "stacksize": 1,
+            "stock": {
+                "avg": 16,
+                "var": 4
+            },
+            "price": {
+                "avg": 4,
+                "var": 1
+            }
+        },
+    },
+    {
+        file: "game:config/tradelists/trader-luxuries.json",
+        op: "addmerge",
+        path: "/selling/list/-",
+        value: {
+            "code": "spear-generic-ornatealuminum",
+            "type": "item",
+            "stacksize": 1,
+            "stock": {
+                "avg": 1,
+                "var": 0.25
+            },
+            "price": {
+                "avg": 40,
+                "var": 12
+            }
+        },
+    },
+
+
+
+    {
+        file: "game:config/tradelists/trader-luxuries.json",
+        op: "addmerge",
+        path: "/buying/list/-",
+        value: {
+            "code": "ingot-aluminum",
+            "type": "item",
+            "stacksize": 1,
+            "stock": {
+                "avg": 4,
+                "var": 1
+            },
+            "price": {
+                "avg": 25,
+                "var": 10
+            }
+        },
+    },
+]

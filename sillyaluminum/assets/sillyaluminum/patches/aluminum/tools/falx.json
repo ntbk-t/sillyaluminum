@@ -28,7 +28,7 @@
 			"falxstring": { base: "block/transparent" },
 			"thongs": { base: "block/transparent" },			
 			"woodguard": { base: "block/transparent" },
-			"handle":  { base: "block/wood/debarked/veryaged"  },
+			"handle":  { base: "block/wood/debarked/purpleheart"  },
 			"falxblade":  { base: "block/metal/ingot/steel"  },
 			"cloth":  { base: "block/cloth/linen/green"  },
 			"handguard":  { base: "block/metal/sheet/aluminum"  },
