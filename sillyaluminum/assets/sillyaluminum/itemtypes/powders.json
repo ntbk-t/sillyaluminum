@@ -20,9 +20,9 @@
 	creativeinventory: { "general": ["*"], "items": ["*"] },
 	attributes: {
 		omokpiece: true,
-		inContainerTextureByType: {
-			"*": { base: "item/resource/ungraded/{type}" }
-		},
+		// inContainerTextureByType: {
+		// 	"*": { base: "item/resource/ungraded/{type}" }
+		// },
 		dissolveInWater: true,
 		displaycaseable: true, 
 		shelvable: true,
