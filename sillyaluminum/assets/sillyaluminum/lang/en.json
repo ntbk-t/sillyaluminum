@@ -11,18 +11,115 @@
     "game:item-metalchain-aluminum": "Aluminum chain",
     "game:item-ingot-aluminum": "Aluminum ingot",
     "sillyaluminum:item-powder-aluminumpowder": "Aluminum powder",
-    "sillyaluminum:item-salty-powder-saltyaluminumpowder": "Aluminum powder (with salt)",
+    "sillyaluminum:item-powder-saltyaluminum": "Aluminum powder (with salt)",
     // TODO: is this name good?
-    "sillyaluminum:item-salty-powder-aluminumchloride": "Muriate of alumina",
+    "sillyaluminum:item-powder-aluminumchloride": "Muriate of alumina",
 
-    "sillyaluminum:item-ingot-sodium": "Sodium ingot",
-    "sillyaluminum:item-metalbit-sodium": "Sodium bits",
+    "game:item-ingot-sodium": "Sodium ingot",
+    "game:item-metalbit-sodium": "Sodium bits",
     // TODO: less chemistry sounding name?
-    "sillyaluminum:item-sodium-aluminate": "Sodium aluminate",
+    "sillyaluminum:item-powder-sodiumaluminate": "Sodium aluminate",
     "sillyaluminum:item-powder-sodaash": "Soda ash",
+    "sillyaluminum:item-powder-causticsoda": "Caustic soda",
+    "sillyaluminum:item-ore-gibbsite": "Gibbsite",
+    "sillyaluminum:item-powder-gibbsite": "Crushed gibbsite",
+    "sillyaluminum:item-powder-alumina": "Alumina",
 
     "sillyaluminum:item-sprig-saltwort-raw": "Saltwort sprig",
     "sillyaluminum:item-sprig-saltwort-dry": "Saltwort sprig (dry)",
     "sillyaluminum:item-seeds-saltwort": "Saltwort seeds",
     "sillyaluminum:item-powder-saltwortash": "Saltwort ash",
+
+    "game:material-aluminum": "Aluminum",
+
+    "game:ore-nativealuminum": "Native aluminum",
+    "game:ore-pyrolusite": "Pyrolusite",
+
+    "game:item-nugget-nativealuminum": "Nugget (Native aluminum)",
+    "sillyaluminum:block-ore-*-nativealuminum-*": "Native aluminum ore",
+    "sillyaluminum:block-looseores-nativealuminum-*": "Native aluminum ore bits",
+
+    "sillyaluminum:item-ore-pyrolusite": "Pyrolusite",
+    "sillyaluminum:block-ore-pyrolusite-*": "Pyrolusite ore",
+    "sillyaluminum:block-looseores-pyrolusite-*": "Pyrolusite ore bits",
+
+    "game:block-lantern-small-*-aluminum": "Aluminum lantern",
+    "game:block-lantern-large-*-aluminum": "Large aluminum lantern",
+    "game:item-metalnailsandstrips-aluminum": "Nails and strips (Aluminum)",
+
+    "game:item-armor-head-chain-aluminum": "Chain head armor (Aluminum)",
+    "game:item-armor-body-chain-aluminum": "Chain body armor (Aluminum)",
+    "game:item-armor-legs-chain-aluminum": "Chain leg armor (Aluminum)",
+
+    "game:item-armor-head-plate-aluminum": "Plate helmet (Aluminum)",
+    "game:item-armor-body-plate-aluminum": "Plate body armor (Aluminum)",
+    "game:item-armor-legs-plate-aluminum": "Plate leg armor (Aluminum)",
+
+    "game:itemdesc-shield-woodmetal-aluminum-*-none": "A wooden shield crafted with aluminum boss and rim",
+    "game:itemdesc-shield-woodmetalleather-aluminum-*-none": "A leather-reinforced wooden shield crafted with aluminum boss and rim",
+    "game:itemdesc-shield-woodmetalleather-aluminum-*-black-ornate": "A wooden shield ornately reinforced with black, red, and yellow leather and crafted with aluminum boss and rim",
+	"game:itemdesc-shield-woodmetalleather-aluminum-*-blue-ornate": "A wooden shield ornately reinforced with blue, green, and yellow leather and crafted with aluminum boss and rim",
+	"game:itemdesc-shield-woodmetalleather-aluminum-*-brown-ornate": "A wooden shield ornately reinforced with brown, green, and gray leather and crafted with aluminum boss and rim",
+	"game:itemdesc-shield-woodmetalleather-aluminum-*-gray-ornate": "A wooden shield ornately reinforced with gray, purple, and white leather and crafted with aluminum boss and rim",
+	"game:itemdesc-shield-woodmetalleather-aluminum-*-green-ornate": "A wooden shield ornately reinforced with green, yellow, and gray leather and crafted with aluminum boss and rim",
+	"game:itemdesc-shield-woodmetalleather-aluminum-*-orange-ornate": "A wooden shield ornately reinforced with orange, green, and blue leather and crafted with aluminum boss and rim",
+	"game:itemdesc-shield-woodmetalleather-aluminum-*-pink-ornate": "A wooden shield ornately reinforced with pink, green, and white leather and crafted with aluminum boss and rim",
+	"game:itemdesc-shield-woodmetalleather-aluminum-*-purple-ornate": "A wooden shield ornately reinforced with purple, pink, and gray leather and crafted with aluminum boss and rim",
+	"game:itemdesc-shield-woodmetalleather-aluminum-*-red-ornate": "A wooden shield ornately reinforced with red, white, and gray leather and crafted with aluminum boss and rim",
+	"game:itemdesc-shield-woodmetalleather-aluminum-*-white-ornate": "A wooden shield ornately reinforced with white, yellow, and orange leather and crafted with aluminum boss and rim",
+	"game:itemdesc-shield-woodmetalleather-aluminum-*-yellow-ornate": "A wooden shield ornately reinforced with yellow, white, and black leather and crafted with aluminum boss and rim",
+
+    "game:item-shield-metal-aluminum-*": "Aluminum round shield",
+
+    "game:item-arrow-aluminum": "Aluminum arrow",
+    "game:item-arrowhead-aluminum": "Aluminum arrowhead",
+    "game:item-axe-felling-aluminum": "Aluminum axe",
+    "game:item-hammer-aluminum": "Aluminum hammer",
+    "game:item-hoe-aluminum": "Aluminum hoe",
+    "game:item-knife-generic-aluminum": "Aluminum knife",
+    "game:item-pickaxe-aluminum": "Aluminum pickaxe",
+    "game:item-prospectingpick-aluminum": "Aluminum prospecting pick",
+    "game:item-saw-aluminum": "Aluminum saw",
+    "game:item-shears-aluminum": "Aluminum shears",
+    "game:item-shovel-aluminum": "Aluminum shovel",
+    "game:item-blade-falx-aluminum": "Aluminum falx",
+    "game:item-spear-generic-ornatealuminum": "Ornate aluminum spear",
+
+    "game:item-axehead-aluminum": "Aluminum axe head",
+    "game:item-hammerhead-aluminum": "Aluminum hammer head",
+    "game:item-hoehead-aluminum": "Aluminum hoe head",
+    "game:item-knifeblade-aluminum": "Aluminum knife blade",
+    "game:item-pickaxehead-aluminum": "Aluminum pickaxe head",
+    "game:item-prospectingpickhead-aluminum": "Aluminum prospecting pick head",
+    "game:item-sawblade-aluminum": "Aluminum saw blade",
+    "game:item-shovelhead-aluminum": "Aluminum shovel head",
+    "game:item-scythehead-aluminum": "Aluminum scythe head",
+    "game:item-scythe-aluminum": "Aluminum scythe",
+    "game:item-cleaverhead-aluminum": "Aluminum cleaver blade",
+    "game:item-cleaver-aluminum": "Aluminum cleaver",
+
+    "game:item-boss-aluminum": "Aluminum boss",
+    "game:item-hoop-aluminum": "Aluminum hoop",
+    "game:item-rod-aluminum": "Aluminum rod",
+
+    "game:item-chisel-aluminum": "Aluminum chisel",
+    "game:item-wrench-aluminum": "Aluminum wrench",
+    "game:item-tongsmetal-*-aluminum": "Aluminum tongs",
+    "game:item-crowbar-aluminum": "Aluminum crowbar",
+
+    "sillyaluminum:item-portion-bauxiteslurry": "Bauxite slurry",
+    "sillyaluminum:item-portion-sodiumaluminate": "Sodium aluminate solution",
+
+    "sillyaluminum:item-portion-chlorinegas": "Chlorine gas",
+    "sillyaluminum:itemdesc-portion-chlorinegas": "I promise it's a gas",
+
+    "game:item-acid-full-hydrochloric": "Hydrochloric acid",
+
+    "sillyaluminum:incontainer-item-portion-bauxiteslurry": "Bauxite slurry",
+    "sillyaluminum:incontainer-item-portion-sodiumaluminate": "Sodium aluminate solution",
+    "sillyaluminum:incontainer-item-portion-chlorinegas": "Chlorine gas",
+    "game:incontainer-item-acid-full-hydrochloric": "Hydrochloric acid",
+
+    "sillyaluminum:block-crop-saltwort-7": "Mature saltwort",
+    "sillyaluminum:block-crop-saltwort-*": "Growing saltwort",
 }
