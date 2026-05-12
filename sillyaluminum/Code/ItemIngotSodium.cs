@@ -39,7 +39,7 @@ internal class ItemIngotSodium : ItemIngot {
 		var nuggets = api.World.Rand.NextInt64() % 10 + 10;
 		for (var i = 0; i < nuggets; i++) {
 			var nugget = (EntityItem?) api.World.SpawnItemEntity(
-				new ItemStack(metalbit_sodium, 1),
+				new ItemStack(metalbit_sodium, entityItem.Itemstack.StackSize),
 				entityItem.Pos.XYZ,
 				new Vec3d(
 					entityItem.Pos.Motion.X + (api.World.Rand.NextDouble() - 0.5) * 0.25,
