@@ -10,7 +10,7 @@
     "game:item-metalbit-aluminum": "Aluminum bits",
     "game:item-metalchain-aluminum": "Aluminum chain",
     "game:item-ingot-aluminum": "Aluminum ingot",
-    "sillyaluminum:item-powder-aluminumpowder": "Aluminum powder",
+    "sillyaluminum:item-powder-aluminum": "Powered aluminum",
     "sillyaluminum:item-powder-saltyaluminum": "Aluminum powder (with salt)",
     // TODO: is this name good?
     "sillyaluminum:item-powder-aluminumchloride": "Muriate of alumina",
@@ -122,4 +122,7 @@
 
     "sillyaluminum:block-crop-saltwort-7": "Mature saltwort",
     "sillyaluminum:block-crop-saltwort-*": "Growing saltwort",
+
+    "sillyaluminum:aluminummaking-title": "Mod Mechanic: Aluminum Making",
+    "sillyaluminum:aluminummaking-text": "Todo: Tell people how to do the"
 }
