@@ -1,7 +1,10 @@
 {
 	code: "powder",
+	classByType: {
+		"*-saltyaluminum": "sillyaluminum.ItemPowderSaltyAluminum"
+	},
 	variantgroups: [
-		{ code: "type", states: ["saltwortash", "sodaash", "causticsoda", "sodiumaluminate", "gibbsite", "alumina", "aluminumchloride", "saltyaluminum", "aluminumpowder"] }
+		{ code: "type", states: ["saltwortash", "sodaash", "causticsoda", "sodiumaluminate", "gibbsite", "alumina", "aluminumchloride", "saltyaluminum", "aluminum"] }
 	],
 	behaviors: [
 		{ name: "GroundStorable", properties: { layout: 'Messy12', collisionBox: { x1: 0, y1: 0, z1: 0, x2: 1, y2: 0.125, z2: 1 } } }
@@ -23,7 +26,11 @@
 		// inContainerTextureByType: {
 		// 	"*": { base: "item/resource/ungraded/{type}" }
 		// },
-		dissolveInWater: true,
+		dissolveInWaterByType: {
+			"*-saltyaluminum": false,
+			"*-aluminum": false,
+			"*": true
+		},
 		displaycaseable: true, 
 		shelvable: true,
 		onDisplayTransform: {
@@ -41,17 +48,17 @@
 		}
 	},
 	storageFlagsByType: {
-		"*-aluminumpowder" : 5,
+		"*-aluminum" : 5,
 		"*": 1
 	},
 	size: { width: 0.0625, height: 0.0625, length: 0.0625 }, //Needed to be able to be in a crucible      for reasons
 	maxstacksize: 64,
 	materialDensityByType: {
-		"*-aluminumpowder" : 2700,
+		"*-aluminum" : 2700,
 		"*": 500
 	},
     combustiblePropsByType: {
-		"powder-aluminumpowder": {
+		"powder-aluminum": {
 			meltingPoint: 660,
 			meltingDuration: 30,
 			smeltedRatio: 20,

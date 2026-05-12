@@ -22,11 +22,12 @@ internal class ItemNuggetSodium : ItemNugget{
 		}
 
 		if (api.World.Rand.NextDouble() < 0.04){
-			api.World.SpawnCubeParticles(entityItem.Pos.XYZ, entityItem.Itemstack.Clone(), 0.1f, 80, 0.3f);
+			api.World.SpawnCubeParticles(entityItem.Pos.XYZ, entityItem.Itemstack.Clone(), 0.1f, 10, 0.3f);
             //api.World.SpawnParticles(2, 255, entityItem.Pos.XYZ, entityItem.Pos.XYZ, )
             ((IServerWorldAccessor)api.World).CreateExplosion(entityItem.Pos.AsBlockPos, EnumBlastType.EntityBlast, 0.0, 2.5, 1f);
 			entityItem.Attributes.SetBool("burnOnWaterExit", true);
 			if(api.World.Rand.NextDouble() < 0.25){
+				api.World.SpawnCubeParticles(entityItem.Pos.XYZ, entityItem.Itemstack.Clone(), 0.1f, 80, 0.3f);
 				entityItem.Die();
 			}else{
 				entityItem.Pos.Motion.X += (api.World.Rand.NextDouble() - 0.5) * 0.25;
