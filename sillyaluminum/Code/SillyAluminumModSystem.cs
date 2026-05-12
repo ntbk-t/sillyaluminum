@@ -1,8 +1,11 @@
 ﻿using Vintagestory.API.Common;
+using HarmonyLib;
 
 namespace sillyaluminum;
 
 public class SillyAluminumModSystem : ModSystem {
+
+    private Harmony? harmony;
     public override bool ShouldLoad(EnumAppSide forSide){
         return true;
     }
@@ -15,5 +18,11 @@ public class SillyAluminumModSystem : ModSystem {
         api.RegisterItemClass(Mod.Info.ModID + ".ItemPowderSaltyAluminum", typeof(ItemPowderSaltyAluminum));
 
         api.RegisterEntity(Mod.Info.ModID + ".EntityThrownIngotSodium", typeof(EntityThrownIngotSodium));
+
+        harmony = new Harmony(Mod.Info.ModID);
+    }
+
+    public override void Dispose() {
+        harmony?.UnpatchAll(Mod.Info.ModID);
     }
 }

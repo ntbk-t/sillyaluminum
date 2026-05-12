@@ -22,7 +22,7 @@
 	},
 	creativeinventory: { "general": ["*"], "items": ["*"] },
 	attributes: {
-		omokpiece: true,
+		omokpiece: false,
 		// inContainerTextureByType: {
 		// 	"*": { base: "item/resource/ungraded/{type}" }
 		// },
