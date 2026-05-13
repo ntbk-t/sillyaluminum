@@ -20,6 +20,7 @@ public class SillyAluminumModSystem : ModSystem {
         api.RegisterEntity(Mod.Info.ModID + ".EntityThrownIngotSodium", typeof(EntityThrownIngotSodium));
 
         harmony = new Harmony(Mod.Info.ModID);
+        harmony.PatchAll();
     }
 
     public override void Dispose() {

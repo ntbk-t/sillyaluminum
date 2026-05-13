@@ -6,39 +6,57 @@ using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.GameContent;
 
-namespace SillyAluminum;
-#nullable enable
+//This code is absolutely not scalable at all in any way
+//It's meant to work for exactly 1 interaction between 2 known items and that's it
+//That interaction alone is hardcoded too
+namespace SillyAluminum{
 
-public partial class HandbookInfoPatch
-{
-    [HarmonyPostfix]
-    [HarmonyPatch(typeof(CollectibleBehaviorHandbookTextAndExtraInfo), "addCreatedByInfo")]
-    public static void PatchSaltyAluminumCraftingInfo(
-        CollectibleBehaviorHandbookTextAndExtraInfo __instance,
-        ICoreClientAPI capi,
-        ItemStack[] allStacks,
-        ActionConsumable<string> openDetailPageFor,
-        ItemStack stack,
-        List<RichTextComponentBase> components)
-    {
-        if (stack.Collectible is not ItemPowderSaltyAluminum) return;
-        // Core.MaxFuelBurnTemp ??= allStacks
-        //     .Where(s => s.Collectible.CombustibleProps?.BurnTemperature > 0)
-        //     .OrderByDescending(s => s.Collectible.CombustibleProps.BurnTemperature)
-        //     .FirstOrDefault()?.Collectible.CombustibleProps?.BurnTemperature ?? 0;
-        // if (stack.Collectible.CombustibleProps?.MeltingPoint > Core.MaxFuelBurnTemp) return;
-        // var moldStacks = allStacks.Where(s =>
-        //         s.Collectible is BlockToolMold &&
-        //         GetStackForVariant(capi, s, stack.Collectible.LastCodePart()) != null)
-        //     .OrderBy(s => s.Collectible.Code.Domain == "game" ? -100 : 0)
-        //     .ThenBy(s => s.ItemAttributes["requiredUnits"].AsInt(100))
-        //     .ToArray();
-        var haveText = true;//components.Count > 0;
-        //if (moldStacks.Length <= 0) return;
-        CollectibleBehaviorHandbookTextAndExtraInfo.AddHeading(components, capi, "THIS IS A TEST HEADING", ref haveText);
-        
-        // Array.ForEach(moldStacks, s =>
-        //     s.StackSize = ToolMoldUnitsPatch.GetPatchedRequiredUnits(capi, s.Block, stack));
-        // AddAlignedSlideshows(capi, openDetailPageFor, components, moldStacks.ToList());
+    [HarmonyPatch(typeof(CollectibleBehaviorHandbookTextAndExtraInfo))]
+    [HarmonyPatch("addCreatedByInfo", MethodType.Normal)]
+    public class PatchAluminumPowderCraftingInfo{
+        public static void Postfix(ref bool __result, CollectibleBehaviorHandbookTextAndExtraInfo __instance, ICoreClientAPI capi, ItemStack[] allStacks, ActionConsumable<string> openDetailPageFor, ItemStack stack, List<RichTextComponentBase> components){
+            //capi.Logger.Event("testing patch against item " + stack.Collectible);
+            if (stack.Collectible.Code != "sillyaluminum:powder-aluminum") return;
+
+            if (!components.Any(comp => (comp as RichTextComponent)?.DisplayText == "Created by\n")) {
+                CollectibleBehaviorHandbookTextAndExtraInfo.AddHeading(components, capi, "Created by", ref __result);
+                components.Add(new ClearFloatTextComponent(capi, 3));
+                CollectibleBehaviorHandbookTextAndExtraInfo.AddSubHeading(components, capi, openDetailPageFor, "Submerging in water", "sillyaluminum:aluminummaking");
+                
+                List<ItemStack> saltyAluminumPowderList = []; //(List<ItemStack>)allStacks.Where(s => s.Collectible.Code == "sillyaluminum:powder-saltyaluminum");
+                for (int i = 0; i < allStacks.Length; i++){
+                    if(allStacks[i].Collectible.Code == "sillyaluminum:powder-saltyaluminum"){
+                        saltyAluminumPowderList.Add(allStacks[i]);
+                        break;
+                    }
+                }
+
+                __instance.AddSlideShowComponent(components, capi, saltyAluminumPowderList, openDetailPageFor, false);
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(CollectibleBehaviorHandbookTextAndExtraInfo))]
+    [HarmonyPatch("addIngredientForInfo", MethodType.Normal)]
+    public class PatchSaltyAluminumPowderCraftingInfo{
+        public static void Postfix(ref bool __result, CollectibleBehaviorHandbookTextAndExtraInfo __instance, ICoreClientAPI capi, ItemStack[] allStacks, ActionConsumable<string> openDetailPageFor, ItemStack stack, List<RichTextComponentBase> components){
+            if (stack.Collectible.Code != "sillyaluminum:powder-saltyaluminum") return;
+
+            if (!components.Any(comp => (comp as RichTextComponent)?.DisplayText == "Ingredient for\n")) {
+                CollectibleBehaviorHandbookTextAndExtraInfo.AddHeading(components, capi, "Ingredient for", ref __result);
+                components.Add(new ClearFloatTextComponent(capi, 3));
+
+                List<ItemStack> aluminumPowderList = [];
+                for (int i = 0; i < allStacks.Length; i++){
+                    if(allStacks[i].Collectible.Code == "sillyaluminum:powder-aluminum"){
+                        aluminumPowderList.Add(allStacks[i]);
+                        break;
+                    }
+                }
+
+                __instance.AddSlideShowComponent(components, capi, aluminumPowderList, openDetailPageFor, false);
+            }
+
+        }   
     }
 }
