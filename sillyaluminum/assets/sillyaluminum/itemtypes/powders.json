@@ -23,9 +23,9 @@
 	creativeinventory: { "general": ["*"], "items": ["*"] },
 	attributes: {
 		omokpiece: false,
-		// inContainerTextureByType: {
-		// 	"*": { base: "item/resource/ungraded/{type}" }
-		// },
+		inContainerTextureByType: {
+			"*": { base: "sillyaluminum:resource/powder/{type}" }
+		},
 		dissolveInWaterByType: {
 			"*-saltyaluminum": false,
 			"*-aluminum": false,

@@ -17,7 +17,7 @@ namespace SillyAluminum{
         public static void Postfix(ref bool __result, CollectibleBehaviorHandbookTextAndExtraInfo __instance, ICoreClientAPI capi, ItemStack[] allStacks, ActionConsumable<string> openDetailPageFor, ItemStack stack, List<RichTextComponentBase> components){
             //capi.Logger.Event("testing patch against item " + stack.Collectible);
             if (stack.Collectible.Code != "sillyaluminum:powder-aluminum") return;
-
+            
             if (!components.Any(comp => (comp as RichTextComponent)?.DisplayText == "Created by\n")) {
                 CollectibleBehaviorHandbookTextAndExtraInfo.AddHeading(components, capi, "Created by", ref __result);
                 components.Add(new ClearFloatTextComponent(capi, 3));
