@@ -1,0 +1,29 @@
+[
+    {
+        file: "game:worldgen/deposits/metalore/iron.json",
+        op: "addmerge",
+        path: "/1/childDeposits", ///
+        value: [{
+                code: "pyrolusite",
+                triesPerChunk: 100,
+                withOreMap: true,
+                handbookPageCode: "item-sillyaluminum:ore-pyrolusite",
+                generator: "childdeposit-pointcloud",
+                attributes: {
+                    randomTries: { avg: 100 },
+                    placeblock: { code: "sillyaluminum:ore-hematite_pyrolusite-{rock}"},
+                    surfaceBlock: { code: "sillyaluminum:looseores-hematite_pyrolusite-{rock}-free" },
+                    surfaceBlockChance: 0.1,
+                    radius: { dist: "gaussian", avg: 20, var: 2 },
+                    thickness: { dist: "uniform", avg: 20, var: 1 }
+                }
+            }
+        ]
+    },
+    // {
+    //     file: "game:worldgen/deposits/metalore/iron.json",
+    //     op: "replace",
+    //     path: "/1/triesPerChunk",
+    //     value: 500
+    // }
+]

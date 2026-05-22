@@ -1,0 +1,42 @@
+[
+    {
+		ingredientPattern: "B	S	F",
+		ingredients: {
+			"B": { type: "block", code: "game:woodbucket" },
+			"S": { 
+                type: "block", code: "game:sand-*",
+                returnedStack: { type: "block", code: "sillyaluminum:redmud" }
+            },
+            "F": { type: "block", code: "game:sieve-*", quantity: 1, isTool: true, toolDurabilityCost: 1 }
+		},
+        attributes: {
+			liquidContainerProps: {
+				requiresContent: { type: "item", code: "sillyaluminum:portion-bauxiteslurry" },
+				requiresLitres: 3
+			}
+		},
+		width: 1,
+		height: 3,
+		output: { type: "item", code: "sillyaluminum:powder-sodiumaluminate", quantity: 4  }
+	},
+    {
+		ingredientPattern: "B	S	F",
+		ingredients: {
+			"B": { type: "block", code: "game:jug-*-fired" },
+			"S": { 
+                type: "block", code: "game:sand-*",
+                returnedStack: { type: "block", code: "sillyaluminum:redmud" }
+            },
+            "F": { type: "block", code: "game:sieve-*", quantity: 1, isTool: true, toolDurabilityCost: 1 }
+		},
+        attributes: {
+			liquidContainerProps: {
+				requiresContent: { type: "item", code: "sillyaluminum:portion-bauxiteslurry" },
+				requiresLitres: 3
+			}
+		},
+		width: 1,
+		height: 3,
+		output: { type: "item", code: "sillyaluminum:powder-sodiumaluminate", quantity: 4  }
+	},
+]

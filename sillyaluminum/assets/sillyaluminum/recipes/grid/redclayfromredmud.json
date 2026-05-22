@@ -1,0 +1,12 @@
+[
+    {
+		ingredientPattern: "SSS	SMS	SSS",
+		ingredients: {
+			"M": { type: "block", code: "sillyaluminum:redmud", quantity: 2 },
+			"S": { type: "block", code: "game:soil-*" }
+		},
+		width: 3,
+		height: 3,
+		output: { type: "item", code: "game:clay-red", quantity: 24  }
+	}
+]

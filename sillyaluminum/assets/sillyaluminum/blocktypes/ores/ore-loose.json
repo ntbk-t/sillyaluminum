@@ -3,7 +3,7 @@
 	class: "BlockLooseOres",
 	behaviors: [{name: "UnstableFalling"}, { name: "RightClickPickup", properties: { dropsPickupMode: true, sound: "game:sounds/block/loosestone" } }],
 	variantgroups: [
-		{ code: "ore", states: ["nativealuminum", "pyrolusite"] },
+		{ code: "ore", states: ["nativealuminum", "hematite_pyrolusite"] },
 		{ code: "rock", loadFromProperties: "block/rockwithdeposit" },
 		{ code: "cover", states: ["free", "snow"] }
 	],
@@ -46,11 +46,11 @@
         "looseores-nativealuminum-chert-free",
         "looseores-nativealuminum-conglomerate-free",
         "looseores-nativealuminum-phyllite-free",
-		"looseores-pyrolusite-granite-free",
-		"looseores-pyrolusite-peridotite-free",
-		"looseores-pyrolusite-sandstone-free",
-		"looseores-pyrolusite-limestone-free",
-		"looseores-pyrolusite-phyllite-free",
+		"looseores-hematite_pyrolusite-granite-free",
+		"looseores-hematite_pyrolusite-peridotite-free",
+		"looseores-hematite_pyrolusite-sandstone-free",
+		"looseores-hematite_pyrolusite-limestone-free",
+		"looseores-hematite_pyrolusite-phyllite-free",
 	],
 	drawtypeByType: {
 		"*-free": "JSON",
@@ -68,10 +68,10 @@
 		"walk": "walk/stone*"
 	},
 	dropsByType: {
-		"*-pyrolusite-*": [
+		"*-hematite_pyrolusite-*": [
 			{
 				type: "item", 
-				code: "ore-{ore}", 
+				code: "ore-pyrolusite", 
 				quantity: { avg: 1, var: 0 } 
 			}
 		],

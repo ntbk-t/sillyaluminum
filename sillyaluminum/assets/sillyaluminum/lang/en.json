@@ -34,14 +34,15 @@
 
     "game:ore-nativealuminum": "Native aluminum",
     "game:ore-pyrolusite": "Pyrolusite",
+    "game:ore-hematite_pyrolusite": "Pyrolusite in hematite",
 
     "game:item-nugget-nativealuminum": "Nugget (Native aluminum)",
     "sillyaluminum:block-ore-*-nativealuminum-*": "Native aluminum ore",
     "sillyaluminum:block-looseores-nativealuminum-*": "Native aluminum ore bits",
 
     "sillyaluminum:item-ore-pyrolusite": "Pyrolusite",
-    "sillyaluminum:block-ore-pyrolusite-*": "Pyrolusite ore",
-    "sillyaluminum:block-looseores-pyrolusite-*": "Pyrolusite ore bits",
+    "sillyaluminum:block-ore-hematite_pyrolusite-*": "Pyrolusite",
+    "sillyaluminum:block-looseores-hematite_pyrolusite-*": "Pyrolusite bits",
 
     "game:block-lantern-small-*-aluminum": "Aluminum lantern",
     "game:block-lantern-large-*-aluminum": "Large aluminum lantern",

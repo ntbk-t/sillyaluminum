@@ -24,6 +24,7 @@
 			scale: 0.5
 		}
 	},
+	storageFlags: 32,
 	maxstacksize: 64,
 	creativeinventory: { "general": ["*"], "items": ["*"] },
 	materialDensity: 450,

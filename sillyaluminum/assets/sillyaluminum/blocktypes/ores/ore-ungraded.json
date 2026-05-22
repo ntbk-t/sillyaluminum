@@ -12,15 +12,15 @@
 	},
 	behaviors: [{name: "BreakIfFloating"}, { name: "UnstableRock" }],
 	variantgroups: [
-		{ code: "type", states: ["pyrolusite"]},
+		{ code: "type", states: ["hematite_pyrolusite"]},
 		{ code: "rock", loadFromProperties: "block/rockwithdeposit" }
 	],
 	allowedVariants: [
-        "ore-pyrolusite-granite",
-        "ore-pyrolusite-peridotite",
-        "ore-pyrolusite-sandstone",
-        "ore-pyrolusite-limestone",
-        "ore-pyrolusite-phyllite"
+        "ore-hematite_pyrolusite-granite",
+        "ore-hematite_pyrolusite-peridotite",
+        "ore-hematite_pyrolusite-sandstone",
+        "ore-hematite_pyrolusite-limestone",
+        "ore-hematite_pyrolusite-phyllite"
 	],
 	creativeinventory: { "general": ["*"], "terrain": ["*"] },
 	storageFlags: 5,
@@ -45,9 +45,12 @@
 		}
 	},
 	requiredMiningTierByType: {
-		"ore-pyrolusite-*": 3,
+		"ore-hematite_pyrolusite-*": 3,
 	},
 	dropsByType: {
+		"*-hematite_pyrolusite-*": [
+			{ type: "item", code: "ore-pyrolusite",  quantity: { avg: 1, var: 0 }  }
+		],
 		"*": [
 			{ type: "item", code: "ore-{type}",  quantity: { avg: 1.25, var: 0 }  }
 		],
