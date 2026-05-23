@@ -40,6 +40,8 @@
     "sillyaluminum:block-ore-*-nativealuminum-*": "Native aluminum ore",
     "sillyaluminum:block-looseores-nativealuminum-*": "Native aluminum ore bits",
 
+    "sillyaluminum:block-redmud": "Red Mud",
+
     "sillyaluminum:item-ore-pyrolusite": "Pyrolusite",
     "sillyaluminum:block-ore-hematite_pyrolusite-*": "Pyrolusite",
     "sillyaluminum:block-looseores-hematite_pyrolusite-*": "Pyrolusite bits",
