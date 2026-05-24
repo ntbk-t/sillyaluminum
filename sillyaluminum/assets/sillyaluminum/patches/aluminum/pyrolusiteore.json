@@ -5,12 +5,12 @@
         path: "/1/childDeposits", ///
         value: [{
                 code: "pyrolusite",
-                triesPerChunk: 100,
-                withOreMap: true,
+                triesPerChunk: 200,
+                withOreMap: false,
                 handbookPageCode: "item-sillyaluminum:ore-pyrolusite",
                 generator: "childdeposit-pointcloud",
                 attributes: {
-                    randomTries: { avg: 100 },
+                    randomTries: { avg: 200 },
                     placeblock: { code: "sillyaluminum:ore-hematite_pyrolusite-{rock}"},
                     surfaceBlock: { code: "sillyaluminum:looseores-hematite_pyrolusite-{rock}-free" },
                     surfaceBlockChance: 0.1,
