@@ -24,7 +24,7 @@
                 }
 			}
 		},
-		inContainerTexture: { base: "resource/minerals/{mineral}" },
+		inContainerTexture: { base: "sillyaluminum:resource/minerals/{resource}" },
 		inBarrelShape: "game:block/wood/barrel/contents-ore"
 	},
 	storageFlags: 5,
