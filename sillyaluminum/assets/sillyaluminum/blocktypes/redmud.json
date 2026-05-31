@@ -2,8 +2,15 @@
 	code: "redmud",
 	behaviors: [{name: "UnstableFalling", properties: { fallSound: "game:effect/rockslide", dustIntensity: 0 }}],	
 	creativeinventory: { "general": ["*"], "flora": ["*"], "terrain": ["*"] },
-	shape: { base: "game:block/basic/cube" },
-	drawtype: "cube",
+	shape: {
+		base: "game:block/basic/cube",
+		alternates: [
+			{ base: "game:block/basic/cube", rotateY: 90 },
+			{ base: "game:block/basic/cube", rotateY: 180 },
+			{ base: "game:block/basic/cube", rotateY: 270 },
+		],
+	},
+	drawtype: "json",
 	blockmaterial: "Soil",
 	textures: {
 		all: {base: "block/redmud"},
