@@ -1,6 +1,6 @@
 [
     {
-        code: "sodaash",
+        code: "sodaash_waterinoneslot",
         perishableProps: {
             type: "None",
             freshHours: { avg: 48 },
@@ -22,6 +22,40 @@
                 minQuantity: 1,
                 maxQuantity: 1,
                 portionSizeLitres: 2,
+            }
+        ],
+        cooksInto: { type: "Item", code: "powder-sodaash", quantity: 1 }
+    },
+    {
+        code: "sodaash_waterintwoslots",
+        perishableProps: {
+            type: "None",
+            freshHours: { avg: 48 },
+            transitionHours: { avg: 48 },
+            transitionRatio: 1,
+            transitionedStack: { type: "item", code: "powder-sodaash" }
+        },
+        shape: { base: "game:block/food/meal/liquid" },
+        ingredients: [
+            { 
+                code: "saltwortash", 
+                validStacks: [ { type: "item",  code: "powder-saltwortash" } ],
+                minQuantity: 1,
+                maxQuantity: 1,
+            },
+            { 
+                code: "water", 
+                validStacks: [  { type: "item", code: "game:waterportion" } ],
+                minQuantity: 1,
+                maxQuantity: 1,
+                portionSizeLitres: 1,
+            },
+            { 
+                code: "water", 
+                validStacks: [  { type: "item", code: "game:waterportion" } ],
+                minQuantity: 1,
+                maxQuantity: 1,
+                portionSizeLitres: 1,
             }
         ],
         cooksInto: { type: "Item", code: "powder-sodaash", quantity: 1 }

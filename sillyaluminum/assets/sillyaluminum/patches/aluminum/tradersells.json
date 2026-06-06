@@ -12,8 +12,8 @@
                 "var": 0.25
             },
             "price": {
-                "avg": 85,
-                "var": 15
+                "avg": 80,
+                "var": 20
             }
         },
     },
@@ -50,6 +50,28 @@
             "price": {
                 "avg": 55,
                 "var": 12
+            }
+        },
+    },
+    {
+        file: "game:config/tradelists/trader-luxuries.json",
+        op: "addmerge",
+        path: "/selling/list/-",
+        value: {
+            "code": "lantern-large-up",
+            "type": "block",
+            "stacksize": 1,
+            "stock": {
+                "avg": 1,
+                "var": 0.25
+            },
+            "price": {
+                "avg": 100,
+                "var": 0
+            },
+            "attributes": {
+                "material": "aluminum",
+                "lining": "aluminum"
             }
         },
     },

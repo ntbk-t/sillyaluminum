@@ -5,11 +5,12 @@
     "name": "Silly Aluminum",
     "authors": [
         "notebook!!",
-        "whatever alias anthony wants to use :>"
+        "CaptainFemboy (need to change thatttttt)",
+        "other person"
     ],
     "description": "Adds aluminum to the game, as well as (hopefully) realistic* processes to produce it!",
     "version": "1.0.0",
     "dependencies": {
-        "game": "1.21.0"
+        "game": "1.22.3"
     }
 }

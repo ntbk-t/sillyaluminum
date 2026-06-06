@@ -3,9 +3,9 @@
         code: "causticsoda",
         sealHours: 2,
         ingredients: [
-            { type: "item", code: "game:acid-full-hydrochloric", litres: 2 },
-            { type: "item", code: "ore-pyrolusite", quantity: 2 }
+            { type: "item", code: "game:acid-full-hydrochloric", litres: 1 },
+            { type: "item", code: "ore-pyrolusite", quantity: 1 }
         ],
-        output: { type: "item", code: "portion-chlorinegas", litres: 10 }
+        output: { type: "item", code: "portion-chlorinegas", litres: 5 }
     }
 ]
