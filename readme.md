@@ -27,4 +27,4 @@ sand filtering would work in vintage story (apparenty we need a rotary kiln? cou
 Please make an issue if you have ideas on how any of that would work!
 
 We also haven't done all that much balancing work, so some number tweaking might be in order.  Feel free to suggest balancing changes!
-It is meant to be difficult, though.  We will not remove any crafting steps.
+It is meant to be difficult, though.  We will not remove any crafting steps unless we find out that we're wrong.
