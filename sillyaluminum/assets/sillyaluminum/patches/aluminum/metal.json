@@ -4,7 +4,7 @@
         op: "addmerge",
         path: "/variants/-",
         value: {
-            code: "aluminum", //Seems like none of these values past "code" are actually used... WHY ARE THEY HERE????? Potential future proofing?
+            code: "aluminum",
             meltPoint: 660.32,
             boilPoint: 2470,
             density: 2700, //2699 but I messed up everywhere else and am too lazy to fix it :P

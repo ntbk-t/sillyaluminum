@@ -9,7 +9,7 @@
         "ThunderClan57"
     ],
     "description": "Adds aluminum to the game, as well as (hopefully) realistic* processes to produce it!",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "dependencies": {
         "game": "1.22.3"
     }
