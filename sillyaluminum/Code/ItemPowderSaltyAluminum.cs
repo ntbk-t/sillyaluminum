@@ -5,7 +5,7 @@ using Vintagestory.GameContent;
 using Vintagestory.API.MathTools;
 
 //Not ItemIngot since that only has anvil stuff that we don't care about here
-internal class ItemPowderSaltyAluminum : ItemIngot {
+internal class ItemPowderSaltyAluminum : Item {
 	Item? powder_aluminum = null;
 
     public override void OnLoaded(ICoreAPI api) {
