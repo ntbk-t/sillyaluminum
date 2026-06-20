@@ -25,7 +25,7 @@ namespace SillyAluminum{
             if (__instance.lining == null || (__instance.lining == "plain" && obj is ItemMetalPlate && (obj.Variant["metal"] == "aluminum"))){
                 __instance.lining = obj.Variant["metal"];
                 if (__instance.Api.Side == EnumAppSide.Client){
-                    (byPlayer as IClientPlayer).TriggerFpAnimation(EnumHandInteract.HeldItemInteract);
+                    (byPlayer as IClientPlayer)!.TriggerFpAnimation(EnumHandInteract.HeldItemInteract);
                 }
                 __instance.Api.World.PlaySoundAt(new AssetLocation("sounds/block/plate"), __instance.Pos, -0.4, byPlayer);
                 slot.TakeOut(1);
