@@ -1,0 +1,125 @@
+[
+    {
+        file: "game:recipes/grid/armor/plate.json",
+        op: "addmerge",
+        path: "/0/ingredients/P/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armor/plate.json",
+        op: "addmerge",
+        path: "/0/ingredients/C/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armor/plate.json",
+        op: "addmerge",
+        path: "/1/ingredients/P/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armor/plate.json",
+        op: "addmerge",
+        path: "/1/ingredients/C/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armor/plate.json",
+        op: "addmerge",
+        path: "/2/ingredients/P/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armor/plate.json",
+        op: "addmerge",
+        path: "/2/ingredients/C/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+
+
+    {
+        file: "game:recipes/grid/armorrepair/plate.json",
+        op: "addmerge",
+        path: "/0/ingredients/P/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armorrepair/plate.json",
+        op: "addmerge",
+        path: "/0/ingredients/C/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armorrepair/plate.json",
+        op: "addmerge",
+        path: "/1/ingredients/P/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armorrepair/plate.json",
+        op: "addmerge",
+        path: "/1/ingredients/C/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    
+    {
+        file: "game:recipes/grid/armorrepair/plate.json",
+        op: "addmerge",
+        path: "/2/ingredients/P/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armorrepair/plate.json",
+        op: "addmerge",
+        path: "/2/ingredients/C/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+
+
+    {
+        file: "game:itemtypes/wearable/seraph/armor.json",
+        op: "addmerge",
+        path: "/attributes/protectionModifiersByType/armor-*-plate-aluminumbronze",
+        value: {
+            relativeProtection: 0.94,
+            flatDamageReduction: 1.5,
+            highDamageTierResistant: true,
+            protectionTier: 3,
+        },
+    },
+    {
+        file: "game:itemtypes/wearable/seraph/armor.json",
+        op: "move",
+        frompath: "/attributes/statModifiersByType/armor-*-plate-*",
+        path: "/temp",
+    },
+    {
+        file: "game:itemtypes/wearable/seraph/armor.json",
+        op: "addmerge",
+        path: "/attributes/statModifiersByType/armor-*-plate-aluminumbronze",
+        value: {
+            rangedWeaponsAcc: -0.05,
+            rangedWeaponsSpeed: -0.1,
+            walkSpeed: -0.07,
+            healingeffectivness: -0.1,
+            hungerrate: 0.1
+        },
+    },
+    {
+        file: "game:itemtypes/wearable/seraph/armor.json",
+        op: "move",
+        frompath: "/temp",
+        path: "/attributes/statModifiersByType/armor-*-plate-*",
+    },
+    {
+        file: "game:itemtypes/wearable/seraph/armor.json",
+        op: "addmerge",
+        path: "/durabilityByType/armor-*-plate-aluminumbronze",
+        value: 450,
+    },
+]

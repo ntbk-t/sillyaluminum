@@ -1,0 +1,17 @@
+[
+    //Boss smithing
+    {
+        file: "game:recipes/smithing/boss.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    //Boss
+    {
+        file: "game:itemtypes/part/boss.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states/-",
+        value: "aluminumbronze"
+    },
+]

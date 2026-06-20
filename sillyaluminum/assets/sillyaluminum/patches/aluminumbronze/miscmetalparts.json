@@ -1,0 +1,171 @@
+[
+    //Ingot
+    {
+        file: "game:itemtypes/resource/ingot.json",
+        op: "addmerge",
+        path: "/materialDensityByType/*-aluminumbronze",
+        value: 8200
+    },
+    {
+        file: "game:itemtypes/resource/ingot.json",
+        op: "addmerge",
+        path: "/combustiblePropsByType/ingot-aluminumbronze",
+        value: {
+            meltingPoint: 1040,
+            meltingDuration: 30,
+            smeltedRatio: 1,
+            smeltedStack: { type: "item", code: "ingot-aluminumbronze" }
+        }
+    },
+
+    //Metal bit
+    {
+        file: "game:itemtypes/resource/metalbit.json",
+        op: "addmerge",
+        path: "/combustiblePropsByType/metalbit-aluminumbronze",
+        value: {
+            meltingPoint: 1040,
+            meltingDuration: 30,
+            smeltedRatio: 20,
+            smeltedStack: { type: "item", code: "ingot-aluminumbronze" }
+        }
+    },
+
+    //Plate
+    {
+        file: "game:itemtypes/resource/metalplate.json",
+        op: "addmerge",
+        path: "/materialDensityByType/*-aluminumbronze",
+        value: 8200
+    },
+    {
+        file: "game:itemtypes/resource/metalplate.json",
+        op: "addmerge",
+        path: "/combustiblePropsByType/metalplate-aluminumbronze",
+        value: {
+			meltingPoint: 1040,
+			meltingDuration: 30,
+			smeltedRatio: 1,
+			smeltedStack: { type: "item", code: "ingot-aluminumbronze", stacksize: 2 }
+		}
+    },
+    {
+        file: "game:recipes/smithing/plate.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    //Chain
+    {
+        file: "game:itemtypes/resource/metalchain.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states/-",
+        value: "aluminumbronze"
+    },
+    {
+        file: "game:itemtypes/resource/metalchain.json",
+        op: "addmerge",
+        path: "/materialDensityByType/*-aluminumbronze",
+        value: 8200
+    },
+    {
+        file: "game:itemtypes/resource/metalchain.json",
+        op: "addmerge",
+        path: "/combustiblePropsByType/metalchain-aluminumbronze",
+        value: {
+			meltingPoint: 1040,
+			meltingDuration: 30,
+			smeltedRatio: 1,
+			smeltedStack: { type: "item", code: "ingot-aluminumbronze", stacksize: 2 }
+		}
+    },
+    {
+        file: "game:recipes/smithing/chain.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    //Scales //Not adding scale armor, so not adding scales
+    // {
+    //     file: "game:recipes/smithing/scale.json",
+    //     op: "addmerge",
+    //     path: "/ingredient/allowedVariants/-",
+    //     value: "aluminumbronze",
+    // },
+
+    //Rod
+    {
+        "file": "game:itemtypes/part/rod.json",
+        "op": "addmerge",
+        "path": "/variantgroups/0/states/-",
+        "value": "aluminumbronze"
+    },
+    {
+        "file": "game:itemtypes/part/rod.json",
+        "op": "addmerge",
+        "path": "/materialDensityByType/*-aluminumbronze",
+        "value": 8200
+    },
+    {
+        "file": "game:itemtypes/part/rod.json",
+        "op": "addmerge",
+        "path": "/combustiblePropsByType/rod-aluminumbronze",
+        "value": {
+			meltingPoint: 1040,
+			meltingDuration: 30,
+			smeltedRatio: 1,
+			smeltedStack: { type: "item", code: "ingot-aluminumbronze" }
+		}
+    },
+    {
+        file: "game:recipes/smithing/rod.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    //Nails and Strips
+    {
+        file: "game:itemtypes/resource/metalnailsandstrips.json",
+        op: "addmerge",
+        path: "/allowedVariants/-",
+        value: "*-aluminumbronze",
+    },
+    {
+        file: "game:itemtypes/resource/metalnailsandstrips.json",
+        op: "addmerge",
+        path: "/attributes/reinforcementStrengthByType/*-aluminumbronze",
+        value: 135,
+    },
+    {
+        file: "game:itemtypes/resource/metalnailsandstrips.json",
+        op: "addmerge",
+        path: "/materialDensityByType/*-aluminumbronze",
+        value: 8200,
+    },
+    {
+        file: "game:itemtypes/resource/metalnailsandstrips.json",
+        op: "addmerge",
+        path: "/combustiblePropsByType/metalnailsandstrips-aluminumbronze",
+        value: {
+			meltingPoint: 1040,
+			meltingDuration: 30,
+			smeltedRatio: 4,
+			smeltedStack: { type: "item", code: "ingot-aluminumbronze", stacksize: 1 }
+		}
+    },
+    {
+        file: "game:recipes/smithing/nails.json",
+        op: "addmerge",
+        path: "/0/ingredient/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/smithing/nails.json",
+        op: "addmerge",
+        path: "/1/ingredient/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+]

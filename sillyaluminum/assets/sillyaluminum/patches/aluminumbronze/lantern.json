@@ -1,0 +1,124 @@
+[
+    //Lantern
+    {
+        file: "game:blocktypes/metal/lantern.json",
+        op: "addmerge",
+        path: "/textures/aluminumbronze",
+        value: { base: "block/metal/lantern/aluminumbronze" }
+    },
+    {
+        file: "game:blocktypes/metal/lantern.json",
+        op: "addmerge",
+        path: "/textures/deco-aluminumbronze",
+        value: { base: "block/metal/lantern/aluminumbronze-deco" }
+    },
+    {
+        file: "game:blocktypes/metal/lantern.json",
+        op: "addmerge",
+        path: "/textures/grid-aluminumbronze",
+        value: { base: "block/metal/lantern/grid/aluminumbronze" }
+    },
+    {
+        file: "game:blocktypes/metal/lantern.json",
+        op: "addmerge",
+        path: "/creativeinventoryStacksByType/*-up/0/stacks/-",
+        value: { 
+            type: "block", 
+            code: "lantern-{size}-up", 
+            attributes: { 
+                material: "aluminumbronze", 
+                lining: "plain", 
+                glass: "quartz" 
+            } 
+        }
+    },
+
+    //Recipes
+    {
+        file: "game:recipes/grid/lantern.json",
+        op: "addmerge",
+        path: "/0/allowedVariants/metal/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/lantern.json",
+        op: "addmerge",
+        path: "/1/allowedVariants/metal/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/lantern.json",
+        op: "addmerge",
+        path: "/1/allowedVariants/lining/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/lantern.json",
+        op: "addmerge",
+        path: "/2/allowedVariants/metal/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/lantern.json",
+        op: "addmerge",
+        path: "/3/allowedVariants/metal/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/lantern.json",
+        op: "addmerge",
+        path: "/3/allowedVariants/lining/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/lantern.json",
+        op: "addmerge",
+        path: "/4/allowedVariants/metal/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/lantern.json",
+        op: "addmerge",
+        path: "/5/allowedVariants/metal/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/lantern.json",
+        op: "addmerge",
+        path: "/5/allowedVariants/lining/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/lantern.json",
+        op: "addmerge",
+        path: "/6/allowedVariants/metal/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/lantern.json",
+        op: "addmerge",
+        path: "/7/allowedVariants/metal/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/lantern.json",
+        op: "addmerge",
+        path: "/7/allowedVariants/lining/-",
+        value: "aluminumbronze",
+    },
+
+    //Lang file
+    // {
+    //     file: "game:lang/en.json",
+    //     op: "replace",
+    //     path: "/lantern-handbook-help-text",
+    //     value: "You can add a gold, silver, electrum, or aluminumbronze lining to a lantern by placing it on the ground, and <hk>rightmouse</hk> clicking with a gold, silver, electrum, or aluminumbronze plate. This will slightly increase the light radius.<br><br><strong>Glass Panes</strong><br>You can also change the color of glass panes by placing the lantern, and <hk>rightmouse</hk> clicking with the new glass. This will swap the glass in hand, for the glass in the lantern. If the lantern has clear quartz panes, you will not get the clear quartz back.",
+    // },
+]

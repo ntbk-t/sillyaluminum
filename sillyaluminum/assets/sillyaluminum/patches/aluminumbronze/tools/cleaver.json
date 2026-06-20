@@ -1,0 +1,35 @@
+[
+    //Cleaverhead
+    {
+        "file": "game:itemtypes/toolhead/cleaverhead.json",
+        "op": "addmerge",
+        "path": "/variantgroups/0/states/-",
+        "value": "aluminumbronze"
+    },
+    {
+        file: "game:recipes/smithing/cleaver.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    //Cleaver
+    {
+        file: "game:itemtypes/tool/cleaver.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states/-",
+        value: "aluminumbronze"
+    },
+    {
+        file: "game:itemtypes/tool/cleaver.json",
+        op: "addmerge",
+        path: "/durabilitybytype/cleaver-aluminumbronze",
+        value: 180
+    },
+    {
+        file: "game:itemtypes/tool/cleaver.json",
+        op: "addmerge",
+        path: "/attackpowerbytype/cleaver-aluminumbronze",
+        value: 1.125
+    }
+]

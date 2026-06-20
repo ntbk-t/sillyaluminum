@@ -1,0 +1,67 @@
+[
+    //Hoe Head
+    {
+        "file": "game:itemtypes/toolhead/hoehead.json",
+        "op": "addmerge",
+        "path": "/variantgroups/0/states/-",
+        "value": "aluminumbronze"
+    },
+    {
+        file: "game:recipes/smithing/hoe.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    //Hoe
+    {
+        file: "game:itemtypes/tool/hoe.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states/-",
+        value: "aluminumbronze"
+    },
+    {
+        file: "game:itemtypes/tool/hoe.json",
+        op: "addmerge",
+        path: "/shapeByType/*-aluminumbronze",
+        value: { "base": "item/tool/hoe-copper" }
+    },
+    {
+        "file": "game:itemtypes/tool/hoe.json",
+        "op": "move",
+        "frompath": "/texturesByType/*",
+        "path": "/temp"
+    },
+    {
+        "file": "game:itemtypes/tool/hoe.json",
+        "op": "addmerge",
+        "path": "/texturesByType/hoe-aluminumbronze",
+        "value": {"material": { base: "block/metal/ingot/{material}" }}
+    },
+    {
+        "file": "game:itemtypes/tool/hoe.json",
+        "op": "move",
+        "frompath": "/temp",
+        "path": "/texturesByType/*"
+    },
+    {
+        file: "game:itemtypes/tool/hoe.json",
+        op: "addmerge",
+        path: "/miningspeedbytype/*-aluminumbronze",
+        value: {
+            "soil": 2.7
+        }
+    },
+    {
+        file: "game:itemtypes/tool/hoe.json",
+        op: "addmerge",
+        path: "/durabilitybytype/*-aluminumbronze",
+        value: 180
+    },
+    {
+        file: "game:itemtypes/tool/hoe.json",
+        op: "addmerge",
+        path: "/attackpowerbytype/hoe-aluminumbronze",
+        value: 1.125
+    },
+]

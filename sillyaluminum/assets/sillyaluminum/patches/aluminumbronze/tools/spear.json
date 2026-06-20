@@ -1,0 +1,163 @@
+[
+    //Spear Head
+    // {
+    //     "file": "game:itemtypes/toolhead/spearhead.json",
+    //     "op": "addmerge",
+    //     "path": "/variantgroups/0/states/-",
+    //     "value": "aluminumbronze"
+    // },
+    // {
+    //     file: "game:recipes/smithing/spear.json",
+    //     op: "addmerge",
+    //     path: "/ingredient/allowedVariants/-",
+    //     value: "aluminumbronze",
+    // },
+
+    //Spear
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "addmerge",
+        path: "/variantgroups/1/states/-",
+        value: "aluminumbronze"
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "addmerge",
+        path: "/shapeByType/spear-generic-aluminumbronze",
+        value: { base: "item/tool/spear/aluminumbronze" },
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "addmerge",
+        path: "/attackpowerbytype/spear-generic-aluminumbronze",
+        value: 4.25,
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "move",
+        frompath: "/attributes/damageByType/*",
+        path: "/temp"
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "addmerge",
+        path: "/attributes/damageByType/spear-generic-aluminumbronze",
+        value: 7.5,
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "move",
+        frompath: "/temp",
+        path: "/attributes/damageByType/*"
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "addmerge",
+        path: "/attributes/damageTierByType/*-aluminumbronze",
+        value: 3,
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "addmerge",
+        path: "/durabilitybytype/spear-generic-aluminumbronze",
+        value: 320,
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "move",
+        frompath: "/attributes/toolrackTransformByType/*",
+        path: "/temp"
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "addmerge",
+        path: "/attributes/toolrackTransformByType/spear-generic-aluminumbronze",
+        value: {
+            translation: { x: 0.31, y: 0.06, z: -0.55 },
+			rotation: { x: -90, y: -1, z: 1 },
+			scale: 1.36
+        },
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "move",
+        frompath: "/temp",
+        path: "/attributes/toolrackTransformByType/*"
+    },
+
+
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "move",
+        frompath: "/guiTransformByType/*",
+        path: "/temp"
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "addmerge",
+        path: "/guiTransformByType/spear-generic-aluminumbronze",
+        value: {
+			rotation: { x: -16, y: -2, z: -134 },
+			origin: { x: 1.47, y: 0.05, z: 0.5 },
+			scale: 3.09
+		},
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "move",
+        frompath: "/temp",
+        path: "/guiTransformByType/*"
+    },
+
+
+
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "move",
+        frompath: "/tpHandTransformByType/*",
+        path: "/temp"
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "addmerge",
+        path: "/tpHandTransformByType/spear-generic-aluminumbronze",
+        value: {
+			translation: { x: -1.04, y: 0.02, z: -0.57 },
+			rotation: { x: -90, y: 0, z: 0 },
+			origin: { x: 0.5, y: 0, z: 0.5 },
+			scale: 0.8
+		},
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "move",
+        frompath: "/temp",
+        path: "/tpHandTransformByType/*"
+    },
+
+    //Spear Projectile Entity
+    {
+        file: "game:entities/nonliving/projectile/spear.json",
+        op: "addmerge",
+        path: "/variantgroups/1/states/-",
+        value: "aluminumbronze"
+    },
+    {
+        file: "game:entities/nonliving/projectile/spear.json",
+        op: "move",
+        frompath: "/client/shapeByType/*",
+        path: "/temp"
+    },
+    {
+        file: "game:entities/nonliving/projectile/spear.json",
+        op: "addmerge",
+        path: "/client/shapeByType/spear-generic-aluminumbronze",
+        value: { base: "item/tool/spear/aluminumbronze" }
+    },
+    {
+        file: "game:entities/nonliving/projectile/spear.json",
+        op: "move",
+        frompath: "/temp",
+        path: "/client/shapeByType/*"
+    },
+]

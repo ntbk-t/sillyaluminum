@@ -1,0 +1,57 @@
+[
+    //Falx Head
+    // {
+    //     "file": "game:itemtypes/toolhead/bladehead.json",
+    //     "op": "addmerge",
+    //     "path": "/variantgroups/1/states/-",
+    //     "value": "aluminumbronze"
+    // },
+    // {
+    //     file: "game:recipes/smithing/blade-falx.json",
+    //     op: "addmerge",
+    //     path: "/ingredient/allowedVariants/-",
+    //     value: "aluminumbronze",
+    // },
+
+    //Falx
+    {
+        file: "game:itemtypes/tool/blade.json",
+        op: "addmerge",
+        path: "/variantgroups/1/states/-",
+        value: "aluminumbronze"
+    },
+    {
+        file: "game:itemtypes/tool/blade.json",
+        op: "addmerge",
+        path: "/texturesByType/blade-falx-aluminumbronze",
+        value: { 
+			"falxstring": { base: "block/transparent" },
+			"thongs": { base: "block/transparent" },			
+			"woodguard": { base: "block/transparent" },
+			"handle":  { base: "block/wood/debarked/purpleheart"  },
+			"falxblade":  { base: "block/metal/ingot/steel"  },
+			"cloth":  { base: "block/cloth/linen/green"  },
+			"handguard":  { base: "block/metal/sheet/aluminumbronze"  },
+			"spinerivet":  { base: "block/metal/sheet/aluminum1"  },
+			"pips":  { base: "block/metal/sheet/aluminum1"  }
+		},
+    },
+    {
+        file: "game:itemtypes/tool/blade.json",
+        op: "addmerge",
+        path: "/tooltierbytype/*-aluminumbronze",
+        value: 3,
+    },
+    {
+        file: "game:itemtypes/tool/blade.json",
+        op: "addmerge",
+        path: "/attackpowerbytype/*-aluminumbronze",
+        value: 5.25
+    },
+    {
+        file: "game:itemtypes/tool/blade.json",
+        op: "addmerge",
+        path: "/durabilitybytype/*-aluminumbronze",
+        value: 2125
+    }
+]

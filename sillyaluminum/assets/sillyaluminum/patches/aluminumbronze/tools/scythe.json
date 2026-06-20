@@ -1,0 +1,29 @@
+[
+    //Scythe Head
+    {
+        "file": "game:itemtypes/toolhead/scythehead.json",
+        "op": "addmerge",
+        "path": "/variantgroups/0/states/-",
+        "value": "aluminumbronze"
+    },
+    {
+        file: "game:recipes/smithing/scythe.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    //Scythe
+    {
+        file: "game:itemtypes/tool/scythe.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states/-",
+        value: "aluminumbronze"
+    },
+    {
+        file: "game:itemtypes/tool/scythe.json",
+        op: "addmerge",
+        path: "/durabilitybytype/scythe-aluminumbronze",
+        value: 405
+    },
+]

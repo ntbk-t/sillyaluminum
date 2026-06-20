@@ -1,0 +1,118 @@
+[
+    {
+        file: "game:recipes/grid/armor/chain.json",
+        op: "addmerge",
+        path: "/0/ingredients/T/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armor/chain.json",
+        op: "addmerge",
+        path: "/1/ingredients/T/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armor/chain.json",
+        op: "addmerge",
+        path: "/1/ingredients/C/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armor/chain.json",
+        op: "addmerge",
+        path: "/2/ingredients/T/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armor/chain.json",
+        op: "addmerge",
+        path: "/2/ingredients/C/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+
+
+    {
+        file: "game:recipes/grid/armorrepair/chain.json",
+        op: "addmerge",
+        path: "/0/ingredients/T/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armorrepair/chain.json",
+        op: "addmerge",
+        path: "/0/ingredients/C/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armorrepair/chain.json",
+        op: "addmerge",
+        path: "/1/ingredients/T/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armorrepair/chain.json",
+        op: "addmerge",
+        path: "/1/ingredients/C/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armorrepair/chain.json",
+        op: "addmerge",
+        path: "/2/ingredients/T/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armorrepair/chain.json",
+        op: "addmerge",
+        path: "/2/ingredients/C/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+
+
+    {
+        file: "game:itemtypes/wearable/seraph/armor.json",
+        op: "addmerge",
+        path: "/attributes/protectionModifiersByType/armor-*-chain-aluminumbronze",
+        value: {
+            relativeProtection: 0.82,
+            flatDamageReduction: 1.2,
+            protectionTier: 3,
+        },
+    },
+    {
+        file: "game:itemtypes/wearable/seraph/armor.json",
+        op: "move",
+        frompath: "/attributes/statModifiersByType/armor-*-chain-*",
+        path: "/temp",
+    },
+    {
+        file: "game:itemtypes/wearable/seraph/armor.json",
+        op: "addmerge",
+        path: "/attributes/statModifiersByType/armor-*-chain-aluminumbronze",
+        value: {
+            rangedWeaponsAcc: -0.015,
+            rangedWeaponsSpeed: -0.03,
+            walkSpeed: -0.015,
+            healingeffectivness: -0.05,
+            hungerrate: 0.0375
+        },
+    },
+    {
+        file: "game:itemtypes/wearable/seraph/armor.json",
+        op: "move",
+        frompath: "/temp",
+        path: "/attributes/statModifiersByType/armor-*-chain-*",
+    },
+    {
+        file: "game:itemtypes/wearable/seraph/armor.json",
+        op: "addmerge",
+        path: "/durabilityByType/armor-*-chain-aluminumbronze",
+        value: 540,
+    },
+]

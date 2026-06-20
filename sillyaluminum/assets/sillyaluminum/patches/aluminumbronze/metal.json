@@ -1,0 +1,16 @@
+[
+    {
+        file: "game:worldproperties/block/metal.json",
+        op: "addmerge",
+        path: "/variants/-",
+        value: {
+            code: "aluminumbronze",
+            meltPoint: 1040,
+            boilPoint: 2300,
+            density: 8200,
+            specificHeatCapacity: 0.38,
+            elemental: false,
+            tier: 3,
+        },
+    },
+]
