@@ -1,10 +1,5 @@
-using System;
 using Vintagestory.API.Common;
-using Vintagestory.API.Server;
-using Vintagestory.GameContent;
-using Vintagestory.API.MathTools;
 
-//Not ItemIngot since that only has anvil stuff that we don't care about here
 internal class ItemPowderSaltyAluminum : Item {
 	Item? powder_aluminum = null;
 
@@ -35,7 +30,7 @@ internal class ItemPowderSaltyAluminum : Item {
 		api.World.SpawnCubeParticles(entityItem.Pos.XYZ, entityItem.Itemstack.Clone(), 0.1f, 80, 0.3f);
 
 		api.World.SpawnItemEntity(
-            new ItemStack(powder_aluminum, entityItem.Itemstack.StackSize),
+            new(powder_aluminum, entityItem.Itemstack.StackSize),
             entityItem.Pos.XYZ,
             entityItem.Pos.Motion
         );

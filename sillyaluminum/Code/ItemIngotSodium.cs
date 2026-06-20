@@ -1,10 +1,8 @@
-using System;
 using Vintagestory.API.Common;
 using Vintagestory.API.Server;
 using Vintagestory.GameContent;
 using Vintagestory.API.MathTools;
 
-//Not ItemIngot since that only has anvil stuff that we don't care about here
 internal class ItemIngotSodium : ItemIngot {
 	Item? metalbit_sodium = null;
 
@@ -34,13 +32,11 @@ internal class ItemIngotSodium : ItemIngot {
 
 		api.World.SpawnCubeParticles(entityItem.Pos.XYZ, entityItem.Itemstack.Clone(), 0.1f, 80, 0.3f);
 		((IServerWorldAccessor)api.World).CreateExplosion(entityItem.Pos.AsBlockPos, EnumBlastType.EntityBlast, 0, 12.5, 1f);
-		//api.World.PlaySoundAt(new AssetLocation("sounds/effect/mediumexplosion"), entityItem.Pos, -0.4);
-		api.World.Logger.Event("Ingot kaboom");
 
 		// if only Rand.NextInRange...
-		var nuggets = api.World.Rand.NextInt64() % 10 + 10;
-		for (var i = 0; i < nuggets; i++) {
-			var nugget = (EntityItem?) api.World.SpawnItemEntity(
+		long nuggets = api.World.Rand.NextInt64() % 10 + 10;
+		for (int i = 0; i < nuggets; i++) {
+			EntityItem? nugget = (EntityItem?) api.World.SpawnItemEntity(
 				new ItemStack(metalbit_sodium, entityItem.Itemstack.StackSize),
 				entityItem.Pos.XYZ,
 				new Vec3d(

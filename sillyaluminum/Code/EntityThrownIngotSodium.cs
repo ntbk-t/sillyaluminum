@@ -23,7 +23,7 @@ internal class EntityThrownIngotSodium : Vintagestory.GameContent.EntityThrownIt
 
         // TODO: copy paste :(
 
-        var metalBitSodium = World.GetItem(new AssetLocation("metalbit-sodium"));
+        Item? metalBitSodium = World.GetItem(new AssetLocation("metalbit-sodium"));
 
         explosionTimer -= dt;
         if (explosionTimer > 0) {
@@ -42,10 +42,9 @@ internal class EntityThrownIngotSodium : Vintagestory.GameContent.EntityThrownIt
         World.SpawnCubeParticles(Pos.XYZ, new(metalBitSodium, 1), 0.1f, 80, 0.3f);
 		((IServerWorldAccessor) World).CreateExplosion(Pos.AsBlockPos, EnumBlastType.EntityBlast, 0, 12.5, 1f);
 
-        
-        var nuggets = World.Rand.NextInt64() % 10 + 10;
-		for (var i = 0; i < nuggets; i++) {
-			var nugget = (EntityItem?) World.SpawnItemEntity(
+        long nuggets = World.Rand.NextInt64() % 10 + 10;
+		for (int i = 0; i < nuggets; i++) {
+			EntityItem? nugget = (EntityItem?)World.SpawnItemEntity(
 				new(metalBitSodium, 1),
 				Pos.XYZ,
 				new Vec3d(
@@ -62,16 +61,15 @@ internal class EntityThrownIngotSodium : Vintagestory.GameContent.EntityThrownIt
         Die();
     }
 
-	public override void OnCollideWithLiquid(){
-		if (World.Side != EnumAppSide.Client){
-			float yDistance = (float)Math.Abs(PositionBeforeFalling.Y - Pos.Y);
-			double width = SelectionBox.XSize;
-			double height = SelectionBox.YSize;
-			double splashStrength = (double)(2f * GameMath.Sqrt(width * height)) + Pos.Motion.Length() * 10.0;
-			if (!(splashStrength < 0.4000000059604645) && !(yDistance < 0.25f))
-			{
-				doSplashEffects(splashStrength, splashStrength);
-			}
+	public override void OnCollideWithLiquid() {
+		if (World.Side == EnumAppSide.Client) return;
+
+		float yDistance = (float)Math.Abs(PositionBeforeFalling.Y - Pos.Y);
+		double width = SelectionBox.XSize;
+		double height = SelectionBox.YSize;
+		double splashStrength = 2 * (double)GameMath.Sqrt(width * height) + Pos.Motion.Length() * 10.0;
+		if (splashStrength >= 0.4 && yDistance >= 0.25f) {
+			doSplashEffects(splashStrength, splashStrength);
 		}
 	}
 }
