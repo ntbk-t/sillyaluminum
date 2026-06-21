@@ -143,13 +143,25 @@
     "game:block-lantern-large-*-aluminumbronze": "Large aluminum bronze lantern",
     "game:item-metalnailsandstrips-aluminumbronze": "Nails and strips (Aluminum bronze)",
 
+    "game:item-armor-head-brigandine-aluminumbronze": "Brigandine head armor (Aluminum bronze)",
+    "game:item-armor-body-brigandine-aluminumbronze": "Brigandine body armor (Aluminum bronze)",
+    "game:item-armor-legs-brigandine-aluminumbronze": "Brigandine leg armor (Aluminum bronze)",
+
     "game:item-armor-head-chain-aluminumbronze": "Chain head armor (Aluminum bronze)",
     "game:item-armor-body-chain-aluminumbronze": "Chain body armor (Aluminum bronze)",
     "game:item-armor-legs-chain-aluminumbronze": "Chain leg armor (Aluminum bronze)",
 
+    "game:item-armor-head-lamellar-aluminumbronze": "Head lamellar (Aluminum bronze)",
+    "game:item-armor-body-lamellar-aluminumbronze": "Body lamellar (Aluminum bronze)",
+    "game:item-armor-legs-lamellar-aluminumbronze": "Leg lamellar (Aluminum bronze)",
+
     "game:item-armor-head-plate-aluminumbronze": "Plate helmet (Aluminum bronze)",
     "game:item-armor-body-plate-aluminumbronze": "Plate body armor (Aluminum bronze)",
     "game:item-armor-legs-plate-aluminumbronze": "Plate leg armor (Aluminum bronze)",
+
+    "game:item-armor-head-scale-aluminumbronze": "Scale helmet (Aluminum bronze)",
+    "game:item-armor-body-scale-aluminumbronze": "Scale body armor (Aluminum bronze)",
+    "game:item-armor-legs-scale-aluminumbronze": "Scale leg armor (Aluminum bronze)",
 
     "game:itemdesc-shield-woodmetal-aluminumbronze-*-none": "A wooden shield crafted with aluminum bronze boss and rim",
     "game:itemdesc-shield-woodmetalleather-aluminumbronze-*-none": "A leather-reinforced wooden shield crafted with aluminum bronze boss and rim",
