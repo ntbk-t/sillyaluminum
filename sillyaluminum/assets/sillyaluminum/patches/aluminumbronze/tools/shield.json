@@ -1,5 +1,5 @@
 [
-    //Sheild
+    //Shield
     {
         file: "game:itemtypes/tool/roundshield.json",
         op: "addmerge",
@@ -22,7 +22,7 @@
         file: "game:itemtypes/tool/roundshield.json",
         op: "addmerge",
         path: "/attributes/durabilityGains/metal/aluminumbronze",
-        value: -45
+        value: 45
     },
 
     //Recipes

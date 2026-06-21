@@ -1,5 +1,5 @@
 [
-    //Sheild
+    //Shield
     {
         file: "game:itemtypes/tool/roundshield.json",
         op: "addmerge",

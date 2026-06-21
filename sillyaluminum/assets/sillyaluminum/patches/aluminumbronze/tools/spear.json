@@ -30,7 +30,7 @@
         file: "game:itemtypes/tool/spear.json",
         op: "addmerge",
         path: "/attackpowerbytype/spear-generic-aluminumbronze",
-        value: 4.25,
+        value: 4.35,
     },
     {
         file: "game:itemtypes/tool/spear.json",
@@ -42,7 +42,7 @@
         file: "game:itemtypes/tool/spear.json",
         op: "addmerge",
         path: "/attributes/damageByType/spear-generic-aluminumbronze",
-        value: 7.5,
+        value: 6.95,
     },
     {
         file: "game:itemtypes/tool/spear.json",
@@ -54,13 +54,13 @@
         file: "game:itemtypes/tool/spear.json",
         op: "addmerge",
         path: "/attributes/damageTierByType/*-aluminumbronze",
-        value: 3,
+        value: 4,
     },
     {
         file: "game:itemtypes/tool/spear.json",
         op: "addmerge",
         path: "/durabilitybytype/spear-generic-aluminumbronze",
-        value: 320,
+        value: 350,
     },
     {
         file: "game:itemtypes/tool/spear.json",

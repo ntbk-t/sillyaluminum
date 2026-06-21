@@ -48,13 +48,13 @@
         file: "game:itemtypes/tool/arrow.json",
         op: "addmerge",
         path: "/attributes/damageByType/*-aluminumbronze",
-        value: 1
+        value: 2.375
     },
     {
         file: "game:itemtypes/tool/arrow.json",
         op: "addmerge",
         path: "/attributes/breakChanceOnImpactByType/*-aluminumbronze",
-        value: 0.15
+        value: 0.1
     },
 
     //Arrow Projectile Entity

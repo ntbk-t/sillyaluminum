@@ -10,7 +10,7 @@
         file: "game:itemtypes/tool/crowbar.json",
         op: "addmerge",
         path: "/durabilitybytype/*-aluminumbronze",
-        value: 225
+        value: 750
     },
     {
         file: "game:recipes/smithing/crowbar.json",

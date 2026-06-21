@@ -24,27 +24,27 @@
         file: "game:itemtypes/tool/prospectingpick.json",
         op: "addmerge",
         path: "/tooltierbytype/*-aluminumbronze",
-        value: 3,
+        value: 4,
     },
     {
         file: "game:itemtypes/tool/prospectingpick.json",
         op: "addmerge",
         path: "/miningspeedbytype/*-aluminumbronze",
         value: {
-			"stone": 2.25,
-			"ore": 2.25,
+			"stone": 5.125,
+			"ore": 5.125
 		}
     },
     {
         file: "game:itemtypes/tool/prospectingpick.json",
         op: "addmerge",
         path: "/attackpowerbytype/prospectingpick-aluminumbronze",
-        value: 1.125
+        value: 2.425
     },
     {
         file: "game:itemtypes/tool/prospectingpick.json",
         op: "addmerge",
         path: "/durabilitybytype/prospectingpick-aluminumbronze",
-        value: 135
+        value: 500
     }
 ]

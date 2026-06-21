@@ -24,12 +24,12 @@
         file: "game:itemtypes/tool/cleaver.json",
         op: "addmerge",
         path: "/durabilitybytype/cleaver-aluminumbronze",
-        value: 180
+        value: 625
     },
     {
         file: "game:itemtypes/tool/cleaver.json",
         op: "addmerge",
         path: "/attackpowerbytype/cleaver-aluminumbronze",
-        value: 1.125
+        value: 2.675
     }
 ]

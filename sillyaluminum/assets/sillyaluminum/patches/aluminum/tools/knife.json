@@ -74,4 +74,10 @@
             "plant": 1.35
         }
     },
+    {
+        file: "game:itemtypes/tool/knife.json",
+        op: "addmerge",
+        path: "/attackpowerbytype/knife-generic-aluminum",
+        value: 2.5
+    },
 ]

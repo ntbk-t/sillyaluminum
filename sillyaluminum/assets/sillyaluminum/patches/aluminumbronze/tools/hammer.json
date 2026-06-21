@@ -24,18 +24,18 @@
         file: "game:itemtypes/tool/hammer.json",
         op: "addmerge",
         path: "/tooltierbytype/*-aluminumbronze",
-        value: 3,
+        value: 4,
     },
     {
         file: "game:itemtypes/tool/hammer.json",
         op: "addmerge",
         path: "/durabilitybytype/hammer-aluminumbronze",
-        value: 450
+        value: 1450
     },
     {
         file: "game:itemtypes/tool/hammer.json",
         op: "addmerge",
         path: "/attackpowerbytype/hammer-aluminumbronze",
-        value: 1.125
+        value: 2.425
     },
 ]

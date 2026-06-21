@@ -10,12 +10,12 @@
         file: "game:itemtypes/tool/shears.json",
         op: "addmerge",
         path: "/attackpowerbytype/shears-aluminumbronze",
-        value: 0.9
+        value: 3.375
     },
     {
         file: "game:itemtypes/tool/shears.json",
         op: "addmerge",
         path: "/durabilitybytype/shears-aluminumbronze",
-        value: 900
+        value: 3025
     },
 ]

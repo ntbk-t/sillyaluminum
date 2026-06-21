@@ -49,19 +49,19 @@
         op: "addmerge",
         path: "/miningspeedbytype/*-aluminumbronze",
         value: {
-            "soil": 2.7
+            "soil": 4.875
         }
     },
     {
         file: "game:itemtypes/tool/hoe.json",
         op: "addmerge",
         path: "/durabilitybytype/*-aluminumbronze",
-        value: 180
+        value: 415
     },
     {
         file: "game:itemtypes/tool/hoe.json",
         op: "addmerge",
         path: "/attackpowerbytype/hoe-aluminumbronze",
-        value: 1.125
+        value: 2.4
     },
 ]

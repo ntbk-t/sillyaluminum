@@ -152,23 +152,23 @@
         op: "addmerge",
         path: "/miningspeedbytype/shovel-aluminumbronze",
         value: {
-			"soil": 3.6,
-			"sand": 3.6,
-			"gravel": 2.34,
-			"snow": 2.34
+			"soil": 6.75,
+			"sand": 6.75,
+			"gravel": 4.3,
+			"snow": 4.3
 		}
     },
     {
         file: "game:itemtypes/tool/shovel.json",
         op: "addmerge",
         path: "/attackpowerbytype/shovel-aluminumbronze",
-        value: 1.125
+        value: 2.425
     },
     {
         file: "game:itemtypes/tool/shovel.json",
         op: "addmerge",
         path: "/durabilitybytype/shovel-aluminumbronze",
-        value: 360
+        value: 950
     },
 
 

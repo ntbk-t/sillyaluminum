@@ -40,7 +40,7 @@
         file: "game:itemtypes/tool/blade.json",
         op: "addmerge",
         path: "/tooltierbytype/*-aluminumbronze",
-        value: 3,
+        value: 4,
     },
     {
         file: "game:itemtypes/tool/blade.json",
@@ -52,6 +52,6 @@
         file: "game:itemtypes/tool/blade.json",
         op: "addmerge",
         path: "/durabilitybytype/*-aluminumbronze",
-        value: 2125
+        value: 725
     }
 ]

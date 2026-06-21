@@ -10,19 +10,19 @@
         "file": "game:itemtypes/tool/wrench.json",
         "op": "addmerge",
         "path": "/tooltierbytype/*-aluminumbronze",
-        "value": 3,
+        "value": 4,
     },
     {
         "file": "game:itemtypes/tool/wrench.json",
         "op": "addmerge",
         "path": "/durabilitybytype/wrench-aluminumbronze",
-        "value": 450
+        "value": 1450
     },
     {
         "file": "game:itemtypes/tool/wrench.json",
         "op": "addmerge",
         "path": "/attackpowerbytype/wrench-aluminumbronze",
-        "value": 1.5
+        "value": 2.425
     },
     {
         file: "game:recipes/smithing/wrench.json",

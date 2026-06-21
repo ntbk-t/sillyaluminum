@@ -93,29 +93,29 @@
         file: "game:itemtypes/tool/axe-metal.json",
         op: "addmerge",
         path: "/tooltierbytype/*-aluminumbronze",
-        value: 3,
+        value: 4,
     },
     {
         file: "game:itemtypes/tool/axe-metal.json",
         op: "addmerge",
         path: "/miningspeedbytype/axe-felling-aluminumbronze",
         value: {
-			"wood": 4.68,
-			"plant": 2.52,
-			"leaves": 2.16
+			"wood": 10.4,
+			"plant": 5.75,
+			"leaves": 3.8
 		}
     },
     {
         file: "game:itemtypes/tool/axe-metal.json",
         op: "addmerge",
         path: "/durabilitybytype/axe-felling-aluminumbronze",
-        value: 225
+        value: 750
     },
     {
         file: "game:itemtypes/tool/axe-metal.json",
         op: "addmerge",
         path: "/attackpowerbytype/axe-felling-aluminumbronze",
-        value: 1.8
+        value: 3.75
     },
     
 ]
