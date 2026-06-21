@@ -45,24 +45,6 @@
         value: "aluminumbronze"
     },
     {
-        "file": "game:itemtypes/tool/arrow.json",
-        "op": "move",
-        "frompath": "/shapeByType/*",
-        "path": "/temp"
-    },
-    {
-        "file": "game:itemtypes/tool/arrow.json",
-        "op": "addmerge",
-        "path": "/shapeByType/*-aluminumbronze",
-        "value": { "base": "item/tool/arrow-aluminumbronze" }
-    },
-    {
-        "file": "game:itemtypes/tool/arrow.json",
-        "op": "move",
-        "frompath": "/temp",
-        "path": "/shapeByType/*"
-    },
-    {
         file: "game:itemtypes/tool/arrow.json",
         op: "addmerge",
         path: "/attributes/damageByType/*-aluminumbronze",
@@ -81,23 +63,5 @@
         op: "addmerge",
         path: "/variantgroups/0/states/-",
         value: "aluminumbronze"
-    },
-    {
-        file: "game:entities/nonliving/projectile/arrow.json",
-        op: "move",
-        frompath: "/client/shapeByType/*",
-        path: "/temp"
-    },
-    {
-        file: "game:entities/nonliving/projectile/arrow.json",
-        op: "addmerge",
-        path: "/client/shapeByType/arrow-aluminumbronze",
-        value: { base: "entity/nonliving/projectile/arrow/aluminumbronze" }
-    },
-    {
-        file: "game:entities/nonliving/projectile/arrow.json",
-        op: "move",
-        frompath: "/temp",
-        path: "/client/shapeByType/*"
     },
 ]
