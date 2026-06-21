@@ -5,4 +5,10 @@
         op: "addmerge",
         value: "aluminumbronze"
     },
+    {
+        file: "game:itemtypes/wearable/seraph/armor.json",
+        path: "/allowedVariants/-",
+        op: "addmerge",
+        value: "armor-*-lamellar-aluminumbronze"
+    }
 ]

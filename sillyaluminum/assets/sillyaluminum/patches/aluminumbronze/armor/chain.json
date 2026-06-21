@@ -75,6 +75,40 @@
 
 
 
+    // // {
+    // //     file: "game:itemtypes/wearable/seraph/armor.json",
+    // //     op: "move",
+    // //     frompath: "/shapeByType/armor-*",
+    // //     path: "/temp1",
+    // // },
+    // {
+    //     file: "game:itemtypes/wearable/seraph/armor.json",
+    //     op: "move",
+    //     frompath: "/shapeByType/armor-head-chain-*",
+    //     path: "/temp2",
+    // },
+    // {
+    //     file: "game:itemtypes/wearable/seraph/armor.json",
+    //     op: "addmerge",
+    //     path: "/shapeByType/armor-head-chain-aluminumbronze",
+    //     value: { base: "entity/humanoid/seraph/armor/{construction}/{bodypart}-bronze" },
+    // },
+    // {
+    //     file: "game:itemtypes/wearable/seraph/armor.json",
+    //     op: "move",
+    //     frompath: "/shapeByType/armor-head-chain-*",
+    //     path: "/temp2",
+    // },
+    // // {
+    // //     file: "game:itemtypes/wearable/seraph/armor.json",
+    // //     op: "move",
+    // //     frompath: "/temp1",
+    // //     path: "/shapeByType/armor-*",
+    // // },
+
+
+
+
     {
         file: "game:itemtypes/wearable/seraph/armor.json",
         op: "addmerge",
