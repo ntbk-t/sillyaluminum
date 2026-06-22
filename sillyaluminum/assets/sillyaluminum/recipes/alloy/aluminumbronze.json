@@ -1,0 +1,7 @@
+{
+    ingredients: [
+        { type: "item", code: "game:ingot-aluminum", minratio: 0.08, maxratio: 0.12 },
+        { type: "item", code: "game:ingot-copper", minratio: 0.88, maxratio: 0.92 }
+    ],
+    output: { type: "item", code: "game:ingot-aluminumbronze" },
+}
