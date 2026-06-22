@@ -10,8 +10,8 @@
 	"textures": {
 		"rivet": "block/metal/sheet/lead1",
 		"handle": "block/wood/debarked/walnut",
-		"aluminumbronze5": "block/metal/sheet/aluminumbronze5",
-		"handguard": "block/metal/sheet/aluminumbronze5"
+		"aluminumbronze5": "block/metal/ingot/aluminumbronze",
+		"handguard": "block/metal/ingot/aluminumbronze"
 	},
 	"elements": [
 		{

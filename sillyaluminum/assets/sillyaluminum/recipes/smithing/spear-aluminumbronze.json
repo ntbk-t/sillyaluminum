@@ -1,0 +1,22 @@
+{
+	ingredient: { type: "item", code: "ingot-*", name: "metal", allowedVariants: ["aluminumbronze"] },
+	pattern: [
+		[
+			"______##____",
+			"___##__#_###",
+			"############",
+			"___##__#_###",
+			"______##____"
+		],
+		[
+			"____________",
+			"_________###",
+			"_________###",
+			"_________###",
+			"____________"
+		]
+	],
+	name: "Spear",
+	code: "spearhead-{metal}",
+	output: { type: "item", code: "spearhead-{metal}"  }
+}

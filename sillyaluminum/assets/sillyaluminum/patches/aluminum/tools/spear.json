@@ -152,7 +152,7 @@
         file: "game:entities/nonliving/projectile/spear.json",
         op: "addmerge",
         path: "/client/shapeByType/spear-generic-ornatealuminum",
-        value: { base: "item/tool/spear/ornatealuminum" }
+        value: { base: "item/tool/spear/ornatealuminum", offsetX: -0.8125 }
     },
     {
         file: "game:entities/nonliving/projectile/spear.json",

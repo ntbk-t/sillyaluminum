@@ -1,17 +1,11 @@
 [
     //Spear Head
-    // {
-    //     "file": "game:itemtypes/toolhead/spearhead.json",
-    //     "op": "addmerge",
-    //     "path": "/variantgroups/0/states/-",
-    //     "value": "aluminumbronze"
-    // },
-    // {
-    //     file: "game:recipes/smithing/spear.json",
-    //     op: "addmerge",
-    //     path: "/ingredient/allowedVariants/-",
-    //     value: "aluminumbronze",
-    // },
+    {
+        "file": "game:itemtypes/toolhead/spearhead.json",
+        "op": "addmerge",
+        "path": "/variantgroups/0/states/-",
+        "value": "aluminumbronze"
+    },
 
     //Spear
     {
@@ -24,7 +18,7 @@
         file: "game:itemtypes/tool/spear.json",
         op: "addmerge",
         path: "/shapeByType/spear-generic-aluminumbronze",
-        value: { base: "item/tool/spear/aluminumbronze" },
+        value: { base: "item/tool/spear/metal-aluminumbronze" },
     },
     {
         file: "game:itemtypes/tool/spear.json",
@@ -62,6 +56,30 @@
         path: "/durabilitybytype/spear-generic-aluminumbronze",
         value: 350,
     },
+
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "move",
+        frompath: "/attributes/groundStorageTransformByType/*",
+        path: "/temp"
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "addmerge",
+        path: "/attributes/groundStorageTransformByType/spear-generic-aluminumbronze",
+        value: {
+            translation: { x: -0.39, y: 0.78, z: 0.2 },
+            rotation: { x: 16, y: 1, z: 90 },
+            scale: 0.85
+        },
+    },
+    {
+        file: "game:itemtypes/tool/spear.json",
+        op: "move",
+        frompath: "/temp",
+        path: "/attributes/groundStorageTransformByType/*"
+    },
+
     {
         file: "game:itemtypes/tool/spear.json",
         op: "move",
@@ -73,9 +91,9 @@
         op: "addmerge",
         path: "/attributes/toolrackTransformByType/spear-generic-aluminumbronze",
         value: {
-            translation: { x: 0.31, y: 0.06, z: -0.55 },
-			rotation: { x: -90, y: -1, z: 1 },
-			scale: 1.36
+            rotation: { x: 90, y: 1, z: -1 },
+            translation: { x: 0.31, y: 0.04, z: 0.7 },
+            scale: 1.36
         },
     },
     {
@@ -97,9 +115,9 @@
         op: "addmerge",
         path: "/guiTransformByType/spear-generic-aluminumbronze",
         value: {
-			rotation: { x: -16, y: -2, z: -134 },
-			origin: { x: 1.47, y: 0.05, z: 0.5 },
-			scale: 3.09
+			rotation: { x: 33, y: 0, z: -127 },
+			origin: { x: 1.39, y: 0.05, z: 0.52 },
+			scale: 2.26
 		},
     },
     {
@@ -122,9 +140,9 @@
         op: "addmerge",
         path: "/tpHandTransformByType/spear-generic-aluminumbronze",
         value: {
-			translation: { x: -1.04, y: 0.02, z: -0.57 },
+			translation: { x: -1.29, y: 0.03, z: -0.57 },
 			rotation: { x: -90, y: 0, z: 0 },
-			origin: { x: 0.5, y: 0, z: 0.5 },
+			origin: { x: 0.6, y: 0, z: 0.5 },
 			scale: 0.8
 		},
     },
@@ -152,7 +170,7 @@
         file: "game:entities/nonliving/projectile/spear.json",
         op: "addmerge",
         path: "/client/shapeByType/spear-generic-aluminumbronze",
-        value: { base: "item/tool/spear/aluminumbronze" }
+        value: { base: "item/tool/spear/metal-aluminumbronze", offsetX: -0.8125 }
     },
     {
         file: "game:entities/nonliving/projectile/spear.json",
