@@ -87,13 +87,61 @@
         value: "aluminumbronze",
     },
 
-    //Scales //Not adding scale armor, so not adding scales
-    // {
-    //     file: "game:recipes/smithing/scale.json",
-    //     op: "addmerge",
-    //     path: "/ingredient/allowedVariants/-",
-    //     value: "aluminumbronze",
-    // },
+    //Scales
+    {
+        file: "game:itemtypes/resource/metalscale.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states/-",
+        value: "aluminumbronze"
+    },
+    {
+        file: "game:itemtypes/resource/metalscale.json",
+        op: "addmerge",
+        path: "/materialDensityByType/*-aluminumbronze",
+        value: 8200
+    },
+    {
+        file: "game:itemtypes/resource/metalscale.json",
+        op: "addmerge",
+        path: "/combustiblePropsByType/metalscale-aluminumbronze",
+        value: {
+			meltingPoint: 8200,
+			meltingDuration: 30,
+			smeltedRatio: 1,
+			smeltedStack: { type: "item", code: "ingot-aluminumbronze", stacksize: 1 }
+		}
+    },
+    {
+        file: "game:recipes/smithing/scale.json",
+        op: "addmerge",
+        path: "/ingredient/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    //Lamellae
+    {
+        file: "game:itemtypes/resource/metallamellae.json",
+        op: "addmerge",
+        path: "/variantgroups/0/states/-",
+        value: "aluminumbronze"
+    },
+    {
+        file: "game:itemtypes/resource/metallamellae.json",
+        op: "addmerge",
+        path: "/materialDensityByType/*-aluminumbronze",
+        value: 8200
+    },
+    {
+        file: "game:itemtypes/resource/metallamellae.json",
+        op: "addmerge",
+        path: "/combustiblePropsByType/metallamellae-aluminumbronze",
+        value: {
+			meltingPoint: 8200,
+			meltingDuration: 30,
+			smeltedRatio: 1,
+			smeltedStack: { type: "item", code: "ingot-aluminumbronze", stacksize: 1 }
+		}
+    },
 
     //Rod
     {
