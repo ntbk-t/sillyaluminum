@@ -1,11 +1,6 @@
 [
     //Spear Head
-    {
-        "file": "game:itemtypes/toolhead/spearhead.json",
-        "op": "addmerge",
-        "path": "/variantgroups/0/states/-",
-        "value": "aluminumbronze"
-    },
+    // Spear head moved out of here into an item because oh my god that would've been too painful
 
     //Spear
     {

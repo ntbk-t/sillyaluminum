@@ -1,5 +1,5 @@
 {
-	ingredient: { type: "item", code: "ingot-*", name: "metal", allowedVariants: ["aluminumbronze"] },
+	ingredient: { type: "item", code: "game:ingot-*", name: "metal", allowedVariants: ["aluminumbronze"] },
 	pattern: [
 		[
 			"______##____",
@@ -17,6 +17,6 @@
 		]
 	],
 	name: "Spear",
-	code: "spearhead-{metal}",
+	code: "game:spearhead-{metal}",
 	output: { type: "item", code: "spearhead-{metal}"  }
 }

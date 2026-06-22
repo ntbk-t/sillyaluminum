@@ -192,6 +192,7 @@
     "game:item-shovel-aluminumbronze": "Aluminum bronze shovel",
     "game:item-blade-falx-aluminumbronze": "Aluminum bronze falx",
     "game:item-spear-generic-aluminumbronze": "Aluminum bronze spear",
+    "sillyaluminum:item-spearhead-aluminumbronze": "Aluminum bronze spear head",
 
     "game:item-bladehead-falx-aluminumbronze": "Aluminum bronze falx head",
     "game:item-axehead-aluminumbronze": "Aluminum bronze axe head",
@@ -212,7 +213,7 @@
     "game:item-rod-aluminumbronze": "Aluminum bronze rod",
 
     "game:item-chisel-aluminumbronze": "Aluminum bronze chisel",
-    "game:item-wrench-aluminumbronze": "Aluminum bronze wrench",
+    "sillyaluminum:item-wrench-aluminumbronze": "Aluminum bronze wrench",
     "game:item-tongsmetal-*-aluminumbronze": "Aluminum bronze tongs",
     "game:item-crowbar-aluminumbronze": "Aluminum bronze crowbar",
 

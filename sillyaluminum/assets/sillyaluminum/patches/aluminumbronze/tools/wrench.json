@@ -1,33 +1,36 @@
+//Wrench moved to sillyaluminum/itemtypes/tool/wrench.json
+//I didn't wanna have to remove every single transform and re-add them as transform by type
+
 [
     //Wrench
-    {
-        "file": "game:itemtypes/tool/wrench.json",
-        "op": "addmerge",
-        "path": "/variantgroups/0/states/-",
-        "value": "aluminumbronze"
-    },
-    {
-        "file": "game:itemtypes/tool/wrench.json",
-        "op": "addmerge",
-        "path": "/tooltierbytype/*-aluminumbronze",
-        "value": 4,
-    },
-    {
-        "file": "game:itemtypes/tool/wrench.json",
-        "op": "addmerge",
-        "path": "/durabilitybytype/wrench-aluminumbronze",
-        "value": 1450
-    },
-    {
-        "file": "game:itemtypes/tool/wrench.json",
-        "op": "addmerge",
-        "path": "/attackpowerbytype/wrench-aluminumbronze",
-        "value": 2.425
-    },
-    {
-        file: "game:recipes/smithing/wrench.json",
-        op: "addmerge",
-        path: "/ingredient/allowedVariants/-",
-        value: "aluminumbronze",
-    },
+    // {
+    //     "file": "game:itemtypes/tool/wrench.json",
+    //     "op": "addmerge",
+    //     "path": "/variantgroups/0/states/-",
+    //     "value": "aluminumbronze"
+    // },
+    // {
+    //     "file": "game:itemtypes/tool/wrench.json",
+    //     "op": "addmerge",
+    //     "path": "/tooltierbytype/*-aluminumbronze",
+    //     "value": 4,
+    // },
+    // {
+    //     "file": "game:itemtypes/tool/wrench.json",
+    //     "op": "addmerge",
+    //     "path": "/durabilitybytype/wrench-aluminumbronze",
+    //     "value": 1450
+    // },
+    // {
+    //     "file": "game:itemtypes/tool/wrench.json",
+    //     "op": "addmerge",
+    //     "path": "/attackpowerbytype/wrench-aluminumbronze",
+    //     "value": 2.425
+    // },
+    // {
+    //     file: "game:recipes/smithing/wrench.json",
+    //     op: "addmerge",
+    //     path: "/ingredient/allowedVariants/-",
+    //     value: "aluminumbronze",
+    // },
 ]
