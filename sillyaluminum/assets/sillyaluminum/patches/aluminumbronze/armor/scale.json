@@ -1,4 +1,104 @@
 [
+    //Recipes
+    {
+        file: "game:recipes/grid/armor/scale.json",
+        op: "addmerge",
+        path: "/0/ingredients/S/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armor/scale.json",
+        op: "addmerge",
+        path: "/0/ingredients/C/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armor/scale.json",
+        op: "addmerge",
+        path: "/1/ingredients/S/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armor/scale.json",
+        op: "addmerge",
+        path: "/1/ingredients/C/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armor/scale.json",
+        op: "addmerge",
+        path: "/2/ingredients/S/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armor/scale.json",
+        op: "addmerge",
+        path: "/2/ingredients/C/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+
+    //Repair recipes
+    {
+        file: "game:recipes/grid/armorrepair/scale.json",
+        op: "addmerge",
+        path: "/0/ingredients/B/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armorrepair/scale.json",
+        op: "addmerge",
+        path: "/0/ingredients/S/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armorrepair/scale.json",
+        op: "addmerge",
+        path: "/0/ingredients/C/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armorrepair/scale.json",
+        op: "addmerge",
+        path: "/1/ingredients/B/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armorrepair/scale.json",
+        op: "addmerge",
+        path: "/1/ingredients/S/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armorrepair/scale.json",
+        op: "addmerge",
+        path: "/1/ingredients/C/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armorrepair/scale.json",
+        op: "addmerge",
+        path: "/2/ingredients/B/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armorrepair/scale.json",
+        op: "addmerge",
+        path: "/2/ingredients/S/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armorrepair/scale.json",
+        op: "addmerge",
+        path: "/2/ingredients/C/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+
     //Armor stats
     {
         file: "game:itemtypes/wearable/seraph/armor.json",

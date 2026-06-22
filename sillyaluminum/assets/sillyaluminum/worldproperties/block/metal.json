@@ -1,0 +1,23 @@
+{
+    "code": "metal",
+	"variants": [
+        {
+            code: "aluminum",
+            meltPoint: 660.32,
+            boilPoint: 2470,
+            density: 2700, //2699 but I messed up everywhere else and am too lazy to fix it :P
+            specificHeatCapacity: 0.921096,
+            elemental: true,
+            tier: 1,
+        },
+        {
+            code: "aluminumbronze",
+            meltPoint: 1040,
+            boilPoint: 2300,
+            density: 8200,
+            specificHeatCapacity: 0.38,
+            elemental: false,
+            tier: 3,
+        }
+    ]
+}

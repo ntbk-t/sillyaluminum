@@ -4,5 +4,21 @@
         "op": "addmerge",
         "path": "/variantgroups/0/states/-",
         "value": "aluminumbronze"
-    }
+    },
+    {
+        "file": "game:recipes/grid/ingot.json",
+        "op": "addmerge",
+        "path": "/-",
+        "value": {
+            ingredientPattern: "C	A",
+            shapeless: true,
+            ingredients: {
+                "C": { type: "item", tags: ["tool-chisel"], name: "metal", name: "metal", allowedVariants: ["aluminumbronze, iron, meteoriciron", "steel"], isTool: true, toolDurabilityCost: 1700 },
+                "A": { type: "block", code: "anvil-aluminumbronze" }
+            },
+            width: 1,
+            height: 2,
+            output: { type: "item", code: "ingot-aluminumbronze", quantity: 8 }
+        }
+    },
 ]

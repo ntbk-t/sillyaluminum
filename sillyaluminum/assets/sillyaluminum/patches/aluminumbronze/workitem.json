@@ -3,6 +3,6 @@
         "file": "game:itemtypes/resource/workitem.json",
         "op": "addmerge",
         "path": "/attributesByType/workitem-aluminumbronze",
-        "value": { "requiresAnvilTier": 1 }
+        "value": { "requiresAnvilTier": 3 }
     }
 ]

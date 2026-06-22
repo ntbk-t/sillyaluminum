@@ -1,4 +1,107 @@
 [
+    //Recipes
+    {
+        file: "game:recipes/grid/armor/lamellar.json",
+        op: "addmerge",
+        path: "/7/ingredients/L/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armor/lamellar.json",
+        op: "addmerge",
+        path: "/8/ingredients/X/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armor/lamellar.json",
+        op: "addmerge",
+        path: "/8/ingredients/Z/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armor/lamellar.json",
+        op: "addmerge",
+        path: "/9/ingredients/X/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armor/lamellar.json",
+        op: "addmerge",
+        path: "/9/ingredients/Z/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armor/lamellar.json",
+        op: "addmerge",
+        path: "/10/ingredients/X/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armor/lamellar.json",
+        op: "addmerge",
+        path: "/10/ingredients/Z/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armor/lamellar.json",
+        op: "addmerge",
+        path: "/11/ingredients/K/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armor/lamellar.json",
+        op: "addmerge",
+        path: "/12/ingredients/K/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+
+    //Repair recipes
+    {
+        file: "game:recipes/grid/armorrepair/lamellar.json",
+        op: "addmerge",
+        path: "/3/ingredients/B/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armorrepair/lamellar.json",
+        op: "addmerge",
+        path: "/3/ingredients/L/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armorrepair/lamellar.json",
+        op: "addmerge",
+        path: "/4/ingredients/B/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armorrepair/lamellar.json",
+        op: "addmerge",
+        path: "/4/ingredients/X/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armorrepair/lamellar.json",
+        op: "addmerge",
+        path: "/5/ingredients/B/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armorrepair/lamellar.json",
+        op: "addmerge",
+        path: "/5/ingredients/K/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+
     //Armor stats
     {
         file: "game:itemtypes/wearable/seraph/armor.json",

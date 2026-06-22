@@ -1,4 +1,68 @@
 [
+    //Recipes
+    {
+        file: "game:recipes/grid/armor/brigandine.json",
+        op: "addmerge",
+        path: "/0/ingredients/P/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armor/brigandine.json",
+        op: "addmerge",
+        path: "/1/ingredients/P/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armor/brigandine.json",
+        op: "addmerge",
+        path: "/2/ingredients/P/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+
+    //Repair recipes
+    {
+        file: "game:recipes/grid/armorrepair/brigandine.json",
+        op: "addmerge",
+        path: "/0/ingredients/B/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armorrepair/brigandine.json",
+        op: "addmerge",
+        path: "/0/ingredients/P/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armorrepair/brigandine.json",
+        op: "addmerge",
+        path: "/1/ingredients/B/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armorrepair/brigandine.json",
+        op: "addmerge",
+        path: "/1/ingredients/P/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+    {
+        file: "game:recipes/grid/armorrepair/brigandine.json",
+        op: "addmerge",
+        path: "/2/ingredients/B/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/armorrepair/brigandine.json",
+        op: "addmerge",
+        path: "/2/ingredients/P/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+
+
     //Armor stats
     {
         file: "game:itemtypes/wearable/seraph/armor.json",
