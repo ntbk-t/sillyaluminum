@@ -1,0 +1,19 @@
+[
+    //Armor stats
+    {
+        file: "game:itemtypes/wearable/seraph/armor.json",
+        op: "addmerge",
+        path: "/attributes/protectionModifiersByType/armor-*-brigandine-aluminumbronze",
+        value: {
+            relativeProtection: 0.8325,
+            flatDamageReduction: 1.26,
+            protectionTier: 3,
+        },
+    },
+    {
+        file: "game:itemtypes/wearable/seraph/armor.json",
+        op: "addmerge",
+        path: "/durabilityByType/armor-*-brigandine-aluminumbronze",
+        value: 1250,
+    },
+]
