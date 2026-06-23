@@ -21,7 +21,6 @@
 	texturesByType: {
 		"*": {
 			"metal": { base: "game:block/metal/ingot/{metal}" },
-			"wood": { base: "item/tool/handle" }
 		}
 	},
 	attributes: {
