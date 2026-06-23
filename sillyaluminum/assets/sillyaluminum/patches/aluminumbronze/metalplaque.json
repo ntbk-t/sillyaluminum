@@ -1,0 +1,14 @@
+[
+    {
+        file: "game:recipes/grid/metalplaque.json",
+        op: "addmerge",
+        path: "/0/ingredients/G/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+    {
+        file: "game:recipes/grid/metalplaque.json",
+        op: "addmerge",
+        path: "/1/ingredients/R/allowedVariants/-",
+        value: "aluminumbronze",
+    },
+]
