@@ -105,7 +105,7 @@
         op: "addmerge",
         path: "/combustiblePropsByType/metalscale-aluminumbronze",
         value: {
-			meltingPoint: 8200,
+			meltingPoint: 1040,
 			meltingDuration: 30,
 			smeltedRatio: 1,
 			smeltedStack: { type: "item", code: "ingot-aluminumbronze", stacksize: 1 }
@@ -136,7 +136,7 @@
         op: "addmerge",
         path: "/combustiblePropsByType/metallamellae-aluminumbronze",
         value: {
-			meltingPoint: 8200,
+			meltingPoint: 1040,
 			meltingDuration: 30,
 			smeltedRatio: 1,
 			smeltedStack: { type: "item", code: "ingot-aluminumbronze", stacksize: 1 }
