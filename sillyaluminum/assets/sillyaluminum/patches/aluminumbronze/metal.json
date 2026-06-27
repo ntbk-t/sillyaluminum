@@ -11,6 +11,10 @@
             specificHeatCapacity: 0.38,
             elemental: false,
             tier: 3,
+			quenchMinTemp: 700,
+			quenchMaxTemp: 900,
+			temperMinTemp: 500,
+			temperMaxTemp: 600
         },
     },
 ]

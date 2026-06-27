@@ -117,5 +117,11 @@
         path: "/attackpowerbytype/axe-felling-aluminum",
         value: 1.8
     },
-    
+
+    {
+        file: "game:recipes/grid/tool/axe.json",
+        op: "addmerge",
+        path: "/0/ingredients/T/allowedVariants/-",
+        value: "aluminum",
+    },
 ]

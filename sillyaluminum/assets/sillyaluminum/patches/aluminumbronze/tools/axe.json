@@ -6,6 +6,30 @@
         "path": "/variantgroups/0/states/-",
         "value": "aluminumbronze"
     },
+
+    {
+        "file": "game:itemtypes/toolhead/axehead.json",
+        "op": "move",
+        "frompath": "/behaviorsByType/*",
+        "path": "/temp"
+    },
+    {
+        "file": "game:itemtypes/toolhead/axehead.json",
+        "op": "addmerge",
+        "path": "/behaviorsByType/*-aluminumbronze",
+        "value": [
+            { name: "Quenchable", properties: { metalVariantgroupCode: "material" } },
+            { name: "GroundStorable", properties: { layout: 'Quadrants', collisionBox: { x1: 0, y1: 0, z1: 0, x2: 1, y2: 0.125, z2: 1 } } }
+        ],
+    },
+    {
+        "file": "game:itemtypes/toolhead/axehead.json",
+        "op": "move",
+        "frompath": "/temp",
+        "path": "/behaviorsByType/*"
+    },
+
+
     {
         "file": "game:itemtypes/toolhead/axehead.json",
         "op": "move",
@@ -117,5 +141,11 @@
         path: "/attackpowerbytype/axe-felling-aluminumbronze",
         value: 3.75
     },
-    
+
+    {
+        file: "game:recipes/grid/tool/axe.json",
+        op: "addmerge",
+        path: "/0/ingredients/T/allowedVariants/-",
+        value: "aluminumbronze",
+    },
 ]

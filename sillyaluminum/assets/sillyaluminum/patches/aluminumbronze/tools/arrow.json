@@ -24,6 +24,7 @@
         "frompath": "/temp",
         "path": "/shapeByType/*"
     },
+    
     {
         file: "game:recipes/smithing/6arrowhead.json",
         op: "addmerge",
