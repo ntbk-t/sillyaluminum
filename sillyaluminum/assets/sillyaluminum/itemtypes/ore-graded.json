@@ -22,10 +22,10 @@
 			searchWeightOffset: -0.25,
 		},
 		metalUnitsByType: {
-			"ore-poor-*": 15,
-			"ore-medium-*": 20,
-			"ore-rich-*": 25,
-			"ore-bountiful-*": 35
+			"ore-poor-*": 5,
+			"ore-medium-*": 10,
+			"ore-rich-*": 15,
+			"ore-bountiful-*": 20
 		},
 		displaycaseable: true,
 		shelvable: true,

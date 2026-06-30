@@ -1,12 +1,38 @@
 [
     {
-		ingredientPattern: "SSS	SMS	SSS",
+		ingredientPattern: "S_S	SMS	SWS",
 		ingredients: {
 			"M": { type: "block", code: "sillyaluminum:redmud", quantity: 2 },
-			"S": { type: "block", code: "game:soil-*" }
+			"S": { type: "block", code: "game:soil-*" },
+			"W": { 
+				type: "block", 
+				code: "game:woodbucket",
+                recipeAttributes: {
+                    requiresContent: { type: "item", code: "game:waterportion" },
+                    requiresLitres: 3
+			    }
+			},
 		},
 		width: 3,
 		height: 3,
-		output: { type: "item", code: "game:clay-red", quantity: 24  }
+		output: { type: "item", code: "game:clay-red", quantity: 12  }
+	},
+	{
+		ingredientPattern: "S_S	SMS	SWS",
+		ingredients: {
+			"M": { type: "block", code: "sillyaluminum:redmud", quantity: 2 },
+			"S": { type: "block", code: "game:soil-*" },
+			"W": { 
+				type: "block", 
+				code: "game:jug-*-fired",
+                recipeAttributes: {
+                    requiresContent: { type: "item", code: "game:waterportion" },
+                    requiresLitres: 3
+			    }
+			},
+		},
+		width: 3,
+		height: 3,
+		output: { type: "item", code: "game:clay-red", quantity: 12  }
 	}
 ]
