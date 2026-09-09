@@ -1,0 +1,121 @@
+[   
+    //Aluminum cookware
+    {
+        file: "metalpots:itemtypes/metalpotbottom.json",
+        path: "/variantgroups/0/states/-",
+        op: "addmerge",
+        value: "aluminum",
+        dependsOn: [{modId: "metalpots"}]
+    },
+    {
+        file: "metalpots:itemtypes/metalpottop.json",
+        path: "/variantgroups/0/states/-",
+        op: "addmerge",
+        value: "aluminum",
+        dependsOn: [{modId: "metalpots"}]
+    },
+
+    {
+        file: "metalpots:blocktypes/metalpot.json",
+        path: "/variantgroups/0/states/-",
+        op: "addmerge",
+        value: "aluminum",
+        dependsOn: [{modId: "metalpots"}]
+    },
+    {
+        file: "metalpots:blocktypes/dirtymetalpot.json",
+        path: "/variantgroups/0/states/-",
+        op: "addmerge",
+        value: "aluminum",
+        dependsOn: [{modId: "metalpots"}]
+    },
+    {
+        file: "metalpots:blocktypes/metalcrock.json",
+        path: "/variantgroups/0/states/-",
+        op: "addmerge",
+        value: "aluminum",
+        dependsOn: [{modId: "metalpots"}]
+    },
+
+    {
+        file: "metalpots:recipes/smithing/metalpotbottom.json",
+        path: "/ingredient/allowedVariants/-",
+        op: "addmerge",
+        value: "aluminum",
+        dependsOn: [{modId: "metalpots"}]
+    },
+    {
+        file: "metalpots:recipes/smithing/metalpottop.json",
+        path: "/ingredient/allowedVariants/-",
+        op: "addmerge",
+        value: "aluminum",
+        dependsOn: [{modId: "metalpots"}]
+    },
+    {
+        file: "metalpots:recipes/smithing/metalcrock.json",
+        path: "/ingredient/allowedVariants/-",
+        op: "addmerge",
+        value: "aluminum",
+        dependsOn: [{modId: "metalpots"}]
+    },
+
+    //Aluminum bronze cookware
+    {
+        file: "metalpots:itemtypes/metalpotbottom.json",
+        path: "/variantgroups/0/states/-",
+        op: "addmerge",
+        value: "aluminumbronze",
+        dependsOn: [{modId: "metalpots"}]
+    },
+    {
+        file: "metalpots:itemtypes/metalpottop.json",
+        path: "/variantgroups/0/states/-",
+        op: "addmerge",
+        value: "aluminumbronze",
+        dependsOn: [{modId: "metalpots"}]
+    },
+
+    {
+        file: "metalpots:blocktypes/metalpot.json",
+        path: "/variantgroups/0/states/-",
+        op: "addmerge",
+        value: "aluminumbronze",
+        dependsOn: [{modId: "metalpots"}]
+    },
+    {
+        file: "metalpots:blocktypes/dirtymetalpot.json",
+        path: "/variantgroups/0/states/-",
+        op: "addmerge",
+        value: "aluminumbronze",
+        dependsOn: [{modId: "metalpots"}]
+    },
+    {
+        file: "metalpots:blocktypes/metalcrock.json",
+        path: "/variantgroups/0/states/-",
+        op: "addmerge",
+        value: "aluminumbronze",
+        dependsOn: [{modId: "metalpots"}]
+    },
+
+    {
+        file: "metalpots:recipes/smithing/metalpotbottom.json",
+        path: "/ingredient/allowedVariants/-",
+        op: "addmerge",
+        value: "aluminumbronze",
+        dependsOn: [{modId: "metalpots"}]
+    },
+    {
+        file: "metalpots:recipes/smithing/metalpottop.json",
+        path: "/ingredient/allowedVariants/-",
+        op: "addmerge",
+        value: "aluminumbronze",
+        dependsOn: [{modId: "metalpots"}]
+    },
+    {
+        file: "metalpots:recipes/smithing/metalcrock.json",
+        path: "/ingredient/allowedVariants/-",
+        op: "addmerge",
+        value: "aluminumbronze",
+        dependsOn: [{modId: "metalpots"}]
+    },
+]
